@@ -8,7 +8,7 @@ import Waffles from "./pages/Waffles";
 import Sandwich from "./pages/Sandwich";
 import Pizzas from "./pages/Pizzas";
 
-import { FaInfo } from "react-icons/fa6";
+// import { FaInfo } from "react-icons/fa6";
 import Footer from "./components/Footer";
 
 // const img = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
@@ -29,7 +29,7 @@ const App = () => {
         <Footer languaje={languaje} />
       </section>
 
-      <FaInfo
+      {/* <FaInfo
         className="
           h-8 w-8 p-2
           fixed bottom-6 right-6
@@ -40,7 +40,7 @@ const App = () => {
 
           hover:text-black hover:bg-beige
         "
-      />
+      /> */}
     </main>
   );
 };
