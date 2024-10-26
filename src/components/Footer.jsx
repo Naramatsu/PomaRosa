@@ -2,7 +2,7 @@ import { ENGLISH, SPANISH } from "../utils/constants";
 import TextWarning from "./TextWarning";
 
 const Footer = ({ languaje }) => (
-  <footer>
+  <footer className="py-5">
     <TextWarning>{footer[languaje]}</TextWarning>
   </footer>
 );
