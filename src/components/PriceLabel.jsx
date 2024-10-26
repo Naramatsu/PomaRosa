@@ -6,7 +6,7 @@ const PriceLabel = ({ value, label, cold }) => {
         lexend
         flex flex-col items-center
         font-bold
-        min-w-[85px] max-w-[90px]
+        min-w-[90px] max-w-[100px]
         ${color}
       `}
     >
