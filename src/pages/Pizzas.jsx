@@ -2,8 +2,13 @@ import Box from "../components/Box";
 import PizzaItem from "../components/PizzaItem";
 import Title from "../components/Title";
 import { PIZZA, pizzaProducts } from "../data/pizzas";
+import useLanguaje from "../hooks/useLanguaje";
 
-const Pizzas = ({ languaje }) => {
+const img = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
+
+const Pizzas = () => {
+  const [languaje] = useLanguaje();
+
   return (
     <section id="pizzas" className="w-full p-5">
       <Title>{PIZZA}</Title>
@@ -12,6 +17,7 @@ const Pizzas = ({ languaje }) => {
           ({ name, personal, familiar, description }, index) => (
             <PizzaItem
               key={index}
+              img={img}
               name={name[languaje]}
               personal={personal}
               familiar={familiar}

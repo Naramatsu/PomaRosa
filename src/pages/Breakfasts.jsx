@@ -13,8 +13,11 @@ import {
   SPECIAL_EGGS_SUBTITLE,
   specialEggsProducts,
 } from "../data/breakfasts";
+import useLanguaje from "../hooks/useLanguaje";
 
-const Breakfasts = ({ languaje }) => {
+const Breakfasts = () => {
+  const [languaje] = useLanguaje();
+
   return (
     <section id="breakfasts" className="w-full p-5">
       <Title>{BREAKFASTS[languaje]}</Title>

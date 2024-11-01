@@ -21,9 +21,9 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
         <section className="w-full flex flex-col gap-3">
           <p
             className="
-              kalam-regular uppercase
+              kalam-regular
               relative w-full overflow-hidden
-              text-xl text-white font-semibold math-auto
+              text-xl text-white font-semibold
             "
           >
             {name}
@@ -35,7 +35,6 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
             />
           </p>
           {description && (
-            // <p className="text-sm text-white/70 great-vibes-regular">
             <p className="text-sm text-white/70 dancing-script">
               {description}
             </p>

@@ -1,46 +1,79 @@
+import { useEffect, useRef } from "react";
 import ComboBreakfasts from "./pages/ComboBreakfasts";
 import Cafe from "./pages/Cafe";
 import Drinks from "./pages/Drinks";
 import Menu from "./pages/Menu";
-import { SPANISH } from "./utils/constants";
 import Breakfasts from "./pages/Breakfasts";
 import Waffles from "./pages/Waffles";
 import Sandwich from "./pages/Sandwich";
 import Pizzas from "./pages/Pizzas";
-
-// import { FaInfo } from "react-icons/fa6";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-// const img = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
-
-const languaje = SPANISH;
 const App = () => {
+  const cafeTitle = useRef(null);
+  const drinkTitle = useRef(null);
+  const comboBfTitle = useRef(null);
+  const breakfastsTitle = useRef(null);
+  const wafflesTitle = useRef(null);
+  const sandwichTitle = useRef(null);
+  const pizzasTitle = useRef(null);
+
+  useEffect(() => {
+    const allRef =
+      cafeTitle?.current &&
+      drinkTitle?.current &&
+      comboBfTitle?.current &&
+      breakfastsTitle?.current &&
+      wafflesTitle?.current &&
+      sandwichTitle?.current &&
+      pizzasTitle?.current;
+
+    if (allRef)
+      console.log({
+        cafeTitle: cafeTitle.current.getBoundingClientRect(),
+        drinkTitle: drinkTitle.current.getBoundingClientRect(),
+      });
+  }, [
+    cafeTitle,
+    drinkTitle,
+    comboBfTitle,
+    breakfastsTitle,
+    wafflesTitle,
+    sandwichTitle,
+    pizzasTitle,
+  ]);
+
   return (
-    <main className="relative w-full h-full min-h-screen bg-black flex justify-center">
+    <main className="relative w-full h-full min-h-screen bg-black flex flex-col justify-center">
+      <Header />
       <section className="w-full max-w-[600px] m-auto h-full">
-        <Menu languaje={languaje} />
-        <Cafe languaje={languaje} />
-        <Drinks languaje={languaje} />
-        <ComboBreakfasts languaje={languaje} />
-        <Breakfasts languaje={languaje} />
-        <Waffles languaje={languaje} />
-        <Sandwich languaje={languaje} />
-        <Pizzas languaje={languaje} />
-        <Footer languaje={languaje} />
+        <section id="menu">
+          <Menu />
+        </section>
+        <section id="cafe" ref={cafeTitle}>
+          <Cafe />
+        </section>
+        <section id="drinks" ref={drinkTitle}>
+          <Drinks />
+        </section>
+        <section id="combos" ref={comboBfTitle}>
+          <ComboBreakfasts />
+        </section>
+        <section id="breakfasts" ref={breakfastsTitle}>
+          <Breakfasts />
+        </section>
+        <section id="waffles" ref={wafflesTitle}>
+          <Waffles />
+        </section>
+        <section id="sandwich" ref={sandwichTitle}>
+          <Sandwich />
+        </section>
+        <section id="pizzas" ref={pizzasTitle}>
+          <Pizzas />
+        </section>
       </section>
-
-      {/* <FaInfo
-        className="
-          h-8 w-8 p-2
-          fixed bottom-6 right-6
-          text-lg text-beige border-2 border-beige
-          cursor-pointer
-          rounded-full
-          duration-200 ease-linear
-
-          hover:text-black hover:bg-beige
-        "
-      /> */}
+      <Footer />
     </main>
   );
 };

@@ -7,8 +7,11 @@ import {
   SWEET_WAFFLES,
   sweetWafflesProducts,
 } from "../data/waffles";
+import useLanguaje from "../hooks/useLanguaje";
 
-const Waffles = ({ languaje }) => {
+const Waffles = () => {
+  const [languaje] = useLanguaje();
+
   return (
     <section id="waffles" className="w-full p-5">
       <Title>{SAVORY_WAFFLES[languaje]}</Title>

@@ -1,20 +1,15 @@
-import Button from "../components/Button";
+import { ENGLISH, SPANISH } from "../utils/constants";
+import useLanguaje from "../hooks/useLanguaje";
+import MenuLayout from "../components/MenuLayout";
 import { menuList } from "../data/menu";
 
-const Menu = ({ languaje }) => {
-  return (
-    <section
-      className="
-        lexend
-        w-full h-full min-h-screen
-        flex justify-center items-center flex-col gap-6
-      "
-    >
-      {menuList.map(({ label }, index) => (
-        <Button key={index}>{label[languaje]}</Button>
-      ))}
-    </section>
-  );
+const Menu = () => {
+  const [languaje, setLanguaje] = useLanguaje();
+  const isSpanish = languaje === SPANISH;
+
+  const handlerLanguaje = () => setLanguaje(isSpanish ? ENGLISH : SPANISH);
+
+  return <MenuLayout items={menuList} ispPage setLanguaje={handlerLanguaje} />;
 };
 
 export default Menu;

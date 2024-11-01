@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 code {
@@ -26,41 +26,113 @@ code {
 .dancing-script {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
   font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
 .kalam-light {
   font-family: "Kalam", cursive;
-  font-weight: 300;
   font-style: normal;
+  font-weight: 300;
 }
 
 .kalam-regular {
   font-family: "Kalam", cursive;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 
 .kalam-bold {
   font-family: "Kalam", cursive;
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
 }
 
 .lexend {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
   font-style: normal;
+  font-weight: 800;
+}
+
+.toggle-switch {
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+}
+
+.toggle-switch .checkbox-input {
+  -webkit-appearance: none;
+  background: #000;
+  border: solid 2px #f0ccac;
+  border-radius: 20px;
+  border-style: outset;
+  cursor: pointer;
+  height: 40px;
+  opacity: 1;
+  outline: none;
+  position: relative;
+  transition: 0.5s;
+  width: 80px;
+}
+
+.toggle-switch .checkbox-input::before {
+  background: linear-gradient(to top, #000, #555);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0.98, 0.96);
+  transition: 0.5s;
+  width: 40px;
+}
+
+.toggle-switch .checkbox-input::after {
+  background: #f0ccac;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #000, 0 0 15px #000, 0 0 30px #000;
+  content: "";
+  height: 4px;
+  left: 18px;
+  position: absolute;
+  top: calc(50% - 2px);
+  transition: 0.5s;
+  width: 4px;
+}
+
+.toggle-switch .checkbox-input:checked {
+  background: #f0ccac !important;
+}
+
+.toggle-switch .checkbox-input:checked::before {
+  left: 36px;
+}
+
+.toggle-switch .checkbox-input:checked::after {
+  background: #f0ccac;
+  box-shadow: 0 0 5px #f0ccac, 0 0 15px #f0ccac, 0 0 30px #f0ccac;
+  left: calc(14px + 40px);
+}
+
+.menu {
+  transform: scaleY(0);
+  transition: 0.25s ease-in-out;
+  transform-origin: top;
+}
+
+.menu.active {
+  transform: scaleY(1) !important;
 }

@@ -10,10 +10,13 @@ import {
   TO_ACCOMPANY,
   accompanyProductList,
 } from "../data/cafe";
+import useLanguaje from "../hooks/useLanguaje";
 
-const Cafe = ({ languaje }) => {
+const Cafe = () => {
+  const [languaje] = useLanguaje();
+
   return (
-    <section id="cafe" className="w-full p-5">
+    <section id={CAFE_TILTE[languaje]} className="w-full p-5">
       <Title>{CAFE_TILTE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
         {cafeProductList.map(({ name, hotPrice, coldPrice }, index) => (

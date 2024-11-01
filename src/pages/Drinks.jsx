@@ -14,10 +14,13 @@ import {
   SODAS,
   sodasProductList,
 } from "../data/drinks";
+import useLanguaje from "../hooks/useLanguaje";
 
-const Drinks = ({ languaje }) => {
+const Drinks = () => {
+  const [languaje] = useLanguaje();
+
   return (
-    <section id="drinks" className="w-full p-5">
+    <section id={COLD_DRINKS[languaje]} className="w-full p-5">
       <Title>{COLD_DRINKS[languaje]}</Title>
       <br />
       <Title subTitle>{LEMONADE[languaje]}</Title>

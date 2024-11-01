@@ -1,6 +1,11 @@
+import { COLD, HOT } from "../utils/constants";
+import useLanguaje from "../hooks/useLanguaje";
+
 const Price = ({ value, cold, noLabel = false }) => {
-  const label = !cold ? "Caliente" : "Frio";
+  const [languaje] = useLanguaje();
+  const label = !cold ? HOT[languaje] : COLD[languaje];
   const color = !cold ? "text-beige" : "text-green";
+
   return (
     <section
       className={`

@@ -7,8 +7,11 @@ import {
   COMBOS_BREAKFASTS,
   comboWarning,
 } from "../data/comboBreakfasts";
+import useLanguaje from "../hooks/useLanguaje";
 
-const ComboBreakfasts = ({ languaje }) => {
+const ComboBreakfasts = () => {
+  const [languaje] = useLanguaje();
+
   return (
     <section id="combo-breakfasts" className="w-full p-5">
       <Title>{COMBOS_BREAKFASTS[languaje]}</Title>
