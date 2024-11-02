@@ -6,8 +6,6 @@ import useScrollY from "../hooks/useScrollY";
 import { IoMenuSharp } from "react-icons/io5";
 import { MENU_TITLES, scrollToSection } from "../utils/constants";
 
-const logo = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
-
 const Header = ({ title = "" }) => {
   const scrollY = useScrollY();
   const [languaje] = useLanguaje();
