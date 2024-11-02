@@ -21,12 +21,12 @@ const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
         <section className="w-full flex flex-col gap-3">
           <p
             className="
-              kalam-regular
+              kalam-regular first-letter:capitalize
               relative w-full overflow-hidden
-              text-xl text-white font-semibold
+              text-2xl text-white font-semibold
             "
           >
-            {name}
+            {name.toLowerCase()}
             <span
               className="
                 absolute bottom-0
@@ -35,8 +35,8 @@ const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
             />
           </p>
           {description && (
-            <p className="text-sm text-white/70 dancing-script">
-              {description}
+            <p className="text-sm text-white/70 dancing-script first-letter:capitalize">
+              {description.toLowerCase()}
             </p>
           )}
         </section>

@@ -43,8 +43,8 @@ export const pizzaProducts = [
   },
   {
     name: {
-      [SPANISH]: "HANAPEPE",
-      [ENGLISH]: "HANAPEPE",
+      [SPANISH]: "HAWAPEPE",
+      [ENGLISH]: "HAWAPEPE",
     },
     personal: "23.000",
     familiar: "43.000",

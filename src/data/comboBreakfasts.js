@@ -29,15 +29,15 @@ export const comboBreakfastsProducts = [
   },
   {
     name: {
-      [SPANISH]: "SANDUCHE DE HUEVO",
+      [SPANISH]: "SANDWICH DE HUEVO",
       [ENGLISH]: "EGG SANDWICH",
     },
     hotPrice: "22.500",
     description: {
       [SPANISH]:
-        "Huevos revueltos con mayonesa, tocineta y queso en pan artesanal y bebida caliente.",
+        "Huevos revueltos con mayonesa, tocineta, queso en pan artesanal y bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with mayonnaise, bacon and cheese on artisan bread and hot drink.",
+        "Scrambled eggs with mayonnaise, bacon, cheese on artisan bread and hot drink.",
     },
   },
   {

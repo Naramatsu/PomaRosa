@@ -59,12 +59,13 @@ const Header = ({ title = "" }) => {
               key={index}
               type="chip"
               isActive={isNotMenu && title === label[languaje]}
+              className="first-letter:capitalize"
               onClick={() => {
                 scrollToSection(link);
                 setIsMenuActive(false);
               }}
             >
-              {label[languaje]}
+              {label[languaje].toLowerCase()}
             </Button>
           ))}
         </section>

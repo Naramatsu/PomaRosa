@@ -8,6 +8,8 @@ const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
   const [languaje] = useLanguaje();
   const isSpanish = languaje === SPANISH;
 
+  const isCapitalize = !ispPage ? "first-letter:capitalize" : "";
+
   return (
     <section
       className="
@@ -24,7 +26,11 @@ const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
         />
       )}
       {items.map(({ label, link, handlerCLick }, index) => (
-        <Button key={index} onClick={() => handlerCLick(link)}>
+        <Button
+          key={index}
+          onClick={() => handlerCLick(link)}
+          className={isCapitalize}
+        >
           {label[languaje]}
         </Button>
       ))}
