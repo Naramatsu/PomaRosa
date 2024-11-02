@@ -4,8 +4,8 @@ import Title from "../components/Title";
 import {
   ACCOMPANIMENTS,
   accompanimentsProducts,
-  BREAKFASTS,
   EGGS_TO_TASTE,
+  EGGS_TO_TASTE_SUBTITLE,
   eggsToTasteProducts,
   HEALTHY,
   healthyProducts,
@@ -14,15 +14,19 @@ import {
   specialEggsProducts,
 } from "../data/breakfasts";
 import useLanguaje from "../hooks/useLanguaje";
+import { BREAKFASTS_TITLE } from "../utils/constants";
 
 const Breakfasts = () => {
   const [languaje] = useLanguaje();
 
   return (
     <section id="breakfasts" className="w-full p-5">
-      <Title>{BREAKFASTS[languaje]}</Title>
+      <Title>{BREAKFASTS_TITLE[languaje]}</Title>
       <section className="py-10">
-        <Title subTitle>{EGGS_TO_TASTE[languaje]}</Title>
+        <Title subTitle>
+          {EGGS_TO_TASTE[languaje]}
+          <p className="text-[1rem]">{EGGS_TO_TASTE_SUBTITLE[languaje]}</p>
+        </Title>
         <Box className="gap-5 flex-col">
           {eggsToTasteProducts.map(({ name, hotPrice }, index) => (
             <Product
@@ -48,7 +52,7 @@ const Breakfasts = () => {
       <section className="py-10">
         <Title subTitle>
           {SPECIAL_EGGS[languaje]}
-          <p>{SPECIAL_EGGS_SUBTITLE[languaje]}</p>
+          <p className="text-[1rem]">{SPECIAL_EGGS_SUBTITLE[languaje]}</p>
         </Title>
         <Box className="gap-5 flex-col">
           {specialEggsProducts.map(({ name, hotPrice, description }, index) => (

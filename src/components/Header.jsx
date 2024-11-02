@@ -1,29 +1,19 @@
-import { useEffect, useState } from "react";
-import { IoMenuSharp } from "react-icons/io5";
-import Title from "./Title";
-import { MENU_TITLES, scrollToSection } from "../utils/constants";
+import { useState } from "react";
 import Button from "./Button";
+import Title from "./Title";
 import useLanguaje from "../hooks/useLanguaje";
+import useScrollY from "../hooks/useScrollY";
+import { IoMenuSharp } from "react-icons/io5";
+import { MENU_TITLES, scrollToSection } from "../utils/constants";
 
 const logo = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
 
-const Header = () => {
-  const [isMenuActive, setIsMenuActive] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
+const Header = ({ title = "" }) => {
+  const scrollY = useScrollY();
   const [languaje] = useLanguaje();
-  const [activeTab, setActiveTab] = useState("");
-  const isNotMenu = activeTab !== MENU_TITLES[0].label[languaje];
-  const subTitle = isNotMenu ? activeTab : "";
-
-  useEffect(() => {
-    const handlerScroll = window.addEventListener("scroll", () => {
-      setScrollY(window.scrollY || 0);
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handlerScroll);
-    };
-  }, [scrollY]);
+  const [isMenuActive, setIsMenuActive] = useState(false);
+  const isNotMenu = title !== MENU_TITLES[0].label[languaje];
+  const subTitle = isNotMenu ? title : "";
 
   const headerClassName =
     scrollY > window.innerHeight - 100
@@ -44,7 +34,12 @@ const Header = () => {
           flex items-center justify-between
         "
       >
-        <img src={logo} alt="logo" className="w-[60px] h-[60px] rounded-full" />
+        <img
+          src="logo.png"
+          alt="logo"
+          className="w-[70px] h-[70px] rounded-full cursor-pointer"
+          onClick={() => scrollToSection("menu")}
+        />
         <Title subTitle>{subTitle}</Title>
         <IoMenuSharp
           size={40}
@@ -65,11 +60,10 @@ const Header = () => {
             <Button
               key={index}
               type="chip"
-              isActive={isNotMenu && activeTab === label[languaje]}
+              isActive={isNotMenu && title === label[languaje]}
               onClick={() => {
                 scrollToSection(link);
                 setIsMenuActive(false);
-                setActiveTab(label[languaje]);
               }}
             >
               {label[languaje]}

@@ -16,6 +16,13 @@ const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
         flex justify-center items-center flex-col gap-6
       "
     >
+      {ispPage && (
+        <img
+          src="logo.png"
+          alt="logo"
+          className="w-[150px] h-[150px] border-2 border-beige rounded-full"
+        />
+      )}
       {items.map(({ label, link, handlerCLick }, index) => (
         <Button key={index} onClick={() => handlerCLick(link)}>
           {label[languaje]}

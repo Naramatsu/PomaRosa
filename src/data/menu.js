@@ -1,21 +1,15 @@
 import {
   ENGLISH,
+  MENU_TITLE,
   scrollToSection,
   SPANISH,
+  urlGenerator,
   whatsAppLink,
 } from "../utils/constants";
 
-export const urlGenerator = (url) => {
-  const newUrl = new URL(url);
-  window.open(newUrl.href, "_blank");
-};
-
 export const menuList = [
   {
-    label: {
-      [SPANISH]: "Menú",
-      [ENGLISH]: "Menu",
-    },
+    label: MENU_TITLE,
     link: "cafe",
     handlerCLick: scrollToSection,
   },

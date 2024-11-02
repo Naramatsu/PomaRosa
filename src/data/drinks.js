@@ -4,6 +4,7 @@ export const COLD_DRINKS = {
   [SPANISH]: "Bebidas frias",
   [ENGLISH]: "Cold drinks",
 };
+
 export const LEMONADE = { [SPANISH]: "Limonada", [ENGLISH]: "Lemonade" };
 
 export const lemonadeProductList = [

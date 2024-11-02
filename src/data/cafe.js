@@ -1,10 +1,5 @@
 import { ENGLISH, SPANISH } from "../utils/constants";
 
-export const CAFE_TILTE = {
-  [SPANISH]: "Caferería",
-  [ENGLISH]: "Café",
-};
-
 export const cafeProductList = [
   {
     name: {

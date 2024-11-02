@@ -1,10 +1,5 @@
 import { ENGLISH, SPANISH } from "../utils/constants";
 
-export const COMBOS_BREAKFASTS = {
-  [SPANISH]: "COMBOS - DESAYUNOS",
-  [ENGLISH]: "COMBOS - BREAKFASTS",
-};
-
 export const comboBreakfastsProducts = [
   {
     name: {

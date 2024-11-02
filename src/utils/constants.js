@@ -13,66 +13,76 @@ export const COLD = {
 
 export const whatsAppLink = "https://wa.me/573103504215";
 
+export const MENU_TITLE = {
+  [SPANISH]: "Menú",
+  [ENGLISH]: "Menu",
+};
+
+export const CAFE_TILTE = {
+  [SPANISH]: "Caferería",
+  [ENGLISH]: "Café",
+};
+
+export const DRINKS_TILTE = {
+  [SPANISH]: "Bebidas",
+  [ENGLISH]: "Drinks",
+};
+
+export const COMBOS_BREAKFASTS_TITLE = {
+  [SPANISH]: "COMBOS - DESAYUNOS",
+  [ENGLISH]: "COMBOS - BREAKFASTS",
+};
+
+export const BREAKFASTS_TITLE = {
+  [SPANISH]: "DESAYUNOS",
+  [ENGLISH]: "BREAKFASTS",
+};
+
+export const WAFFLES_TITLE = {
+  [SPANISH]: "WAFFLES",
+  [ENGLISH]: "WAFFLES",
+};
+
+export const SANDWICH_TITLE = {
+  [SPANISH]: "SANDWICHS",
+  [ENGLISH]: "SANDWICHS",
+};
+
+export const PIZZA_TITLE = {
+  [SPANISH]: "PIZZAS",
+  [ENGLISH]: "PIZZAS",
+};
+
 export const MENU_TITLES = [
-  {
-    label: {
-      [SPANISH]: "Menú",
-      [ENGLISH]: "Menu",
-    },
-    link: "menu",
-  },
-  {
-    label: {
-      [SPANISH]: "Caferería",
-      [ENGLISH]: "Café",
-    },
-    link: "cafe",
-  },
-  {
-    label: {
-      [SPANISH]: "Bebidas",
-      [ENGLISH]: "Drinks",
-    },
-    link: "drinks",
-  },
-  {
-    label: {
-      [SPANISH]: "Combos - Desayunos",
-      [ENGLISH]: "Combos - Breakfasts",
-    },
-    link: "combos",
-  },
-  {
-    label: {
-      [SPANISH]: "Desayunos",
-      [ENGLISH]: "Breakfasts",
-    },
-    link: "breakfasts",
-  },
-  {
-    label: {
-      [SPANISH]: "Waffles",
-      [ENGLISH]: "Waffles",
-    },
-    link: "waffles",
-  },
-  {
-    label: {
-      [SPANISH]: "Sandwichs",
-      [ENGLISH]: "Sandwichs",
-    },
-    link: "sandwichs",
-  },
-  {
-    label: {
-      [SPANISH]: "Pizzas",
-      [ENGLISH]: "Pizzas",
-    },
-    link: "pizzas",
-  },
+  { label: MENU_TITLE, link: "menu" },
+  { label: CAFE_TILTE, link: "cafe" },
+  { label: DRINKS_TILTE, link: "drinks" },
+  { label: COMBOS_BREAKFASTS_TITLE, link: "combos" },
+  { label: BREAKFASTS_TITLE, link: "breakfasts" },
+  { label: WAFFLES_TITLE, link: "waffles" },
+  { label: SANDWICH_TITLE, link: "sandwichs" },
+  { label: PIZZA_TITLE, link: "pizzas" },
 ];
 
 export const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) section.scrollIntoView({ behavior: "smooth" });
 };
+
+export const urlGenerator = (url) => {
+  const newUrl = new URL(url);
+  window.open(newUrl.href, "_blank");
+};
+
+export const getTitle = (items) => {
+  const some = Object.keys(items).findLast(
+    (keys) => items[keys].top <= 100 && items[keys].top <= items[keys].height
+  );
+  return items[some].title;
+};
+
+export const generateRefObject = (ref, title) => ({
+  top: ref?.current?.getBoundingClientRect().top,
+  height: ref?.current?.getBoundingClientRect().height,
+  title,
+});

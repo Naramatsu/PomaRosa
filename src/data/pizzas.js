@@ -2,41 +2,6 @@ import { ENGLISH, SPANISH } from "../utils/constants";
 
 export const PIZZA = "PIZZA";
 
-/*
-
-
-$ $
-
-
-
-$ 
-
-
-
-$ $
-
-
-
-$ $
-
-
-
-$ $
-
-
-
-$ $
-
-
-
-$ $
-
-
-
-$ $
-
- */
-
 export const pizzaProducts = [
   {
     name: {

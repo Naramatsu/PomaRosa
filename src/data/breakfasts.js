@@ -1,13 +1,13 @@
 import { ENGLISH, SPANISH } from "../utils/constants";
 
-export const BREAKFASTS = {
-  [SPANISH]: "DESAYUNOS",
-  [ENGLISH]: "BREAKFASTS",
+export const EGGS_TO_TASTE = {
+  [SPANISH]: "HUEVOS AL GUSTO",
+  [ENGLISH]: "EGGS TO TASTE",
 };
 
-export const EGGS_TO_TASTE = {
-  [SPANISH]: "HUEVOS AL GUSTO ( 3 unidades)",
-  [ENGLISH]: "EGGS TO TASTE (3 units)",
+export const EGGS_TO_TASTE_SUBTITLE = {
+  [SPANISH]: "( 3 unidades )",
+  [ENGLISH]: "( 3 units )",
 };
 
 export const eggsToTasteProducts = [
