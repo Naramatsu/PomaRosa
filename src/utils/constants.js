@@ -7,11 +7,11 @@ export const HOT = {
 };
 
 export const COLD = {
-  [SPANISH]: "Frio",
+  [SPANISH]: "Frío",
   [ENGLISH]: "Cold",
 };
 
-export const whatsAppLink = "https://wa.me/573103504215";
+export const whatsAppLink = "https://wa.me/573146343249";
 
 export const MENU_TITLE = {
   [SPANISH]: "Menú",
@@ -19,7 +19,7 @@ export const MENU_TITLE = {
 };
 
 export const CAFE_TILTE = {
-  [SPANISH]: "Caferería",
+  [SPANISH]: "Cafetería",
   [ENGLISH]: "Café",
 };
 
@@ -53,6 +53,11 @@ export const PIZZA_TITLE = {
   [ENGLISH]: "PIZZAS",
 };
 
+export const DAILYMENU_TITLE = {
+  [SPANISH]: "MENÚ DEL DÍA",
+  [ENGLISH]: "DAILY MENU",
+};
+
 export const MENU_TITLES = [
   { label: MENU_TITLE, link: "menu" },
   { label: CAFE_TILTE, link: "cafe" },
@@ -62,6 +67,7 @@ export const MENU_TITLES = [
   { label: WAFFLES_TITLE, link: "waffles" },
   { label: SANDWICH_TITLE, link: "sandwichs" },
   { label: PIZZA_TITLE, link: "pizzas" },
+  { label: DAILYMENU_TITLE, link: "dailymenu" },
 ];
 
 export const scrollToSection = (id) => {

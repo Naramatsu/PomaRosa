@@ -4,8 +4,6 @@ import Title from "../components/Title";
 import { PIZZA, pizzaProducts } from "../data/pizzas";
 import useLanguaje from "../hooks/useLanguaje";
 
-const img = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
-
 const Pizzas = () => {
   const [languaje] = useLanguaje();
 
@@ -17,7 +15,6 @@ const Pizzas = () => {
           ({ name, personal, familiar, description }, index) => (
             <PizzaItem
               key={index}
-              img={img}
               name={name[languaje]}
               personal={personal}
               familiar={familiar}

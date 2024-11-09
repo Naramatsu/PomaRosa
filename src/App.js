@@ -15,6 +15,7 @@ import {
   BREAKFASTS_TITLE,
   CAFE_TILTE,
   COMBOS_BREAKFASTS_TITLE,
+  DAILYMENU_TITLE,
   DRINKS_TILTE,
   generateRefObject,
   getTitle,
@@ -23,6 +24,7 @@ import {
   SANDWICH_TITLE,
   WAFFLES_TITLE,
 } from "./utils/constants";
+import DailyMenu from "./pages/DailyMenu";
 
 const App = () => {
   const [title, setTitle] = useState("");
@@ -37,6 +39,7 @@ const App = () => {
   const wafflesTitle = useRef(null);
   const sandwichTitle = useRef(null);
   const pizzasTitle = useRef(null);
+  const dailyMenuTitle = useRef(null);
 
   useEffect(() => {
     const allRef = {
@@ -54,6 +57,10 @@ const App = () => {
       wafflesTitle: generateRefObject(wafflesTitle, WAFFLES_TITLE[languaje]),
       sandwichTitle: generateRefObject(sandwichTitle, SANDWICH_TITLE[languaje]),
       pizzasTitle: generateRefObject(pizzasTitle, PIZZA_TITLE[languaje]),
+      dailyMenuTitle: generateRefObject(
+        dailyMenuTitle,
+        DAILYMENU_TITLE[languaje]
+      ),
     };
 
     if (Object.keys(allRef).every((obj) => allRef[obj].top))
@@ -98,6 +105,9 @@ const App = () => {
         </section>
         <section id="pizzas" ref={pizzasTitle}>
           <Pizzas />
+        </section>
+        <section id="dailymenu" ref={dailyMenuTitle}>
+          <DailyMenu />
         </section>
       </section>
       <Footer />

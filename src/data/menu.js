@@ -31,10 +31,11 @@ export const menuList = [
   },
   {
     label: {
-      [SPANISH]: "Galería",
-      [ENGLISH]: "Gallery",
+      [SPANISH]: "Instagram",
+      [ENGLISH]: "Instagram",
     },
-    link: "",
+    link: "https://www.instagram.com/panaderiapomarosa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    handlerCLick: urlGenerator,
   },
 ];
 

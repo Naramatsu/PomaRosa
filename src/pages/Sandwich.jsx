@@ -5,8 +5,6 @@ import Title from "../components/Title";
 import { SANDWICH, sandwichProducts, sandwichWarning } from "../data/sandwich";
 import useLanguaje from "../hooks/useLanguaje";
 
-const img = "https://images7.alphacoders.com/349/thumb-1920-349766.jpg";
-
 const Sandwich = () => {
   const [languaje] = useLanguaje();
 
@@ -17,7 +15,6 @@ const Sandwich = () => {
         {sandwichProducts.map(({ name, hotPrice, description }, index) => (
           <Product
             key={index}
-            img={img}
             name={name[languaje]}
             hotPrice={hotPrice}
             noLabel

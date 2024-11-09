@@ -35,7 +35,7 @@ export const eggsToTasteProducts = [
   {
     name: {
       [SPANISH]: "Chorizo santarrosano",
-      [ENGLISH]: "Chorizo from Santa Rosa",
+      [ENGLISH]: "Santarrosano chorizo",
     },
     hotPrice: "10.500",
   },
@@ -57,21 +57,21 @@ export const accompanimentsProducts = [
   {
     name: {
       [SPANISH]: "Tostadas artesanales con mantequilla",
-      [ENGLISH]: "Homemade toast with butter",
+      [ENGLISH]: "Artisan Toast with Butter",
     },
     hotPrice: "6.500",
   },
   {
     name: {
       [SPANISH]: "Arepa de maíz blanco con mantequilla",
-      [ENGLISH]: "White corn arepa with butter",
+      [ENGLISH]: "White Corn Arepa with Butter",
     },
     hotPrice: "6.500",
   },
   {
     name: {
       [SPANISH]: "Arepa con queso, jamón y huevos fritos",
-      [ENGLISH]: "Arepa with cheese, ham and fried eggs",
+      [ENGLISH]: "Arepa with Cheese, Ham, and Fried Eggs",
     },
     hotPrice: "16.000",
   },
@@ -84,7 +84,7 @@ export const SPECIAL_EGGS = {
 
 export const SPECIAL_EGGS_SUBTITLE = {
   [SPANISH]: "Acompañados con pan artesanal y mantequilla",
-  [ENGLISH]: "Accompanied with artisan bread and butter",
+  [ENGLISH]: "Served with Artisan Bread and Butter",
 };
 
 export const specialEggsProducts = [
@@ -98,7 +98,7 @@ export const specialEggsProducts = [
       [SPANISH]:
         "Huevos revueltos con chorizo santarrosano, maíz tierno, jamón, queso mozzarella y tocineta.",
       [ENGLISH]:
-        "Scrambled eggs with Santa Rosa chorizo, tender corn, ham, mozzarella cheese and bacon.",
+        "Scrambled Eggs with Santarrosano Chorizo, Sweet Corn, Ham, Mozzarella Cheese, and Bacon.",
     },
   },
   {
@@ -108,8 +108,8 @@ export const specialEggsProducts = [
     },
     hotPrice: "19.500",
     description: {
-      [SPANISH]: "Huevos fritos bañados con hogaó, salsa pomodoro y cilantro.",
-      [ENGLISH]: "Fried eggs topped with hogaó, tomato sauce and cilantro.",
+      [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
+      [ENGLISH]: "Fried Eggs with Hogao Sauce, Pomodoro Sauce, and Cilantro",
     },
   },
 ];
@@ -128,7 +128,7 @@ export const healthyProducts = [
     coldPrice: "16.000",
     description: {
       [SPANISH]: "Variedad de frutas frescas con semillas de amapola.",
-      [ENGLISH]: "variety of fresh fruits with poppy seeds.",
+      [ENGLISH]: "Assorted Fresh Fruits with Poppy Seeds.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const healthyProducts = [
       [SPANISH]:
         "Yogurt griego sin azúcar, mermelada casera de frutos rojos y granola artesanal con nueces y coco.",
       [ENGLISH]:
-        "Sugar-free Greek yogurt, homemade red berry jam and artisanal granola with nuts and coconut.",
+        "Unsweetened Greek Yogurt, Homemade Berry Jam, and Artisan Granola with Nuts and Coconut.",
     },
   },
   {
@@ -154,7 +154,7 @@ export const healthyProducts = [
       [SPANISH]:
         "Batido de fresa, banano y mora natural con yogur griego, acompañado con: granola artesanal con coco y nueces, banano, fresa, arándanos, miel de agave, semillas de amapola y chía.",
       [ENGLISH]:
-        "Strawberry, banana and natural blackberry smoothie with Greek yogurt, accompanied with: artisanal granola with coconut and nuts, banana, strawberry, blueberries, agave honey, poppy seeds and chia.",
+        "Strawberry, Banana, and Blackberry Smoothie with Greek Yogurt, served with: Artisan Granola with Coconut and Nuts, Banana, Strawberry, Blueberries, Agave Syrup, Poppy Seeds, and Chia.",
     },
   },
   {
@@ -165,9 +165,9 @@ export const healthyProducts = [
     coldPrice: "28.000",
     description: {
       [SPANISH]:
-        "Tostada de pan de masa madre con pure de aguacate, tortillita de huevos revueltos y tomates cherry.",
+        "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos y tomates cherry.",
       [ENGLISH]:
-        "Sourdough toast with avocado puree, scrambled egg omelette and cherry tomatoes.",
+        "Sourdough Toast with Avocado Purée, Scrambled Egg Tortilla, and Cherry Tomatoes.",
     },
   },
 ];

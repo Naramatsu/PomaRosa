@@ -5,6 +5,7 @@ const ToggleSwitch = ({ checked, onChange, ...rest }) => {
     <section {...rest} className="toggle-switch">
       <input
         type="checkbox"
+        aria-label="languaje switch"
         className="checkbox-input"
         name="btn"
         checked={checked}

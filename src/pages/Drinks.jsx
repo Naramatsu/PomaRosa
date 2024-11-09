@@ -36,8 +36,10 @@ const Drinks = () => {
       </section>
       <br />
       <Title subTitle>{JUICES[languaje]}</Title>
-      <section className="w-full flex flex-col gap-5 justify-center items-center p-2 border-2 border-white/50 sm:flex-row sm:p-5">
-        <p className="text-white text-xl lexend">{juicesList[languaje]}</p>
+      <section className="w-full flex flex-col gap-5 justify-center items-center p-2 border-2 border-white/50 sm:flex-row rounded-sm sm:p-5">
+        <p className="text-white text-xl dancing-script">
+          {juicesList[languaje]}
+        </p>
         <section>
           {juicesPrices.map(({ name, coldPrice }, index) => (
             <Product

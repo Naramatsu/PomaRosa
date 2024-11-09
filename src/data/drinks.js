@@ -1,7 +1,7 @@
 import { ENGLISH, SPANISH } from "../utils/constants";
 
 export const COLD_DRINKS = {
-  [SPANISH]: "Bebidas frias",
+  [SPANISH]: "Bebidas frías",
   [ENGLISH]: "Cold drinks",
 };
 
@@ -60,7 +60,10 @@ export const juicesPrices = [
   },
 ];
 
-export const ORANGE_JUICE = "Jugo de Naranja";
+export const ORANGE_JUICE = {
+  [SPANISH]: "Jugo de Naranja",
+  [ENGLISH]: "Orange juice",
+};
 export const orangeJuiceProductList = [
   {
     name: {
@@ -107,7 +110,7 @@ export const otherDrinksProductList = [
   },
   {
     name: {
-      [SPANISH]: "HATSU Té frio",
+      [SPANISH]: "HATSU Té frío",
       [ENGLISH]: "HATSU Iced tea",
     },
     coldPrice: "9.000",
@@ -122,7 +125,7 @@ export const otherDrinksProductList = [
   {
     name: {
       [SPANISH]: "Adicional michelada",
-      [ENGLISH]: "Additional Michelada",
+      [ENGLISH]: "Add Michelada",
     },
     coldPrice: "3.000",
   },
@@ -138,7 +141,7 @@ export const sodasProductList = [
     coldPrice: "13.000",
     description: {
       [SPANISH]: "Mermelada artesanal de fresa y mora con hierbabuena y limón",
-      [ENGLISH]: "Homemade strawberry and blackberry jam with mint and lemon",
+      [ENGLISH]: "Artisanal Strawberry and Blackberry Jam with Mint and Lime",
     },
   },
   {
@@ -149,7 +152,7 @@ export const sodasProductList = [
     coldPrice: "13.000",
     description: {
       [SPANISH]: "Pulpa de maracuyá con limón y hierbabuena",
-      [ENGLISH]: "Passion fruit pulp with lemon and mint",
+      [ENGLISH]: "Passion Fruit Pulp with Lime and Mint",
     },
   },
   {

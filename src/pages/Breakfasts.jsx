@@ -37,17 +37,19 @@ const Breakfasts = () => {
             />
           ))}
         </Box>
-        <Title subTitle>{ACCOMPANIMENTS[languaje]}</Title>
-        <Box className="gap-5 flex-col">
-          {accompanimentsProducts.map(({ name, hotPrice }, index) => (
-            <Product
-              key={index}
-              name={name[languaje]}
-              hotPrice={hotPrice}
-              noLabel
-            />
-          ))}
-        </Box>
+        <section className="pt-10">
+          <Title subTitle>{ACCOMPANIMENTS[languaje]}</Title>
+          <Box className="gap-5 flex-col">
+            {accompanimentsProducts.map(({ name, hotPrice }, index) => (
+              <Product
+                key={index}
+                name={name[languaje]}
+                hotPrice={hotPrice}
+                noLabel
+              />
+            ))}
+          </Box>
+        </section>
       </section>
       <section className="py-10">
         <Title subTitle>

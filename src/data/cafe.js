@@ -4,14 +4,14 @@ export const cafeProductList = [
   {
     name: {
       [SPANISH]: "Café del día (tinto)",
-      [ENGLISH]: "Coffee of the day (red)",
+      [ENGLISH]: "Coffee of the day (black)",
     },
     hotPrice: "4.500",
   },
   {
     name: {
       [SPANISH]: "Americano",
-      [ENGLISH]: "American",
+      [ENGLISH]: "Americano",
     },
     hotPrice: "4.500",
     coldPrice: "7.000",
@@ -26,14 +26,14 @@ export const cafeProductList = [
   {
     name: {
       [SPANISH]: "Aromática frutas",
-      [ENGLISH]: "Fruit Aromatic",
+      [ENGLISH]: "Fruit Herbal Tea",
     },
     hotPrice: "6.500",
   },
   {
     name: {
       [SPANISH]: "Chocolate de la casa",
-      [ENGLISH]: "House Chocolate",
+      [ENGLISH]: "House Hot Chocolate",
     },
     hotPrice: "8.500",
   },
@@ -63,14 +63,14 @@ export const cafeProductList = [
   {
     name: {
       [SPANISH]: "Capuchino canela",
-      [ENGLISH]: "Cinnamon Cappuccino",
+      [ENGLISH]: "Cinnamon cappuccino",
     },
     hotPrice: "8.500",
     coldPrice: "11.500",
   },
   {
     name: {
-      [SPANISH]: "Capuchino caramelo",
+      [SPANISH]: "Capuchino caramel",
       [ENGLISH]: "Caramel Cappuccino",
     },
     hotPrice: "9.500",
@@ -79,7 +79,15 @@ export const cafeProductList = [
   {
     name: {
       [SPANISH]: "Milo",
-      [ENGLISH]: "Milo",
+      [ENGLISH]: "Milo (Chocolate Drink)",
+    },
+    hotPrice: "9.500",
+    coldPrice: "12.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Mocachino",
+      [ENGLISH]: "Mocha",
     },
     hotPrice: "9.500",
     coldPrice: "12.000",
@@ -96,7 +104,7 @@ export const cafeProductList = [
 
 export const ADDITIONAL_MILK = {
   [SPANISH]: "Adicional Leche de Almendras",
-  [ENGLISH]: "Additional Almond Milk",
+  [ENGLISH]: "Add Almond Milk",
 };
 
 export const almondMilkAdditionalPrices = [
@@ -113,21 +121,21 @@ export const accompanyProductList = [
   {
     name: {
       [SPANISH]: "Pan de yuca",
-      [ENGLISH]: "Yucca bread",
+      [ENGLISH]: "Yuca Bread",
     },
     hotPrice: "3.500",
   },
   {
     name: {
       [SPANISH]: "Alfajor desde",
-      [ENGLISH]: "Alfajor from",
+      [ENGLISH]: "Alfajor (starting at)",
     },
     hotPrice: "3.500",
   },
   {
     name: {
       [SPANISH]: "Mogolla brioche de queso",
-      [ENGLISH]: "Mogolla cheese brioche",
+      [ENGLISH]: "Cheese Brioche Roll",
     },
     hotPrice: "3.500",
   },
@@ -140,7 +148,7 @@ export const accompanyProductList = [
   },
   {
     name: {
-      [SPANISH]: "Pan jamón y queso",
+      [SPANISH]: "Pan de jamón y queso",
       [ENGLISH]: "Ham and cheese bread",
     },
     hotPrice: "4.500",
@@ -148,7 +156,7 @@ export const accompanyProductList = [
   {
     name: {
       [SPANISH]: "Pan de tres quesos",
-      [ENGLISH]: "Three cheese bread",
+      [ENGLISH]: "Three-Cheese Bread",
     },
     hotPrice: "6.000",
   },
@@ -162,20 +170,20 @@ export const accompanyProductList = [
   {
     name: {
       [SPANISH]: "Empanada de pollo, queso y uvas pasas",
-      [ENGLISH]: "Chicken, cheese and raisin empanada",
+      [ENGLISH]: "Chicken, Cheese, and Raisin Empanada",
     },
     hotPrice: "9.500",
   },
   {
     name: {
       [SPANISH]: "Empanada de carne y aceitunas",
-      [ENGLISH]: "Meat and olive empanada",
+      [ENGLISH]: "Beef and Olive Empanada",
     },
     hotPrice: "9.500",
   },
   {
     name: {
-      [SPANISH]: "Empanada capresse",
+      [SPANISH]: "Empanada caprese",
       [ENGLISH]: "Caprese empanada",
     },
     hotPrice: "9.500",
@@ -183,7 +191,7 @@ export const accompanyProductList = [
   {
     name: {
       [SPANISH]: "Brownie con nueces",
-      [ENGLISH]: "Brownie with walnuts",
+      [ENGLISH]: "Walnut Brownie",
     },
     hotPrice: "10.500",
   },

@@ -136,3 +136,7 @@ code {
 .menu.active {
   transform: scaleY(1) !important;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}

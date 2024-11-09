@@ -13,7 +13,7 @@ export const sandwichProducts = [
       [SPANISH]:
         "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
       [ENGLISH]:
-        "Breaded chicken breast, mixed green leaves with balsamic vinegar reduction, pesto sauce, sun-dried tomatoes, mozzarella cheese.",
+        "Breaded Chicken Breast, Mixed Greens with Balsamic Reduction, Pesto Sauce, Sun-Dried Tomatoes, Mozzarella Cheese.",
     },
   },
   {
@@ -26,7 +26,7 @@ export const sandwichProducts = [
       [SPANISH]:
         "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate, lechuga.",
       [ENGLISH]:
-        "Chicken, egg, ham, crispy bacon, cheese, aioli, mustard, tomato, lettuce.",
+        "Chicken, Egg, Ham, Crispy Bacon, Cheese, Aioli, Mustard, Tomato, Lettuce.",
     },
   },
   {
@@ -39,7 +39,7 @@ export const sandwichProducts = [
       [SPANISH]:
         "Tomates secos, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, queso mozzarella, champiñones salteados y aguacate fresco en pan ciabatta.",
       [ENGLISH]:
-        "Sun-dried tomatoes, mixed green leaves with balsamic vinegar reduction, pesto sauce, mozzarella cheese, sautéed mushrooms and fresh avocado on ciabatta bread.",
+        "Sun-Dried Tomatoes, Mixed Greens with Balsamic Reduction, Pesto Sauce, Mozzarella Cheese, Sautéed Mushrooms, and Fresh Avocado on Ciabatta Bread.",
     },
   },
   {
@@ -52,7 +52,7 @@ export const sandwichProducts = [
       [SPANISH]:
         "Pollo salteado con champiñones y cebollas, salsa cremosa, finas hierbas y queso fundido en pan ciabatta.",
       [ENGLISH]:
-        "Chicken sautéed with mushrooms and onions, creamy sauce, fine herbs and melted cheese on ciabatta bread.",
+        "Sautéed Chicken with Mushrooms and Onions, Creamy Sauce, Fine Herbs, and Melted Cheese on Ciabatta Bread.",
     },
   },
 ];
@@ -60,5 +60,5 @@ export const sandwichProducts = [
 export const sandwichWarning = {
   [SPANISH]:
     "*Todos los sándwiches vienen acompañados de papas en cascos o ensalada*",
-  [ENGLISH]: "*All sandwiches come with potato wedges or salad*",
+  [ENGLISH]: "*All sandwiches are served with potato wedges or salad*",
 };

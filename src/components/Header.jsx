@@ -33,7 +33,7 @@ const Header = ({ title = "" }) => {
         "
       >
         <img
-          src="logo.png"
+          src="logo.webp"
           alt="logo"
           className="w-[70px] h-[70px] rounded-full cursor-pointer"
           onClick={() => scrollToSection("menu")}

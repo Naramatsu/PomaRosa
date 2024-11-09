@@ -12,9 +12,9 @@ export const pizzaProducts = [
     familiar: "43.000",
     description: {
       [SPANISH]:
-        "Queso mozzarella, tomate fresco, orégano y albahaca y aceite de ajo.",
+        "Queso mozzarella, tomate fresco, orégano, albahaca y aceite de ajo.",
       [ENGLISH]:
-        "Mozzarella cheese, fresh tomato, oregano, basil and garlic oil.",
+        "Mozzarella Cheese, Fresh Tomato, Oregano, Basil, and Garlic Oil.",
     },
   },
   {
@@ -26,7 +26,8 @@ export const pizzaProducts = [
     familiar: "$43.000",
     description: {
       [SPANISH]: "Queso mozzarella pomodoro, orégano y aceitunas verdes.",
-      [ENGLISH]: "Mozzarella pomodoro cheese, oregano and green olives.",
+      [ENGLISH]:
+        "Mozzarella Cheese, Pomodoro Sauce, Oregano, and Green Olives.",
     },
   },
   {
@@ -37,8 +38,8 @@ export const pizzaProducts = [
     personal: "23.000",
     familiar: "43.000",
     description: {
-      [SPANISH]: "Queso mozzarella y salami o pepperoni y orégano.",
-      [ENGLISH]: "Mozzarella cheese and salami or pepperoni and oregano.",
+      [SPANISH]: "Queso mozzarella, pepperoni y orégano.",
+      [ENGLISH]: "Mozzarella Cheese, Pepperoni, and Oregano.",
     },
   },
   {
@@ -50,7 +51,7 @@ export const pizzaProducts = [
     familiar: "43.000",
     description: {
       [SPANISH]: "Queso mozzarella, trocitos de piña dulce y pepperoni.",
-      [ENGLISH]: "Mozzarella cheese, sweet pineapple chunks and pepperoni.",
+      [ENGLISH]: "Mozzarella Cheese, Sweet Pineapple Chunks, and Pepperoni.",
     },
   },
   {
@@ -62,12 +63,12 @@ export const pizzaProducts = [
     familiar: "43.000",
     description: {
       [SPANISH]: "Queso mozzarella, pollo y champiñones.",
-      [ENGLISH]: "Mozzarella cheese, chicken and mushrooms.",
+      [ENGLISH]: "Mozzarella Cheese, Chicken, and Mushrooms.",
     },
   },
   {
     name: {
-      [SPANISH]: "MEDITERRANEA",
+      [SPANISH]: "Mediterránea",
       [ENGLISH]: "MEDITERRANEAN",
     },
     personal: "26.000",
@@ -76,7 +77,7 @@ export const pizzaProducts = [
       [SPANISH]:
         "Tomates secos, champiñones salteados, aceitunas negras, salsa pesto, reducción balsámico.",
       [ENGLISH]:
-        "Sun-dried tomatoes, sautéed mushrooms, black olives, pesto sauce, balsamic reduction.",
+        "Sun-Dried Tomatoes, Sautéed Mushrooms, Black Olives, Pesto Sauce, and Balsamic Reduction.",
     },
   },
   {
@@ -89,7 +90,7 @@ export const pizzaProducts = [
     description: {
       [SPANISH]:
         "Queso mozzarella , cebolla, jamón, orégano y aceite de oliva.",
-      [ENGLISH]: "Mozzarella cheese, onion, ham, oregano and olive oil.",
+      [ENGLISH]: "Mozzarella Cheese, Onion, Ham, Oregano, and Olive Oil.",
     },
   },
   {
@@ -103,7 +104,7 @@ export const pizzaProducts = [
       [SPANISH]:
         "Queso mozzarella, pomodoro, lomos de atún, maíz tierno, champiñones y orégano.",
       [ENGLISH]:
-        "Mozzarella cheese, pomodoro, tuna loins, sweet corn, mushrooms and oregano.",
+        "Mozzarella Cheese, Pomodoro Sauce, Tuna Fillets, Sweet Corn, Mushrooms, and Oregano.",
     },
   },
 ];

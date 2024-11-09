@@ -20,7 +20,7 @@ const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
     >
       {ispPage && (
         <img
-          src="logo.png"
+          src="logo.webp"
           alt="logo"
           className="w-[150px] h-[150px] border-2 border-beige rounded-full"
         />

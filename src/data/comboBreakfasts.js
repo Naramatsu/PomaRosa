@@ -3,7 +3,7 @@ import { ENGLISH, SPANISH } from "../utils/constants";
 export const comboBreakfastsProducts = [
   {
     name: {
-      [SPANISH]: "EXPRESO",
+      [SPANISH]: "EXPRESS",
       [ENGLISH]: "EXPRESS",
     },
     hotPrice: "18.500",
@@ -11,7 +11,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]:
         "Huevos revueltos, con pan artesanal de la casa, mantequilla y café negro.",
       [ENGLISH]:
-        "Scrambled eggs, with homemade artisan bread, butter and black coffee.",
+        "Scrambled eggs with house-made artisan bread, butter, and black coffee.",
     },
   },
   {
@@ -23,8 +23,7 @@ export const comboBreakfastsProducts = [
     description: {
       [SPANISH]:
         "Jamón, queso mozzarella y tomate + bebida caliente a elección",
-      [ENGLISH]:
-        "Ham, mozzarella cheese and tomato + hot drink of your choice.",
+      [ENGLISH]: "Ham, mozzarella cheese, and tomato + hot drink of choice.",
     },
   },
   {
@@ -37,7 +36,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]:
         "Huevos revueltos con mayonesa, tocineta, queso en pan artesanal y bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with mayonnaise, bacon, cheese on artisan bread and hot drink.",
+        "Scrambled eggs with mayonnaise, bacon, cheese on artisan bread + hot drink.",
     },
   },
   {
@@ -50,26 +49,26 @@ export const comboBreakfastsProducts = [
       [SPANISH]:
         "Huevos al gusto + arepa asada de maíz o pan artesanal de la casa + mantequilla y queso fresco + bebida caliente a elección.",
       [ENGLISH]:
-        "Eggs to taste + grilled corn arepa or homemade bread + butter and fresh cheese + hot drink of your choice.",
+        "Eggs any style + grilled corn arepa or house-made artisan bread + butter and fresh cheese + hot drink of choice.",
     },
   },
   {
     name: {
       [SPANISH]: "RANCHERO",
-      [ENGLISH]: "RANCHER",
+      [ENGLISH]: "RANCHERO",
     },
     hotPrice: "29.000",
     description: {
       [SPANISH]:
         "Huevos revueltos con tomate, cebolla y chorizo santarrosano, arepa de maíz con queso costeño, mantequilla + bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with tomato, onion and chorizo from Santa Rosa, corn arepa with coastal cheese, butter + hot drink.",
+        "Scrambled eggs with tomato, onion, and Santarrosano chorizo, corn arepa with coastal cheese, butter + hot drink.",
     },
   },
   {
     name: {
       [SPANISH]: "AMERICANO",
-      [ENGLISH]: "AMERICAN",
+      [ENGLISH]: "AMERICANO",
     },
     hotPrice: "32.000",
     description: {
@@ -89,7 +88,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]:
         "Copa parfait (yogurt griego sin azúcar, con granola artesanal y mermelada casera de frutos rojos) + huevos revueltos + porción de tostadas y mantequilla + bebida caliente.",
       [ENGLISH]:
-        "Parfait cup (sugar-free Greek yogurt, with homemade granola and homemade red fruit jam) + scrambled eggs + portion of toast and butter + hot drink.",
+        "Parfait cup (unsweetened Greek yogurt with artisan granola and homemade berry jam) + scrambled eggs + toast and butter + hot drink.",
     },
   },
 ];
@@ -98,5 +97,5 @@ export const comboWarning = {
   [SPANISH]:
     "*Aplica restricciones, consultar opciones. cualquier cambio tiene un costo adicional.",
   [ENGLISH]:
-    "*Restrictions apply, check options. Any changes have an additional cost.",
+    "*Restrictions apply, check available options. Any substitutions incur an additional cost.",
 };
