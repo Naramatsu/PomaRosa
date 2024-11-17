@@ -22,8 +22,8 @@ export const comboBreakfastsProducts = [
     hotPrice: "18.500",
     description: {
       [SPANISH]:
-        "Jamón, queso mozzarella y tomate + bebida caliente a elección",
-      [ENGLISH]: "Ham, mozzarella cheese, and tomato + hot drink of choice.",
+        "Jamón, queso mozzarella y tomate + bebida caliente a elección*",
+      [ENGLISH]: "Ham, mozzarella cheese, and tomato + hot drink of choice*",
     },
   },
   {

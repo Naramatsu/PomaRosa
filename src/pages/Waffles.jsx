@@ -1,11 +1,13 @@
 import Box from "../components/Box";
 import Product from "../components/Product";
+import TextWarning from "../components/TextWarning";
 import Title from "../components/Title";
 import {
   SAVORY_WAFFLES,
   savoryWafflesProducts,
   SWEET_WAFFLES,
   sweetWafflesProducts,
+  WAFFLE_WARNING,
 } from "../data/waffles";
 import useLanguaje from "../hooks/useLanguaje";
 
@@ -41,6 +43,7 @@ const Waffles = () => {
             )
           )}
         </Box>
+        <TextWarning>{WAFFLE_WARNING[languaje]}</TextWarning>
       </section>
     </section>
   );

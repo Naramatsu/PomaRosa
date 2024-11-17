@@ -1,7 +1,7 @@
 import Box from "../components/Box";
 import Product from "../components/Product";
 import Title from "../components/Title";
-import { daymeuProductList } from "../data/daymenu";
+import { daymenuHours, daymenuPrice, daymeuProductList } from "../data/daymenu";
 import useLanguaje from "../hooks/useLanguaje";
 import { DAILYMENU_TITLE } from "../utils/constants";
 
@@ -20,9 +20,9 @@ const DailyMenu = () => {
           rounded-sm
         "
       >
-        Todos los días de 12:00 a 3:00 pm
+        {daymenuHours[languaje]}
       </p>
-      <Title subTitle>$25.000 con bebida + postre</Title>
+      <Title subTitle>{daymenuPrice[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
         {daymeuProductList.map(({ name, hotPrice, description }, index) => (
           <Product

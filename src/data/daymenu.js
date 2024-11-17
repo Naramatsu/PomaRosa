@@ -68,3 +68,13 @@ export const daymeuProductList = [
     hotPrice: "",
   },
 ];
+
+export const daymenuHours = {
+  [SPANISH]: "Todos los días de 12:00 a 3:00 pm",
+  [ENGLISH]: "Every day from 12:00 PM to 3:00 PM",
+};
+
+export const daymenuPrice = {
+  [SPANISH]: "$25.000 con bebida",
+  [ENGLISH]: "$25,000 with a drink",
+};

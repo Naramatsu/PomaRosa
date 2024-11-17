@@ -170,4 +170,17 @@ export const healthyProducts = [
         "Sourdough Toast with Avocado Purée, Scrambled Egg Tortilla, and Cherry Tomatoes.",
     },
   },
+  {
+    name: {
+      [SPANISH]: "Bowl de fruta",
+      [ENGLISH]: "Fruit Bowl",
+    },
+    coldPrice: "28.000",
+    description: {
+      [SPANISH]:
+        "Porción fruta fresca, porción de yogurt griego sin azúcar, granola artesanal, coco deshidratado y semillas de amapola y chia. ",
+      [ENGLISH]:
+        "Portion of fresh fruit, unsweetened Greek yogurt, artisan granola, dehydrated coconut, and poppy and chia seeds.",
+    },
+  },
 ];

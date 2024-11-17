@@ -133,3 +133,10 @@ export const sweetWafflesProducts = [
     },
   },
 ];
+
+export const WAFFLE_WARNING = {
+  [SPANISH]:
+    "Todos nuestros wafles dulces vienen con helado y crema chantilly.",
+  [ENGLISH]:
+    "All our sweet waffles are served with ice cream and whipped cream.",
+};

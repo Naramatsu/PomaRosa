@@ -13,7 +13,7 @@ export const cafeProductList = [
       [SPANISH]: "Americano",
       [ENGLISH]: "Americano",
     },
-    hotPrice: "4.500",
+    hotPrice: "5.500",
     coldPrice: "7.000",
   },
   {
