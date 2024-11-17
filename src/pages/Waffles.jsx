@@ -16,20 +16,26 @@ const Waffles = () => {
 
   return (
     <section id="waffles" className="w-full p-5">
-      <Title>{SAVORY_WAFFLES[languaje]}</Title>
-      <Box className="gap-5 flex-col py-10">
-        {savoryWafflesProducts.map(({ name, hotPrice, description }, index) => (
-          <Product
-            key={index}
-            name={name[languaje]}
-            hotPrice={hotPrice}
-            noLabel
-            description={description[languaje]}
-          />
-        ))}
-      </Box>
+      <Title>waffles</Title>
       <section className="py-10">
-        <Title>{SWEET_WAFFLES[languaje]}</Title>
+        <Title subTitle>{SAVORY_WAFFLES[languaje]}</Title>
+
+        <Box className="gap-5 flex-col py-10">
+          {savoryWafflesProducts.map(
+            ({ name, hotPrice, description }, index) => (
+              <Product
+                key={index}
+                name={name[languaje]}
+                hotPrice={hotPrice}
+                noLabel
+                description={description[languaje]}
+              />
+            )
+          )}
+        </Box>
+      </section>
+      <section className="py-10 border-2 border-white/50 border-dashed p-5">
+        <Title subTitle>{SWEET_WAFFLES[languaje]}</Title>
         <Box className="gap-5 flex-col py-10">
           {sweetWafflesProducts.map(
             ({ name, coldPrice, description }, index) => (
