@@ -47,9 +47,9 @@ export const comboBreakfastsProducts = [
     hotPrice: "25.000",
     description: {
       [SPANISH]:
-        "Huevos al gusto + arepa asada de maíz o pan artesanal de la casa + mantequilla y queso fresco + bebida caliente a elección.",
+        "Huevos al gusto + arepa asada de maíz o pan artesanal de la casa + mantequilla y queso fresco + bebida caliente a elección*.",
       [ENGLISH]:
-        "Eggs any style + grilled corn arepa or house-made artisan bread + butter and fresh cheese + hot drink of choice.",
+        "Eggs any style + grilled corn arepa or house-made artisan bread + butter and fresh cheese + hot drink of choice*.",
     },
   },
   {
