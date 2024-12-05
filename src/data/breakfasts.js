@@ -70,6 +70,13 @@ export const accompanimentsProducts = [
   },
   {
     name: {
+      [SPANISH]: "Wafles con miel o mantequilla",
+      [ENGLISH]: "Waffles with honey or butter.",
+    },
+    hotPrice: "14.000",
+  },
+  {
+    name: {
       [SPANISH]: "Arepa con queso, jamón y huevos fritos",
       [ENGLISH]: "Arepa with Cheese, Ham, and Fried Eggs",
     },
@@ -178,9 +185,9 @@ export const healthyProducts = [
     coldPrice: "28.000",
     description: {
       [SPANISH]:
-        "Porción fruta fresca, porción de yogurt griego sin azúcar, granola artesanal, coco deshidratado y semillas de amapola y chia. ",
+        "Porción de fruta fresca de estación, acompañada con yogurt griego sin azúcar, granola artesanal, coco deshidratado nueces y semillas de amapola y chia.",
       [ENGLISH]:
-        "Portion of fresh fruit, unsweetened Greek yogurt, artisan granola, dehydrated coconut, and poppy and chia seeds.",
+        "Portion of fresh seasonal fruit, served with unsweetened Greek yogurt, artisan granola, dried coconut, nuts, and poppy and chia seeds.",
     },
   },
 ];

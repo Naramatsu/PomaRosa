@@ -29,6 +29,13 @@ export const lemonadeProductList = [
     },
     coldPrice: "12.000",
   },
+  {
+    name: {
+      [SPANISH]: "De coco",
+      [ENGLISH]: "Coconut",
+    },
+    coldPrice: "15.000",
+  },
 ];
 
 export const JUICES = {
@@ -103,15 +110,15 @@ export const otherDrinksProductList = [
   },
   {
     name: {
-      [SPANISH]: "HATSU soda",
+      [SPANISH]: "Soda HATSU",
       [ENGLISH]: "HATSU soda",
     },
     coldPrice: "8.000",
   },
   {
     name: {
-      [SPANISH]: "HATSU Té frío",
-      [ENGLISH]: "HATSU Iced tea",
+      [SPANISH]: "Té HATSU",
+      [ENGLISH]: "HATSU tea",
     },
     coldPrice: "9.000",
   },
@@ -121,6 +128,13 @@ export const otherDrinksProductList = [
       [ENGLISH]: "Beer",
     },
     coldPrice: "9.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Cerveza importada",
+      [ENGLISH]: "Imported beer",
+    },
+    coldPrice: "12.000",
   },
   {
     name: {

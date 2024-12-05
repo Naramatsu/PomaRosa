@@ -34,9 +34,9 @@ export const comboBreakfastsProducts = [
     hotPrice: "22.500",
     description: {
       [SPANISH]:
-        "Huevos revueltos con mayonesa, tocineta, queso en pan artesanal y bebida caliente.",
+        "Huevos revueltos tocineta, queso mozzarella y alioli de ajo en pan artesanal de la casa.",
       [ENGLISH]:
-        "Scrambled eggs with mayonnaise, bacon, cheese on artisan bread + hot drink.",
+        "Scrambled eggs, bacon, mozzarella cheese, and garlic aioli on homemade artisan bread.",
     },
   },
   {

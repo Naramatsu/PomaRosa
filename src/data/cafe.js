@@ -130,7 +130,7 @@ export const accompanyProductList = [
       [SPANISH]: "Alfajor desde",
       [ENGLISH]: "Alfajor (starting at)",
     },
-    hotPrice: "3.500",
+    hotPrice: "4.00",
   },
   {
     name: {
@@ -151,7 +151,7 @@ export const accompanyProductList = [
       [SPANISH]: "Pan de jamón y queso",
       [ENGLISH]: "Ham and cheese bread",
     },
-    hotPrice: "4.500",
+    hotPrice: "5.000",
   },
   {
     name: {
@@ -160,13 +160,13 @@ export const accompanyProductList = [
     },
     hotPrice: "6.000",
   },
-  {
-    name: {
-      [SPANISH]: "Palito de queso",
-      [ENGLISH]: "Cheese stick",
-    },
-    hotPrice: "6.000",
-  },
+  // {
+  //   name: {
+  //     [SPANISH]: "Palito de queso",
+  //     [ENGLISH]: "Cheese stick",
+  //   },
+  //   hotPrice: "6.000",
+  // },
   {
     name: {
       [SPANISH]: "Empanada de pollo, queso y uvas pasas",
@@ -188,11 +188,11 @@ export const accompanyProductList = [
     },
     hotPrice: "9.500",
   },
-  {
-    name: {
-      [SPANISH]: "Brownie con nueces",
-      [ENGLISH]: "Walnut Brownie",
-    },
-    hotPrice: "10.500",
-  },
+  // {
+  //   name: {
+  //     [SPANISH]: "Brownie con nueces",
+  //     [ENGLISH]: "Walnut Brownie",
+  //   },
+  //   hotPrice: "10.500",
+  // },
 ];
