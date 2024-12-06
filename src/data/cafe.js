@@ -130,7 +130,7 @@ export const accompanyProductList = [
       [SPANISH]: "Alfajor desde",
       [ENGLISH]: "Alfajor (starting at)",
     },
-    hotPrice: "4.00",
+    hotPrice: "4.000",
   },
   {
     name: {

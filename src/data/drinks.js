@@ -110,14 +110,14 @@ export const otherDrinksProductList = [
   },
   {
     name: {
-      [SPANISH]: "Soda HATSU",
+      [SPANISH]: "HATSU soda",
       [ENGLISH]: "HATSU soda",
     },
     coldPrice: "8.000",
   },
   {
     name: {
-      [SPANISH]: "Té HATSU",
+      [SPANISH]: "HATSU té",
       [ENGLISH]: "HATSU tea",
     },
     coldPrice: "9.000",
