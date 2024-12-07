@@ -44,6 +44,19 @@ export const sandwichProducts = [
   },
   {
     name: {
+      [SPANISH]: "GRILLED Y BACON",
+      [ENGLISH]: "GRILLED AND BACON",
+    },
+    hotPrice: "28.000",
+    description: {
+      [SPANISH]:
+        "Variedad de quesos fundidos, con tocineta crujiente, en pan artesanal tostado.",
+      [ENGLISH]:
+        "Variety of melted cheeses, with crispy bacon, on toasted artisan bread.",
+    },
+  },
+  {
+    name: {
       [SPANISH]: "POLLO Y CHAMPIÑONES",
       [ENGLISH]: "CHICKEN AND MUSHROOMS",
     },

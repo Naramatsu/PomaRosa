@@ -113,10 +113,23 @@ export const specialEggsProducts = [
       [SPANISH]: "CRIOLLOS",
       [ENGLISH]: "CREOLES",
     },
-    hotPrice: "19.500",
+    hotPrice: "22.000",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
       [ENGLISH]: "Fried Eggs with Hogao Sauce, Pomodoro Sauce, and Cilantro",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "Campestres",
+      [ENGLISH]: "Rustic Style",
+    },
+    hotPrice: "25.000",
+    description: {
+      [SPANISH]:
+        "Omellet de huevos, con espinaca, champiñones y queso muzzarella.",
+      [ENGLISH]:
+        "Omelette with eggs, spinach, mushrooms, and mozzarella cheese.",
     },
   },
 ];

@@ -7,8 +7,8 @@ export const daymeuProductList = [
       [ENGLISH]: "PERSONAL PIZZA",
     },
     description: {
-      [SPANISH]: "Napolitana - Hawappe - Pepperoni - Pollo champiñones",
-      [ENGLISH]: "Neapolitan - Hawaiian - Pepperoni - Chicken & Mushrooms",
+      [SPANISH]: "Napolitana - Hawappe - Pepperoni",
+      [ENGLISH]: "Neapolitan - Hawaiian - Pepperoni",
     },
     hotPrice: "",
   },
@@ -40,8 +40,8 @@ export const daymeuProductList = [
       [ENGLISH]: "PASTAS",
     },
     description: {
-      [SPANISH]: "PomaRosa - Carbonara - Lasaña",
-      [ENGLISH]: "PomaRosa - Carbonara - Lasagna",
+      [SPANISH]: "PomaRosa - Carbonara",
+      [ENGLISH]: "PomaRosa - Carbonara",
     },
     hotPrice: "",
   },
