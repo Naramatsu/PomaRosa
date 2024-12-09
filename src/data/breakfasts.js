@@ -70,6 +70,13 @@ export const accompanimentsProducts = [
   },
   {
     name: {
+      [SPANISH]: "Arepa de maiz con mantequilla y queso",
+      [ENGLISH]: "Corn arepa with butter and cheese",
+    },
+    hotPrice: "11.000",
+  },
+  {
+    name: {
       [SPANISH]: "Wafles con miel o mantequilla",
       [ENGLISH]: "Waffles with honey or butter.",
     },
