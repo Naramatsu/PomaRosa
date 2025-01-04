@@ -24,8 +24,10 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "26.000",
     description: {
-      [SPANISH]: "Acompañado de jalea de guayaba y dulce de arequipe.",
-      [ENGLISH]: "Served with Guava Jelly and Dulce de Leche.",
+      [SPANISH]:
+        "Acompañado de fresas frescas, arándanos, jalea de guayaba y dulce de arequipe.",
+      [ENGLISH]:
+        "Accompanied by fresh strawberries, blueberries, guava jelly and Dulce de Leche.",
     },
   },
   {
@@ -61,8 +63,10 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "29.500",
     description: {
-      [SPANISH]: "Jamón, queso mozzarella, huevos revueltos y alioli de ajo.",
-      [ENGLISH]: "Ham, Mozzarella Cheese, Scrambled Eggs, and Garlic Aioli.",
+      [SPANISH]:
+        "Jamón de cerdo, queso mozzarella, queso amarillo, huevos revuelos y alioli de ajo.",
+      [ENGLISH]:
+        "Pork ham, mozzarella cheese, yellow cheese, scrambled eggs and garlic aioli.",
     },
   },
 ];
