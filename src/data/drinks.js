@@ -131,6 +131,13 @@ export const otherDrinksProductList = [
   },
   {
     name: {
+      [SPANISH]: "Tres cordilleras",
+      [ENGLISH]: "Three mountain ranges",
+    },
+    coldPrice: "12.000",
+  },
+  {
+    name: {
       [SPANISH]: "Cerveza importada",
       [ENGLISH]: "Imported beer",
     },
