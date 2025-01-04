@@ -95,7 +95,7 @@ export const comboBreakfastsProducts = [
 
 export const comboWarning = {
   [SPANISH]:
-    "*Aplica restricciones, consultar opciones. cualquier cambio tiene un costo adicional.",
+    "*Bebidas calientes a eleccion : cafe negro, chocolate, aromatica, cafe con leche, cambio de bebida fria desde $ 4.000 en adelante. *Aplica restricciones, consultar opciones. cualquier cambio tiene un costo adicional.",
   [ENGLISH]:
-    "*Restrictions apply, check available options. Any substitutions incur an additional cost.",
+    "*Hot drinks of your choice: black coffee, chocolate, aromatic, coffee with milk, change of cold drink from $ 4,000 onwards. *Restrictions apply, check available options. Any substitutions incur an additional cost.",
 };
