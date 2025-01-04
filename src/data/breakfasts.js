@@ -16,35 +16,35 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Revueltos o fritos",
       [ENGLISH]: "Scrambled or fried",
     },
-    hotPrice: "7.500",
+    hotPrice: "8.500",
   },
   {
     name: {
       [SPANISH]: "Tomate y cebolla",
       [ENGLISH]: "Tomato and onion",
     },
-    hotPrice: "9.500",
+    hotPrice: "11.500",
   },
   {
     name: {
       [SPANISH]: "Maíz tierno",
       [ENGLISH]: "Tender corn",
     },
-    hotPrice: "9.900",
+    hotPrice: "10.900",
   },
   {
     name: {
       [SPANISH]: "Chorizo santarrosano",
       [ENGLISH]: "Santarrosano chorizo",
     },
-    hotPrice: "10.500",
+    hotPrice: "11.900",
   },
   {
     name: {
       [SPANISH]: "Jamón y queso",
       [ENGLISH]: "Ham and cheese",
     },
-    hotPrice: "9.900",
+    hotPrice: "10.900",
   },
 ];
 
@@ -59,28 +59,28 @@ export const accompanimentsProducts = [
       [SPANISH]: "Tostadas artesanales con mantequilla",
       [ENGLISH]: "Artisan Toast with Butter",
     },
-    hotPrice: "6.500",
+    hotPrice: "7.500",
   },
   {
     name: {
       [SPANISH]: "Arepa de maíz blanco con mantequilla",
       [ENGLISH]: "White Corn Arepa with Butter",
     },
-    hotPrice: "6.500",
+    hotPrice: "8.500",
   },
   {
     name: {
       [SPANISH]: "Arepa de maiz con mantequilla y queso",
       [ENGLISH]: "Corn arepa with butter and cheese",
     },
-    hotPrice: "11.000",
+    hotPrice: "13.000",
   },
   {
     name: {
       [SPANISH]: "Wafles con miel o mantequilla",
       [ENGLISH]: "Waffles with honey or butter.",
     },
-    hotPrice: "14.000",
+    hotPrice: "15.000",
   },
   {
     name: {
@@ -107,7 +107,7 @@ export const specialEggsProducts = [
       [SPANISH]: "SALVAJES",
       [ENGLISH]: "SAVAGES",
     },
-    hotPrice: "19.500",
+    hotPrice: "22.500",
     description: {
       [SPANISH]:
         "Huevos revueltos con chorizo santarrosano, maíz tierno, jamón, queso mozzarella y tocineta.",
@@ -131,7 +131,7 @@ export const specialEggsProducts = [
       [SPANISH]: "Campestres",
       [ENGLISH]: "Rustic Style",
     },
-    hotPrice: "25.000",
+    hotPrice: "27.000",
     description: {
       [SPANISH]:
         "Omellet de huevos, con espinaca, champiñones y queso muzzarella.",
@@ -176,7 +176,7 @@ export const healthyProducts = [
       [SPANISH]: "SMOOTHIE BOWL",
       [ENGLISH]: "SMOOTHIE BOWL",
     },
-    coldPrice: "26.000",
+    coldPrice: "28.000",
     description: {
       [SPANISH]:
         "Batido de fresa, banano y mora natural con yogur griego, acompañado con: granola artesanal con coco y nueces, banano, fresa, arándanos, miel de agave, semillas de amapola y chía.",

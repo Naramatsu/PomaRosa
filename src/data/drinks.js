@@ -13,7 +13,7 @@ export const lemonadeProductList = [
       [SPANISH]: "Clásica",
       [ENGLISH]: "Classic",
     },
-    coldPrice: "8.500",
+    coldPrice: "9.500",
   },
   {
     name: {
@@ -77,7 +77,7 @@ export const orangeJuiceProductList = [
       [SPANISH]: "Mediano",
       [ENGLISH]: "Medium",
     },
-    coldPrice: "7.000",
+    coldPrice: "8.000",
   },
   {
     name: {

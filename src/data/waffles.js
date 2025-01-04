@@ -22,7 +22,7 @@ export const savoryWafflesProducts = [
       [SPANISH]: "WAFFLE YUCA",
       [ENGLISH]: "YUCA WAFFLE",
     },
-    hotPrice: "22.000",
+    hotPrice: "26.000",
     description: {
       [SPANISH]: "Acompañado de jalea de guayaba y dulce de arequipe.",
       [ENGLISH]: "Served with Guava Jelly and Dulce de Leche.",
@@ -59,7 +59,7 @@ export const savoryWafflesProducts = [
       [SPANISH]: "WAFFLE SANDWICH",
       [ENGLISH]: "WAFFLE SANDWICH",
     },
-    hotPrice: "26.000",
+    hotPrice: "29.500",
     description: {
       [SPANISH]: "Jamón, queso mozzarella, huevos revueltos y alioli de ajo.",
       [ENGLISH]: "Ham, Mozzarella Cheese, Scrambled Eggs, and Garlic Aioli.",

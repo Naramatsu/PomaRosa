@@ -6,7 +6,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "EXPRESS",
       [ENGLISH]: "EXPRESS",
     },
-    hotPrice: "18.500",
+    hotPrice: "20.000",
     description: {
       [SPANISH]:
         "Huevos revueltos, con pan artesanal de la casa, mantequilla y café negro.",
@@ -31,7 +31,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH DE HUEVO",
       [ENGLISH]: "EGG SANDWICH",
     },
-    hotPrice: "22.500",
+    hotPrice: "23.500",
     description: {
       [SPANISH]:
         "Huevos revueltos tocineta, queso mozzarella y alioli de ajo en pan artesanal de la casa.",
@@ -70,7 +70,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "AMERICANO",
       [ENGLISH]: "AMERICANO",
     },
-    hotPrice: "32.000",
+    hotPrice: "34.000",
     description: {
       [SPANISH]:
         "Waffles con miel de maple + tocineta crocante + huevos revueltos o fritos + café negro.",
@@ -83,7 +83,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SILVESTRE",
       [ENGLISH]: "WILD",
     },
-    hotPrice: "32.000",
+    hotPrice: "35.000",
     description: {
       [SPANISH]:
         "Copa parfait (yogurt griego sin azúcar, con granola artesanal y mermelada casera de frutos rojos) + huevos revueltos + porción de tostadas y mantequilla + bebida caliente.",

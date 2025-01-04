@@ -8,7 +8,7 @@ export const sandwichProducts = [
       [SPANISH]: "POLLO CAPRESE",
       [ENGLISH]: "CHICKEN CAPRESE",
     },
-    hotPrice: "32.000",
+    hotPrice: "34.000",
     description: {
       [SPANISH]:
         "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
@@ -47,7 +47,7 @@ export const sandwichProducts = [
       [SPANISH]: "GRILLED Y BACON",
       [ENGLISH]: "GRILLED AND BACON",
     },
-    hotPrice: "28.000",
+    hotPrice: "29.000",
     description: {
       [SPANISH]:
         "Variedad de quesos fundidos, con tocineta crujiente, en pan artesanal tostado.",
