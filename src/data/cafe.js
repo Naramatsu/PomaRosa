@@ -172,7 +172,7 @@ export const accompanyProductList = [
   },
   {
     name: {
-      [SPANISH]: "°Pan de arándanos y chocolate",
+      [SPANISH]: "Pan de arándanos y chocolate",
       [ENGLISH]: "Blueberry and chocolate bread",
     },
     hotPrice: "7.500",
