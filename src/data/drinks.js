@@ -138,6 +138,13 @@ export const otherDrinksProductList = [
   },
   {
     name: {
+      [SPANISH]: "Corona / Stella",
+      [ENGLISH]: "Corona / Stella",
+    },
+    coldPrice: "12.000",
+  },
+  {
+    name: {
       [SPANISH]: "Cerveza importada",
       [ENGLISH]: "Imported beer",
     },
