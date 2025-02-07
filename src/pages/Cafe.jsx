@@ -19,12 +19,13 @@ const Cafe = () => {
     <section id={CAFE_TILTE[languaje]} className="w-full p-5">
       <Title>{CAFE_TILTE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
-        {cafeProductList.map(({ name, hotPrice, coldPrice }, index) => (
+        {cafeProductList.map(({ name, hotPrice, coldPrice, img }, index) => (
           <Product
             key={index}
             name={name[languaje]}
             hotPrice={hotPrice}
             coldPrice={coldPrice}
+            img={img}
           />
         ))}
         <Box className="gap-2 mt-4">
@@ -39,11 +40,12 @@ const Cafe = () => {
       <section className="w-full py-5">
         <Title subTitle>{TO_ACCOMPANY[languaje]}</Title>
         <Box className="gap-5 flex-col py-10">
-          {accompanyProductList.map(({ name, hotPrice }, index) => (
+          {accompanyProductList.map(({ name, hotPrice, img }, index) => (
             <Product
               key={index}
               name={name[languaje]}
               hotPrice={hotPrice}
+              img={img}
               noLabel
             />
           ))}

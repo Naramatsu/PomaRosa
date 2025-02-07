@@ -12,12 +12,13 @@ const Sandwich = () => {
     <section id="sandwich" className="w-full p-5">
       <Title>{SANDWICH}</Title>
       <Box className="gap-5 flex-col py-10">
-        {sandwichProducts.map(({ name, hotPrice, description }, index) => (
+        {sandwichProducts.map(({ name, hotPrice, description, img }, index) => (
           <Product
             key={index}
             name={name[languaje]}
             hotPrice={hotPrice}
             noLabel
+            img={img}
             description={description[languaje]}
           />
         ))}

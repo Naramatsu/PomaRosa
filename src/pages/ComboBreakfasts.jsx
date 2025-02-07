@@ -14,12 +14,13 @@ const ComboBreakfasts = () => {
       <Title>{COMBOS_BREAKFASTS_TITLE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
         {comboBreakfastsProducts.map(
-          ({ name, hotPrice, description }, index) => (
+          ({ name, hotPrice, description, img }, index) => (
             <Product
               key={index}
               name={name[languaje]}
               hotPrice={hotPrice}
               noLabel
+              img={img}
               description={description[languaje]}
             />
           )

@@ -2,11 +2,12 @@ import { useReducer } from "react";
 import Reducer from "./reducer";
 import { PreferencesContext } from ".";
 import { SPANISH } from "../utils/constants";
-import { SET_LANGUAJE } from "./actions";
+import { CLEAR_IMAGE, SELECT_IMAGE, SET_LANGUAJE } from "./actions";
 
 const PreferencesState = ({ children }) => {
   const initialState = {
     languaje: localStorage.getItem("languaje") || SPANISH,
+    image: null,
   };
   const [globalState, dispatch] = useReducer(Reducer, initialState);
 
@@ -18,7 +19,20 @@ const PreferencesState = ({ children }) => {
     localStorage.setItem("languaje", languaje);
   };
 
-  const combinedFunctions = { setLanguaje };
+  const selectImage = (image) => {
+    dispatch({
+      type: SELECT_IMAGE,
+      payload: image,
+    });
+  };
+
+  const clearImage = () => {
+    dispatch({
+      type: CLEAR_IMAGE,
+    });
+  };
+
+  const combinedFunctions = { setLanguaje, selectImage, clearImage };
 
   return (
     <PreferencesContext.Provider

@@ -12,13 +12,14 @@ const Pizzas = () => {
       <Title>{PIZZA}</Title>
       <Box className="gap-5 flex-col py-10">
         {pizzaProducts.map(
-          ({ name, personal, familiar, description }, index) => (
+          ({ name, personal, familiar, description, img }, index) => (
             <PizzaItem
               key={index}
               name={name[languaje]}
               personal={personal}
               familiar={familiar}
               description={description[languaje]}
+              img={img}
             />
           )
         )}

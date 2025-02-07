@@ -1,6 +1,9 @@
+import { useContext } from "react";
+import { PreferencesContext } from "../context";
 import PriceLabel from "./PriceLabel";
 
 const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
+  const { selectImage } = useContext(PreferencesContext);
   const noDescriptionStyles = !description ? "gap-0" : "gap-3";
   const noDescriptionMargin = !description ? "-mt-0" : "";
   return (
@@ -12,9 +15,10 @@ const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
           <img
             src={img}
             alt="item"
+            onClick={() => selectImage(img)}
             className="
-              w-[70px] h-[70px] object-cover
-              rounded-full border-4 border-white
+              w-[100px] h-[100px] object-cover
+              rounded-md border-2 border-white
             "
           />
         )}

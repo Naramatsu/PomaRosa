@@ -28,11 +28,12 @@ const Breakfasts = () => {
           <p className="text-[1rem]">{EGGS_TO_TASTE_SUBTITLE[languaje]}</p>
         </Title>
         <Box className="gap-5 flex-col">
-          {eggsToTasteProducts.map(({ name, hotPrice }, index) => (
+          {eggsToTasteProducts.map(({ name, hotPrice, img }, index) => (
             <Product
               key={index}
               name={name[languaje]}
               hotPrice={hotPrice}
+              img={img}
               noLabel
             />
           ))}
@@ -40,11 +41,12 @@ const Breakfasts = () => {
         <section className="pt-10">
           <Title subTitle>{ACCOMPANIMENTS[languaje]}</Title>
           <Box className="gap-5 flex-col">
-            {accompanimentsProducts.map(({ name, hotPrice }, index) => (
+            {accompanimentsProducts.map(({ name, hotPrice, img }, index) => (
               <Product
                 key={index}
                 name={name[languaje]}
                 hotPrice={hotPrice}
+                img={img}
                 noLabel
               />
             ))}
@@ -57,29 +59,35 @@ const Breakfasts = () => {
           <p className="text-[1rem]">{SPECIAL_EGGS_SUBTITLE[languaje]}</p>
         </Title>
         <Box className="gap-5 flex-col">
-          {specialEggsProducts.map(({ name, hotPrice, description }, index) => (
-            <Product
-              key={index}
-              name={name[languaje]}
-              hotPrice={hotPrice}
-              noLabel
-              description={description[languaje]}
-            />
-          ))}
+          {specialEggsProducts.map(
+            ({ name, hotPrice, description, img }, index) => (
+              <Product
+                key={index}
+                name={name[languaje]}
+                hotPrice={hotPrice}
+                noLabel
+                img={img}
+                description={description[languaje]}
+              />
+            )
+          )}
         </Box>
       </section>
       <section className="py-10">
         <Title subTitle>{HEALTHY[languaje]}</Title>
         <Box className="gap-5 flex-col">
-          {healthyProducts.map(({ name, coldPrice, description }, index) => (
-            <Product
-              key={index}
-              name={name[languaje]}
-              coldPrice={coldPrice}
-              noLabel
-              description={description[languaje]}
-            />
-          ))}
+          {healthyProducts.map(
+            ({ name, coldPrice, description, img }, index) => (
+              <Product
+                key={index}
+                name={name[languaje]}
+                coldPrice={coldPrice}
+                noLabel
+                img={img}
+                description={description[languaje]}
+              />
+            )
+          )}
         </Box>
       </section>
     </section>

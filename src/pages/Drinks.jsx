@@ -25,11 +25,12 @@ const Drinks = () => {
       <br />
       <Title subTitle>{LEMONADE[languaje]}</Title>
       <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-        {lemonadeProductList.map(({ name, coldPrice }, index) => (
+        {lemonadeProductList.map(({ name, coldPrice, img }, index) => (
           <Product
             key={index}
             name={name[languaje]}
             coldPrice={coldPrice}
+            img={img}
             noLabel
           />
         ))}
@@ -41,11 +42,12 @@ const Drinks = () => {
           {juicesList[languaje]}
         </p>
         <section>
-          {juicesPrices.map(({ name, coldPrice }, index) => (
+          {juicesPrices.map(({ name, coldPrice, img }, index) => (
             <Product
               key={index}
               name={name[languaje]}
               coldPrice={coldPrice}
+              img={img}
               noLabel
             />
           ))}
@@ -54,11 +56,12 @@ const Drinks = () => {
       <br />
       <Title subTitle>{ORANGE_JUICE[languaje]}</Title>
       <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-        {orangeJuiceProductList.map(({ name, coldPrice }, index) => (
+        {orangeJuiceProductList.map(({ name, coldPrice, img }, index) => (
           <Product
             key={index}
             name={name[languaje]}
             coldPrice={coldPrice}
+            img={img}
             noLabel
           />
         ))}
@@ -66,11 +69,12 @@ const Drinks = () => {
       <br />
       <Title subTitle>{OTHER_DRINKS[languaje]}</Title>
       <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-        {otherDrinksProductList.map(({ name, coldPrice }, index) => (
+        {otherDrinksProductList.map(({ name, coldPrice, img }, index) => (
           <Product
             key={index}
             name={name[languaje]}
             coldPrice={coldPrice}
+            img={img}
             noLabel
           />
         ))}
@@ -78,15 +82,18 @@ const Drinks = () => {
       <br />
       <Title subTitle>{SODAS[languaje]}</Title>
       <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-        {sodasProductList.map(({ name, description, coldPrice }, index) => (
-          <Product
-            key={index}
-            name={name[languaje]}
-            coldPrice={coldPrice}
-            description={description[languaje]}
-            noLabel
-          />
-        ))}
+        {sodasProductList.map(
+          ({ name, description, coldPrice, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              description={description[languaje]}
+              img={img}
+              noLabel
+            />
+          )
+        )}
       </section>
     </section>
   );

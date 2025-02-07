@@ -25,6 +25,7 @@ import {
   WAFFLES_TITLE,
 } from "./utils/constants";
 import DailyMenu from "./pages/DailyMenu";
+import ModalImage from "./components/ModalImage";
 
 const App = () => {
   const [title, setTitle] = useState("");
@@ -111,6 +112,7 @@ const App = () => {
         </section>
       </section>
       <Footer />
+      <ModalImage />
     </main>
   );
 };

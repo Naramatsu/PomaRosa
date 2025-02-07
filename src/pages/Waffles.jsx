@@ -22,12 +22,13 @@ const Waffles = () => {
 
         <Box className="gap-5 flex-col py-10">
           {savoryWafflesProducts.map(
-            ({ name, hotPrice, description }, index) => (
+            ({ name, hotPrice, description, img }, index) => (
               <Product
                 key={index}
                 name={name[languaje]}
                 hotPrice={hotPrice}
                 noLabel
+                img={img}
                 description={description[languaje]}
               />
             )
@@ -38,12 +39,13 @@ const Waffles = () => {
         <Title subTitle>{SWEET_WAFFLES[languaje]}</Title>
         <Box className="gap-5 flex-col py-10">
           {sweetWafflesProducts.map(
-            ({ name, coldPrice, description }, index) => (
+            ({ name, coldPrice, description, img }, index) => (
               <Product
                 key={index}
                 name={name[languaje]}
                 coldPrice={coldPrice}
                 noLabel
+                img={img}
                 description={description[languaje]}
               />
             )

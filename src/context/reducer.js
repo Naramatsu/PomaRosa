@@ -1,4 +1,4 @@
-import { SET_LANGUAJE } from "./actions";
+import { CLEAR_IMAGE, SELECT_IMAGE, SET_LANGUAJE } from "./actions";
 
 const reducer = (state, action) => {
   const { type, payload } = action;
@@ -8,6 +8,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         languaje: payload,
+      };
+    case SELECT_IMAGE:
+      return {
+        ...state,
+        image: payload,
+      };
+    case CLEAR_IMAGE:
+      return {
+        ...state,
+        image: null,
       };
 
     default:
