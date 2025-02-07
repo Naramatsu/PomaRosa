@@ -15,7 +15,11 @@ const ModalImage = () => {
         "
       >
         <section>
-          <img src={image} alt="modal" className="max-w-full max-h-full p-4" />
+          <img
+            src={image}
+            alt="modal"
+            className="max-w-full max-h-screen p-4 object-contain"
+          />
         </section>
       </section>
     );

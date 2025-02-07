@@ -92,3 +92,13 @@ export const generateRefObject = (ref, title) => ({
   height: ref?.current?.getBoundingClientRect().height,
   title,
 });
+
+export const descriptionStyles = (description, img) => {
+  const noDescriptionStyles = !description ? "gap-0" : "gap-3";
+  const noDescriptionMargin = !description ? "-mt-0" : "";
+  const descriptionImageStyles = img
+    ? "text-sm text-white/70 dancing-script first-letter:capitalize"
+    : "text-sm text-white/70 dancing-script first-letter:capitalize pl-4";
+
+  return { noDescriptionStyles, noDescriptionMargin, descriptionImageStyles };
+};

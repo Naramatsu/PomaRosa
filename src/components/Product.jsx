@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { PreferencesContext } from "../context";
 import Price from "./Price";
+import { descriptionStyles } from "../utils/constants";
 
 const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
   const { selectImage } = useContext(PreferencesContext);
-  const noDescriptionStyles = !description ? "gap-0" : "gap-3";
-  const noDescriptionMargin = !description ? "-mt-0" : "";
+  const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
+    descriptionStyles(description, img);
+
   return (
     <section
       className={`relative flex flex-col w-full min-w-[300px] ${noDescriptionStyles}`}
@@ -17,8 +19,9 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
             alt="item"
             onClick={() => selectImage(img)}
             className="
-              w-[100px] h-[100px] object-cover
+              min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] object-cover
               rounded-md border-2 border-white
+              hover:cursor-pointer
             "
           />
         )}
@@ -31,15 +34,9 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
             "
           >
             {name.toLowerCase()}
-            <span
-              className="
-                absolute bottom-0
-                border-b-2 border-dashed border-beige
-                mb-[7px] w-full ml-2"
-            />
           </p>
           {description && (
-            <p className="text-sm text-white/70 dancing-script first-letter:capitalize">
+            <p className={descriptionImageStyles}>
               {description.toLowerCase()}
             </p>
           )}

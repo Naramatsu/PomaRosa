@@ -1,3 +1,4 @@
+import Banner from "../components/Banner";
 import Box from "../components/Box";
 import Product from "../components/Product";
 import Title from "../components/Title";
@@ -11,6 +12,7 @@ const DailyMenu = () => {
   return (
     <section id="dailymenu" className="w-full p-5">
       <Title>{DAILYMENU_TITLE[languaje]}</Title>
+      <Title subTitle>{daymenuPrice[languaje]}</Title>
       <p
         className="
           font-bold kalam-regular text-white text-xl
@@ -22,7 +24,7 @@ const DailyMenu = () => {
       >
         {daymenuHours[languaje]}
       </p>
-      <Title subTitle>{daymenuPrice[languaje]}</Title>
+      <Banner img="https://res.cloudinary.com/dwufyf99d/image/upload/v1738937793/menupastapomarosa_ocdmo6.jpg" />
       <Box className="gap-5 flex-col py-10">
         {daymeuProductList.map(({ name, hotPrice, description }, index) => (
           <Product

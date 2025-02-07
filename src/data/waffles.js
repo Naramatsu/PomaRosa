@@ -12,6 +12,7 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "CLASSIC",
     },
     hotPrice: "18.000",
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
       [ENGLISH]: "With maple syrup and butter.",
@@ -49,6 +50,7 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "YUCA WAFFLE SANDWICH",
     },
     hotPrice: "32.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con maíz tierno, jamón de cerdo, queso mozzarella, cebolla y alioli.",
@@ -62,6 +64,7 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "WAFFLE SANDWICH",
     },
     hotPrice: "29.500",
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/wafflesanduche_ec3ptv.jpg",
     description: {
       [SPANISH]:
         "Jamón de cerdo, queso mozzarella, queso amarillo, huevos revuelos y alioli de ajo.",

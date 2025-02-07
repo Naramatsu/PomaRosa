@@ -7,6 +7,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "EXPRESS",
     },
     hotPrice: "20.000",
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunoexpress_gy6l0a.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos, con pan artesanal de la casa, mantequilla y café negro.",
@@ -45,6 +46,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "TRADITIONAL",
     },
     hotPrice: "25.000",
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunotradicional_zm5txw.jpg",
     description: {
       [SPANISH]:
         "Huevos al gusto + arepa asada de maíz o pan artesanal de la casa + mantequilla y queso fresco + bebida caliente a elección*.",
@@ -58,6 +60,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "RANCHERO",
     },
     hotPrice: "29.000",
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941119/desayunoranchero_amh8mi.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con tomate, cebolla y chorizo santarrosano, arepa de maíz con queso costeño, mantequilla + bebida caliente.",
@@ -71,6 +74,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "AMERICANO",
     },
     hotPrice: "34.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
     description: {
       [SPANISH]:
         "Waffles con miel de maple + tocineta crocante + huevos revueltos o fritos + café negro.",
@@ -84,6 +88,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "WILD",
     },
     hotPrice: "35.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunosilvestre_njxrc8.webp",
     description: {
       [SPANISH]:
         "Copa parfait (yogurt griego sin azúcar, con granola artesanal y mermelada casera de frutos rojos) + huevos revueltos + porción de tostadas y mantequilla + bebida caliente.",

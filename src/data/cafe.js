@@ -133,6 +133,7 @@ export const accompanyProductList = [
       [SPANISH]: "Pan de yuca",
       [ENGLISH]: "Yuca Bread",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/pandeyuca_boe8xr.jpg",
     hotPrice: "4.000",
   },
   {
@@ -154,6 +155,7 @@ export const accompanyProductList = [
       [SPANISH]: "Pan de chocolate",
       [ENGLISH]: "Chocolate bread",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pandechocolate_a2rfej.jpg",
     hotPrice: "5.500",
   },
   {
@@ -161,6 +163,7 @@ export const accompanyProductList = [
       [SPANISH]: "Pan de jamón y queso",
       [ENGLISH]: "Ham and cheese bread",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941124/jamonyqueso_qrxxrt.jpg",
     hotPrice: "5.500",
   },
   {
@@ -189,6 +192,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada de pollo, queso y uvas pasas",
       [ENGLISH]: "Chicken, Cheese, and Raisin Empanada",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadadepollo_mpiq3t.jpg",
     hotPrice: "11.000",
   },
   {
@@ -203,6 +207,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada caprese",
       [ENGLISH]: "Caprese empanada",
     },
+    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadacaprese_k5mqqp.jpg",
     hotPrice: "11.000",
   },
   // {

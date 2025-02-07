@@ -73,6 +73,7 @@ export const pizzaProducts = [
     },
     personal: "26.000",
     familiar: "46.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937791/pizzamediterr%C3%A1nea_mdrdky.jpg",
     description: {
       [SPANISH]:
         "Tomates secos, champiñones salteados, aceitunas negras, salsa pesto, reducción balsámico.",
@@ -87,6 +88,7 @@ export const pizzaProducts = [
     },
     personal: "24.000",
     familiar: "44.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
     description: {
       [SPANISH]:
         "Queso mozzarella , cebolla, jamón, orégano y aceite de oliva.",

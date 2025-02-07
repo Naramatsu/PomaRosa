@@ -4,19 +4,32 @@ const Banner = ({ img = "" }) => {
       <section
         role="banner"
         className="
-        rounded-md
-        w-full h-[300px] my-2 p-2
-        border-2 border-dashed border-white
-      "
-      >
-        <section
-          className="
-          w-full h-full
-          bg-cover bg-position-center bg-no-repeat
-          rounded-sm
+          relative
+          rounded-md
+          w-full h-[300px] my-2 p-2
+          border-2 border-dashed border-white
         "
-          style={{ backgroundImage: `url(${img})` }}
-        />
+      >
+        <section className="w-full h-full relative">
+          <section
+            className="
+            absolute top-0 left-0
+            w-full h-full z-[1]
+            bg-center bg-no-repeat bg-cover rounded-sm
+            blur-sm brightness-[0.3]
+          "
+            style={{ backgroundImage: `url(${img})` }}
+          />
+          <section
+            className="
+            absolute top-0 left-0
+            w-full h-full z-[2]
+            bg-contain bg-center bg-no-repeat
+            rounded-sm
+          "
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        </section>
       </section>
     );
 };
