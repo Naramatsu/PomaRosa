@@ -207,7 +207,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada caprese",
       [ENGLISH]: "Caprese empanada",
     },
-    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadacaprese_k5mqqp.jpg",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadacaprese_k5mqqp.jpg",
     hotPrice: "11.000",
   },
   // {
