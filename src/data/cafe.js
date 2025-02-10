@@ -83,6 +83,7 @@ export const cafeProductList = [
       [SPANISH]: "Capuchino caramel",
       [ENGLISH]: "Caramel Cappuccino",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/capuccinocaramel_dbs5yf.jpg",
     hotPrice: "11.500",
     coldPrice: "18.500",
   },

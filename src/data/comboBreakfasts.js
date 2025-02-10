@@ -33,6 +33,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "EGG SANDWICH",
     },
     hotPrice: "23.500",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/sanduchedehuevo_uw4ysa.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos tocineta, queso mozzarella y alioli de ajo en pan artesanal de la casa.",

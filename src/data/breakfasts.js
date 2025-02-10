@@ -16,6 +16,7 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Revueltos o fritos",
       [ENGLISH]: "Scrambled or fried",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
     hotPrice: "8.500",
   },
   {
@@ -23,6 +24,7 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Tomate y cebolla",
       [ENGLISH]: "Tomato and onion",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
     hotPrice: "11.500",
   },
   {
@@ -133,6 +135,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "Rustic Style",
     },
     hotPrice: "27.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscampestres_oxispa.jpg",
     description: {
       [SPANISH]:
         "Omellet de huevos, con espinaca, champiñones y queso muzzarella.",
@@ -165,6 +168,7 @@ export const healthyProducts = [
       [ENGLISH]: "PARFAIT GLASS",
     },
     coldPrice: "17.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
     description: {
       [SPANISH]:
         "Yogurt griego sin azúcar, mermelada casera de frutos rojos y granola artesanal con nueces y coco.",
@@ -178,6 +182,7 @@ export const healthyProducts = [
       [ENGLISH]: "SMOOTHIE BOWL",
     },
     coldPrice: "28.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/smothiebowl_chtj8m.jpg",
     description: {
       [SPANISH]:
         "Batido de fresa, banano y mora natural con yogur griego, acompañado con: granola artesanal con coco y nueces, banano, fresa, arándanos, miel de agave, semillas de amapola y chía.",
