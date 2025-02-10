@@ -123,7 +123,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "CREOLES",
     },
     hotPrice: "22.000",
-    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
       [ENGLISH]: "Fried Eggs with Hogao Sauce, Pomodoro Sauce, and Cilantro",
@@ -196,7 +196,7 @@ export const healthyProducts = [
       [ENGLISH]: "TOAST WITH AVOCADO",
     },
     coldPrice: "28.000",
-    imge: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/tostadadeaguacate_fq4aai.jpg",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/tostadadeaguacate_fq4aai.jpg",
     description: {
       [SPANISH]:
         "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos y tomates cherry.",
