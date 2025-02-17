@@ -86,6 +86,10 @@ code {
   width: 80px;
 }
 
+.toggle-switch .checkbox-input.bakery {
+  background: #f6f2ee;
+}
+
 .toggle-switch .checkbox-input::before {
   background: linear-gradient(to top, #000, #555);
   border-radius: 20px;
@@ -115,6 +119,10 @@ code {
 
 .toggle-switch .checkbox-input:checked {
   background: #f0ccac !important;
+}
+
+.toggle-switch .checkbox-input.bakery:checked {
+  background: #593b39 !important;
 }
 
 .toggle-switch .checkbox-input:checked::before {

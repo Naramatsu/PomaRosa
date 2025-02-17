@@ -1,10 +1,34 @@
 import { useContext } from "react";
 import { PreferencesContext } from "../context";
 import PriceLabel from "./PriceLabel";
-import { descriptionStyles } from "../utils/constants";
+import {
+  BIG,
+  descriptionStyles,
+  generatedThemeStyles,
+  MEDIUM,
+} from "../utils/constants";
+import useTheme from "../hooks/useTheme";
+import useLanguaje from "../hooks/useLanguaje";
 
-const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
+const PizzaItem = ({
+  img,
+  name,
+  description,
+  personal,
+  familiar,
+  big,
+  medium,
+}) => {
+  const [theme] = useTheme();
+  const [languaje] = useLanguaje();
   const { selectImage } = useContext(PreferencesContext);
+
+  const {
+    themeBorderColor,
+    themeTextAlternativeColor,
+    themeBorderAlternativeColor,
+  } = generatedThemeStyles(theme);
+
   const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
     descriptionStyles(description, img);
 
@@ -18,34 +42,38 @@ const PizzaItem = ({ img, name, description, personal, familiar, noLabel }) => {
             src={img}
             alt="item"
             onClick={() => selectImage(img)}
-            className="
+            className={`
               min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] object-cover
-              rounded-md border-2 border-white
+              rounded-md border-2 ${themeBorderAlternativeColor}
               hover:cursor-pointer
-            "
+            `}
           />
         )}
         <section className="w-full flex flex-col gap-3">
           <p
-            className="
+            className={`
               kalam-regular first-letter:capitalize
               relative w-full overflow-hidden
-              text-2xl text-white font-semibold
-            "
+              text-2xl ${themeTextAlternativeColor} font-semibold
+            `}
           >
-            {name.toLowerCase()}
+            {name?.toLowerCase()}
           </p>
           {description && (
             <p className={descriptionImageStyles}>
-              {description.toLowerCase()}
+              {description?.toLowerCase()}
             </p>
           )}
         </section>
       </section>
       <section className={`flex gap-4 ${noDescriptionMargin}`}>
-        <span className="relative w-full border-b-2 border-dashed border-beige mb-[7px]" />
-        <PriceLabel value={personal} label="Personal" />
-        <PriceLabel value={familiar} label="Familiar" cold />
+        <span
+          className={`relative w-full border-b-2 border-dashed ${themeBorderColor} mb-[7px]`}
+        />
+        {personal && <PriceLabel value={personal} label="Personal" />}
+        {familiar && <PriceLabel value={familiar} label="Familiar" cold />}
+        {medium && <PriceLabel value={medium} label={MEDIUM[languaje]} />}
+        {big && <PriceLabel value={big} label={BIG[languaje]} cold />}
       </section>
     </section>
   );

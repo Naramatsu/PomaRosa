@@ -5,7 +5,7 @@ import {
   SPANISH,
   urlGenerator,
   whatsAppLink,
-} from "../utils/constants";
+} from "../../utils/constants";
 
 export const menuList = [
   {

@@ -3,7 +3,10 @@ import Product from "../components/Product";
 import TextWarning from "../components/TextWarning";
 import Title from "../components/Title";
 import useLanguaje from "../hooks/useLanguaje";
-import { comboBreakfastsProducts, comboWarning } from "../data/comboBreakfasts";
+import {
+  comboBreakfastsProducts,
+  comboWarning,
+} from "../data/kitchen/comboBreakfasts";
 import { COMBOS_BREAKFASTS_TITLE } from "../utils/constants";
 
 const ComboBreakfasts = () => {

@@ -2,7 +2,11 @@ import Banner from "../components/Banner";
 import Box from "../components/Box";
 import Product from "../components/Product";
 import Title from "../components/Title";
-import { daymenuHours, daymenuPrice, daymeuProductList } from "../data/daymenu";
+import {
+  daymenuHours,
+  daymenuPrice,
+  daymeuProductList,
+} from "../data/kitchen/daymenu";
 import useLanguaje from "../hooks/useLanguaje";
 import { DAILYMENU_TITLE } from "../utils/constants";
 

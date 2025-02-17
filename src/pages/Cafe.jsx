@@ -8,7 +8,7 @@ import {
   cafeProductList,
   TO_ACCOMPANY,
   accompanyProductList,
-} from "../data/cafe";
+} from "../data/kitchen/cafe";
 import useLanguaje from "../hooks/useLanguaje";
 import { CAFE_TILTE } from "../utils/constants";
 

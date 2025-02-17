@@ -1,14 +1,16 @@
-import { LANGUAJES } from "../data/menu";
+import { LANGUAJES } from "../data/kitchen/menu";
 import useLanguaje from "../hooks/useLanguaje";
-import { ENGLISH, SPANISH } from "../utils/constants";
+import useTheme from "../hooks/useTheme";
+import { ENGLISH, generatedThemeStyles, SPANISH } from "../utils/constants";
 import Button from "./Button";
 import ToggleSwitch from "./ToggleSwitch";
 
 const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
   const [languaje] = useLanguaje();
+  const [theme] = useTheme();
   const isSpanish = languaje === SPANISH;
-
   const isCapitalize = !ispPage ? "first-letter:capitalize" : "";
+  const { themeTextColor } = generatedThemeStyles(theme);
 
   return (
     <section
@@ -36,10 +38,10 @@ const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
       ))}
       {ispPage && (
         <section
-          className="
-            text-xl text-beige
+          className={`
+            text-xl ${themeTextColor}
             flex justify-between items-center gap-2 w-[312px]
-          "
+          `}
         >
           <p>{LANGUAJES[SPANISH]}</p>
           <ToggleSwitch onChange={setLanguaje} checked={!isSpanish} />

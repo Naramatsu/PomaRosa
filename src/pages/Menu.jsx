@@ -1,7 +1,7 @@
 import { ENGLISH, SPANISH } from "../utils/constants";
 import useLanguaje from "../hooks/useLanguaje";
 import MenuLayout from "../components/MenuLayout";
-import { menuList } from "../data/menu";
+import { menuList } from "../data/kitchen/menu";
 
 const Menu = () => {
   const [languaje, setLanguaje] = useLanguaje();

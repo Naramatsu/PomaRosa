@@ -12,7 +12,7 @@ import {
   SPECIAL_EGGS,
   SPECIAL_EGGS_SUBTITLE,
   specialEggsProducts,
-} from "../data/breakfasts";
+} from "../data/kitchen/breakfasts";
 import useLanguaje from "../hooks/useLanguaje";
 import { BREAKFASTS_TITLE } from "../utils/constants";
 

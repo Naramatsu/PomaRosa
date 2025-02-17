@@ -1,5 +1,7 @@
 export const SPANISH = "SPANISH";
 export const ENGLISH = "ENGLISH";
+export const BAKERY = "bakery";
+export const KITCHEN = "kitchen";
 
 export const HOT = {
   [SPANISH]: "Caliente",
@@ -9,6 +11,16 @@ export const HOT = {
 export const COLD = {
   [SPANISH]: "Frío",
   [ENGLISH]: "Cold",
+};
+
+export const MEDIUM = {
+  [SPANISH]: "Mediano",
+  [ENGLISH]: "Medium",
+};
+
+export const BIG = {
+  [SPANISH]: "Grande",
+  [ENGLISH]: "Big",
 };
 
 export const whatsAppLink = "https://wa.me/573146343249";
@@ -58,7 +70,17 @@ export const DAILYMENU_TITLE = {
   [ENGLISH]: "DAILY MENU",
 };
 
-export const MENU_TITLES = [
+export const INDIVIDUAL_BAKERY_TITLE = {
+  [SPANISH]: "Panadería individual",
+  [ENGLISH]: "Individual Bakery",
+};
+
+export const MOLDED_BAKERY_TITLE = {
+  [SPANISH]: "Panadería en Molde",
+  [ENGLISH]: "Molded Bakery",
+};
+
+export const KITCHEN_MENU_TITLES = [
   { label: MENU_TITLE, link: "menu" },
   { label: CAFE_TILTE, link: "cafe" },
   { label: DRINKS_TILTE, link: "drinks" },
@@ -68,6 +90,12 @@ export const MENU_TITLES = [
   { label: SANDWICH_TITLE, link: "sandwichs" },
   { label: PIZZA_TITLE, link: "pizzas" },
   { label: DAILYMENU_TITLE, link: "dailymenu" },
+];
+
+export const BAKERY_MENU_TITLES = [
+  { label: MENU_TITLE, link: "menu" },
+  { label: INDIVIDUAL_BAKERY_TITLE, link: "individual" },
+  { label: MOLDED_BAKERY_TITLE, link: "molded" },
 ];
 
 export const scrollToSection = (id) => {
@@ -101,4 +129,31 @@ export const descriptionStyles = (description, img) => {
     : "text-sm text-white/70 dancing-script first-letter:capitalize pl-4";
 
   return { noDescriptionStyles, noDescriptionMargin, descriptionImageStyles };
+};
+
+export const generatedThemeStyles = (theme = KITCHEN) => {
+  const isKitchen = theme === KITCHEN;
+  const themeTextColor = isKitchen ? "text-beige" : "text-brown";
+  const themeTextSecudaryColor = isKitchen ? "text-green" : "text-dark-green";
+  const themeTextAlternativeColor = isKitchen ? "text-white" : "text-black";
+  const themeBorderColor = isKitchen ? "border-beige" : "border-brown";
+  const themeBorderAlternativeColor = isKitchen
+    ? "border-white"
+    : "border-black";
+  const themeBgColor = isKitchen ? "bg-black" : "bg-light-beige";
+  const themeActive = isKitchen ? "bg-beige text-black" : "bg-brown text-white";
+  const themeHover = isKitchen
+    ? "hover:bg-beige hover:text-black"
+    : "hover:bg-brown hover:text-beige";
+
+  return {
+    themeTextColor,
+    themeBorderColor,
+    themeBgColor,
+    themeActive,
+    themeHover,
+    themeTextSecudaryColor,
+    themeTextAlternativeColor,
+    themeBorderAlternativeColor,
+  };
 };

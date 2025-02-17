@@ -1,4 +1,4 @@
-import { ENGLISH, SPANISH } from "../utils/constants";
+import { ENGLISH, SPANISH } from "../../utils/constants";
 
 export const COLD_DRINKS = {
   [SPANISH]: "Bebidas frías",

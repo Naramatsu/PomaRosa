@@ -1,5 +1,14 @@
+import useTheme from "../hooks/useTheme";
+import { generatedThemeStyles } from "../utils/constants";
+
 const PriceLabel = ({ value, label, cold }) => {
-  const color = !cold ? "text-beige" : "text-green";
+  const [theme] = useTheme();
+
+  const { themeTextColor, themeTextSecudaryColor } =
+    generatedThemeStyles(theme);
+
+  const color = !cold ? themeTextColor : themeTextSecudaryColor;
+
   return (
     <section
       className={`

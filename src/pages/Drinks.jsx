@@ -13,7 +13,7 @@ import {
   otherDrinksProductList,
   SODAS,
   sodasProductList,
-} from "../data/drinks";
+} from "../data/kitchen/drinks";
 import useLanguaje from "../hooks/useLanguaje";
 
 const Drinks = () => {

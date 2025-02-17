@@ -1,7 +1,7 @@
 import Box from "../components/Box";
 import PizzaItem from "../components/PizzaItem";
 import Title from "../components/Title";
-import { PIZZA, pizzaProducts } from "../data/pizzas";
+import { PIZZA, pizzaProducts } from "../data/kitchen/pizzas";
 import useLanguaje from "../hooks/useLanguaje";
 
 const Pizzas = () => {

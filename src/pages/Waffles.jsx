@@ -8,7 +8,7 @@ import {
   SWEET_WAFFLES,
   sweetWafflesProducts,
   WAFFLE_WARNING,
-} from "../data/waffles";
+} from "../data/kitchen/waffles";
 import useLanguaje from "../hooks/useLanguaje";
 
 const Waffles = () => {

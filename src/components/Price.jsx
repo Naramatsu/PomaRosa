@@ -1,10 +1,16 @@
-import { COLD, HOT } from "../utils/constants";
+import { COLD, generatedThemeStyles, HOT } from "../utils/constants";
 import useLanguaje from "../hooks/useLanguaje";
+import useTheme from "../hooks/useTheme";
 
 const Price = ({ value, cold, noLabel = false }) => {
   const [languaje] = useLanguaje();
+  const [theme] = useTheme();
+
+  const { themeTextColor, themeTextSecudaryColor } =
+    generatedThemeStyles(theme);
+
   const label = !cold ? HOT[languaje] : COLD[languaje];
-  const color = !cold ? "text-beige" : "text-green";
+  const color = !cold ? themeTextColor : themeTextSecudaryColor;
 
   return (
     <section

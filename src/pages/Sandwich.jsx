@@ -2,7 +2,11 @@ import Box from "../components/Box";
 import Product from "../components/Product";
 import TextWarning from "../components/TextWarning";
 import Title from "../components/Title";
-import { SANDWICH, sandwichProducts, sandwichWarning } from "../data/sandwich";
+import {
+  SANDWICH,
+  sandwichProducts,
+  sandwichWarning,
+} from "../data/kitchen/sandwich";
 import useLanguaje from "../hooks/useLanguaje";
 
 const Sandwich = () => {

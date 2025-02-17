@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         beige: "#F0CCAC",
         green: "#82B3AD",
+        brown: "#593B39",
+        "dark-green": "#497771",
+        "dark-beige": "#BC9993",
+        "light-beige": "#F6F2EE",
       },
     },
   },

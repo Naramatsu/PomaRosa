@@ -4,21 +4,30 @@ import Title from "./Title";
 import useLanguaje from "../hooks/useLanguaje";
 import useScrollY from "../hooks/useScrollY";
 import { IoMenuSharp } from "react-icons/io5";
-import { MENU_TITLES, scrollToSection } from "../utils/constants";
+import {
+  generatedThemeStyles,
+  KITCHEN_MENU_TITLES,
+  scrollToSection,
+} from "../utils/constants";
+import useTheme from "../hooks/useTheme";
 
-const Header = ({ title = "" }) => {
+const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
   const scrollY = useScrollY();
   const [languaje] = useLanguaje();
+  const [theme] = useTheme();
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const isNotMenu = title !== MENU_TITLES[0].label[languaje];
+  const isNotMenu = title !== data[0].label[languaje];
   const subTitle = isNotMenu ? title : "";
+
+  const { themeBgColor, themeTextColor, themeBorderColor } =
+    generatedThemeStyles(theme);
 
   const headerClassName =
     scrollY > window.innerHeight - 100
       ? `fixed top-0 left-0
         w-full h-[100px]
-        bg-black text-beige
-        border-b-2 border-beige
+        ${themeBgColor} ${themeTextColor}
+        border-b-2 ${themeBorderColor}
         z-10`
       : "hidden";
 
@@ -47,25 +56,25 @@ const Header = ({ title = "" }) => {
       </section>
       <section
         className={`
-          max-w-[600px] m-auto bg-black
-          border-b-2 border-beige
-          sm:border-2 sm:border-beige sm:border-t-transparent
+          max-w-[600px] m-auto ${themeBgColor}
+          border-b-2 ${themeBorderColor}
+          sm:border-2 sm:${themeBorderColor} sm:border-t-transparent
           menu ${isMenuActiveClassName}
         `}
       >
         <section className="flex flex-col p-5 gap-5">
-          {MENU_TITLES.map(({ label, link }, index) => (
+          {data.map(({ label, link }, index) => (
             <Button
               key={index}
               type="chip"
               isActive={isNotMenu && title === label[languaje]}
-              className="first-letter:capitalize"
+              className="first-letter:capitalize lowercase"
               onClick={() => {
                 scrollToSection(link);
                 setIsMenuActive(false);
               }}
             >
-              {label[languaje].toLowerCase()}
+              {label[languaje]}
             </Button>
           ))}
         </section>
