@@ -1,5 +1,6 @@
 import {
   ENGLISH,
+  KITCHEN,
   MENU_TITLE,
   scrollToSection,
   SPANISH,
@@ -7,10 +8,10 @@ import {
   whatsAppLink,
 } from "../../utils/constants";
 
-export const menuList = [
+export const menuList = (theme = KITCHEN) => [
   {
     label: MENU_TITLE,
-    link: "cafe",
+    link: theme === KITCHEN ? "cafe" : "individual",
     handlerCLick: scrollToSection,
   },
   {
