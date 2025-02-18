@@ -19,6 +19,7 @@ import {
 } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 import IndividualBakery from "../pages/IndividualBakery";
+import MoldedBakery from "../pages/MoldedBakery";
 
 const Bakery = () => {
   const [title, setTitle] = useState("");
@@ -63,8 +64,8 @@ const Bakery = () => {
         <section id="individual" ref={individualTitle}>
           <IndividualBakery />
         </section>
-        <section id="molded" ref={moldedTitle} className="h-screen">
-          <h1 className="text-white text-3xl">Molded Bakery</h1>
+        <section id="molded" ref={moldedTitle}>
+          <MoldedBakery />
         </section>
       </section>
       <Footer />

@@ -1,12 +1,15 @@
 import useLanguaje from "../hooks/useLanguaje";
-import { ENGLISH, SPANISH } from "../utils/constants";
+import useTheme from "../hooks/useTheme";
+import { ENGLISH, generatedThemeStyles, SPANISH } from "../utils/constants";
 import TextWarning from "./TextWarning";
 
 const Footer = () => {
   const [languaje] = useLanguaje();
+  const [theme] = useTheme();
+  const { themeBgColor } = generatedThemeStyles(theme);
 
   return (
-    <footer className="w-full h-auto bg-black border-t-2 border-green">
+    <footer className={`w-full h-auto ${themeBgColor} border-t-2 border-green`}>
       <section className="p-5 max-w-[600px] m-auto">
         <TextWarning>{footer[languaje]}</TextWarning>
       </section>

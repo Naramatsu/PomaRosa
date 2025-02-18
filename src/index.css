@@ -122,7 +122,7 @@ code {
 }
 
 .toggle-switch .checkbox-input.bakery:checked {
-  background: #593b39 !important;
+  background: #497771 !important;
 }
 
 .toggle-switch .checkbox-input:checked::before {

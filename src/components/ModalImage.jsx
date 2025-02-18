@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PreferencesContext } from "../context";
+import { MdOutlineCancel } from "react-icons/md";
 
 const ModalImage = () => {
   const { image, clearImage } = useContext(PreferencesContext);
@@ -14,6 +15,16 @@ const ModalImage = () => {
           bg-black bg-opacity-80
         "
       >
+        <MdOutlineCancel
+          color="white"
+          size={60}
+          className="
+            fixed top-4 right-4
+            bg-black bg-opacity-80
+            rounded-full
+            hover:cursor-pointer
+          "
+        />
         <section>
           <img
             src={image}

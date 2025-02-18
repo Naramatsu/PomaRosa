@@ -201,6 +201,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada de carne y aceitunas",
       [ENGLISH]: "Beef and Olive Empanada",
     },
+    // img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813275/empanadadecarne_okikhi.heic",
     hotPrice: "11.000",
   },
   {

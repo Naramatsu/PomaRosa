@@ -61,6 +61,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Tostadas artesanales con mantequilla",
       [ENGLISH]: "Artisan Toast with Butter",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
     hotPrice: "7.500",
   },
   {
@@ -110,6 +111,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "SAVAGES",
     },
     hotPrice: "22.500",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con chorizo santarrosano, maíz tierno, jamón, queso mozzarella y tocineta.",
@@ -156,6 +158,7 @@ export const healthyProducts = [
       [SPANISH]: "PLATO DE FRUTA",
       [ENGLISH]: "FRUIT PLATE",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
     coldPrice: "16.000",
     description: {
       [SPANISH]: "Variedad de frutas frescas con semillas de amapola.",

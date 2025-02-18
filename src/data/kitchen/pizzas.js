@@ -47,6 +47,7 @@ export const pizzaProducts = [
       [SPANISH]: "HAWAPEPE",
       [ENGLISH]: "HAWAPEPE",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813275/Pizzahawapepe_ne94eo.jpg",
     personal: "23.000",
     familiar: "43.000",
     description: {
