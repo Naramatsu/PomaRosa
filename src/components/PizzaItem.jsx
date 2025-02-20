@@ -1,12 +1,7 @@
 import { useContext } from "react";
 import { PreferencesContext } from "../context";
 import PriceLabel from "./PriceLabel";
-import {
-  BIG,
-  descriptionStyles,
-  generatedThemeStyles,
-  MEDIUM,
-} from "../utils/constants";
+import { BIG, descriptionStyles, MEDIUM } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 import useLanguaje from "../hooks/useLanguaje";
 
@@ -19,15 +14,13 @@ const PizzaItem = ({
   big,
   medium,
 }) => {
-  const [theme] = useTheme();
-  const [languaje] = useLanguaje();
-  const { selectImage } = useContext(PreferencesContext);
-
   const {
     themeBorderColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,
-  } = generatedThemeStyles(theme);
+  } = useTheme();
+  const [languaje] = useLanguaje();
+  const { selectImage } = useContext(PreferencesContext);
 
   const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
     descriptionStyles(description, img);
@@ -41,6 +34,7 @@ const PizzaItem = ({
           <img
             src={img}
             alt="item"
+            loading="lazy"
             onClick={() => selectImage(img)}
             className={`
               min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] object-cover

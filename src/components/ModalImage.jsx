@@ -28,6 +28,7 @@ const ModalImage = () => {
         <section>
           <img
             src={image}
+            loading="lazy"
             alt="modal"
             className="max-w-full max-h-screen p-4 object-contain"
           />

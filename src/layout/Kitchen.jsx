@@ -23,16 +23,19 @@ import {
   DRINKS_TILTE,
   generateRefObject,
   getTitle,
+  KITCHEN,
   KITCHEN_MENU_TITLES,
   MENU_TITLE,
   PIZZA_TITLE,
   SANDWICH_TITLE,
   WAFFLES_TITLE,
 } from "../utils/constants";
+import useTheme from "../hooks/useTheme";
 
 const Kitchen = () => {
   const [title, setTitle] = useState("");
   const [languaje] = useLanguaje();
+  const { setTheme } = useTheme();
   const scrollY = useScrollY();
 
   const menuTitle = useRef(null);
@@ -44,6 +47,11 @@ const Kitchen = () => {
   const sandwichTitle = useRef(null);
   const pizzasTitle = useRef(null);
   const dailyMenuTitle = useRef(null);
+
+  useEffect(() => {
+    setTheme(KITCHEN);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const allRef = {

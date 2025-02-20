@@ -1,9 +1,7 @@
 import useTheme from "../hooks/useTheme";
-import { generatedThemeStyles } from "../utils/constants";
 
 const Title = ({ children, subTitle }) => {
-  const [theme] = useTheme();
-  const { themeTextColor, themeBorderColor } = generatedThemeStyles(theme);
+  const { themeTextColor, themeBorderColor } = useTheme();
   const size = subTitle ? "text-2xl" : "text-3xl uppercase";
   const showBorder = subTitle
     ? ""

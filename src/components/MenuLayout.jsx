@@ -1,29 +1,31 @@
 import { LANGUAJES } from "../data/kitchen/menu";
 import useLanguaje from "../hooks/useLanguaje";
 import useTheme from "../hooks/useTheme";
-import { ENGLISH, generatedThemeStyles, SPANISH } from "../utils/constants";
+import { ENGLISH, SPANISH } from "../utils/constants";
 import Button from "./Button";
 import ToggleSwitch from "./ToggleSwitch";
 
 const MenuLayout = ({ items, ispPage = false, setLanguaje }) => {
   const [languaje] = useLanguaje();
-  const [theme] = useTheme();
+  const { themeTextColor, themeBgColor } = useTheme();
   const isSpanish = languaje === SPANISH;
   const isCapitalize = !ispPage ? "first-letter:capitalize" : "";
-  const { themeTextColor } = generatedThemeStyles(theme);
 
   return (
     <section
-      className="
+      className={`
         lexend
-        w-full h-full min-h-screen
+        ${themeBgColor}
+        relative w-full h-full min-h-screen
         flex justify-center items-center flex-col gap-6
-      "
+        z-20
+      `}
     >
       {ispPage && (
         <img
           src="logo.webp"
           alt="logo"
+          loading="lazy"
           className="w-[150px] h-[150px] border-2 border-beige rounded-full"
         />
       )}

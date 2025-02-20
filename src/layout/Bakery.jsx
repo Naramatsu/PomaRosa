@@ -10,7 +10,6 @@ import ModalImage from "../components/ModalImage";
 import {
   BAKERY,
   BAKERY_MENU_TITLES,
-  generatedThemeStyles,
   generateRefObject,
   getTitle,
   INDIVIDUAL_BAKERY_TITLE,
@@ -25,7 +24,7 @@ const Bakery = () => {
   const [title, setTitle] = useState("");
   const [languaje] = useLanguaje();
   const scrollY = useScrollY();
-  const [theme, setTheme] = useTheme();
+  const { themeBgColor, setTheme } = useTheme();
 
   const menuTitle = useRef(null);
   const individualTitle = useRef(null);
@@ -49,8 +48,6 @@ const Bakery = () => {
     if (Object.keys(allRef).every((obj) => allRef[obj].top))
       setTitle(getTitle(allRef));
   }, [individualTitle, moldedTitle, scrollY, languaje, title]);
-
-  const { themeBgColor } = generatedThemeStyles(theme);
 
   return (
     <main

@@ -1,16 +1,15 @@
 import { useContext } from "react";
 import { PreferencesContext } from "../context";
 import Price from "./Price";
-import { descriptionStyles, generatedThemeStyles } from "../utils/constants";
+import { descriptionStyles } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 
 const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
-  const [theme] = useTheme();
   const {
     themeBorderColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,
-  } = generatedThemeStyles(theme);
+  } = useTheme();
 
   const { selectImage } = useContext(PreferencesContext);
   const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
@@ -25,6 +24,7 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
           <img
             src={img}
             alt="item"
+            loading="lazy"
             onClick={() => selectImage(img)}
             className={`
               min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] object-cover

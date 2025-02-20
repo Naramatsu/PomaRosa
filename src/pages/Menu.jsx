@@ -5,7 +5,7 @@ import { menuList } from "../data/kitchen/menu";
 import useTheme from "../hooks/useTheme";
 
 const Menu = () => {
-  const [theme] = useTheme();
+  const { theme } = useTheme();
   const [languaje, setLanguaje] = useLanguaje();
   const isSpanish = languaje === SPANISH;
   const menuListByPage = menuList(theme);

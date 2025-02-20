@@ -133,9 +133,9 @@ export const descriptionStyles = (description, img) => {
 
 export const generatedThemeStyles = (theme = KITCHEN) => {
   const isKitchen = theme === KITCHEN;
-  const themeTextColor = isKitchen ? "text-beige" : "text-brown";
+  const themeTextColor = isKitchen ? "text-beige" : "text-dark-green";
   const themeTextSecudaryColor = isKitchen ? "text-green" : "text-dark-green";
-  const themeTextAlternativeColor = isKitchen ? "text-white" : "text-black";
+  const themeTextAlternativeColor = isKitchen ? "text-white" : "text-brown";
   const themeBorderColor = isKitchen ? "border-beige" : "border-brown";
   const themeBorderAlternativeColor = isKitchen
     ? "border-white"
@@ -145,6 +145,10 @@ export const generatedThemeStyles = (theme = KITCHEN) => {
   const themeHover = isKitchen
     ? "hover:bg-beige hover:text-black"
     : "hover:bg-brown hover:text-beige";
+  const themeGreen = isKitchen ? "text-green" : "text-dark-green";
+  const floatBtnBg = isKitchen
+    ? "bg-black/70 border-white/50"
+    : "bg-white/70 border-black";
 
   return {
     themeTextColor,
@@ -152,6 +156,8 @@ export const generatedThemeStyles = (theme = KITCHEN) => {
     themeBgColor,
     themeActive,
     themeHover,
+    themeGreen,
+    floatBtnBg,
     themeTextSecudaryColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,

@@ -4,23 +4,16 @@ import Title from "./Title";
 import useLanguaje from "../hooks/useLanguaje";
 import useScrollY from "../hooks/useScrollY";
 import { IoMenuSharp } from "react-icons/io5";
-import {
-  generatedThemeStyles,
-  KITCHEN_MENU_TITLES,
-  scrollToSection,
-} from "../utils/constants";
+import { KITCHEN_MENU_TITLES, scrollToSection } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 
 const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
   const scrollY = useScrollY();
   const [languaje] = useLanguaje();
-  const [theme] = useTheme();
+  const { themeBgColor, themeTextColor, themeBorderColor } = useTheme();
   const [isMenuActive, setIsMenuActive] = useState(false);
   const isNotMenu = title !== data[0].label[languaje];
   const subTitle = isNotMenu ? title : "";
-
-  const { themeBgColor, themeTextColor, themeBorderColor } =
-    generatedThemeStyles(theme);
 
   const headerClassName =
     scrollY > window.innerHeight - 100
@@ -44,6 +37,7 @@ const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
         <img
           src="logo.webp"
           alt="logo"
+          loading="lazy"
           className="w-[70px] h-[70px] rounded-full cursor-pointer"
           onClick={() => scrollToSection("menu")}
         />

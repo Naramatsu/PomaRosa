@@ -1,5 +1,4 @@
 import useTheme from "../hooks/useTheme";
-import { generatedThemeStyles } from "../utils/constants";
 
 const Button = ({
   children,
@@ -8,14 +7,12 @@ const Button = ({
   onClick,
   className = "",
 }) => {
-  const [theme] = useTheme();
+  const { themeTextColor, themeBorderColor, themeActive, themeHover } =
+    useTheme();
   const chipStyles =
     type === "chip"
       ? "py-3 px-6 rounded-2xl text-sm"
       : "py-6 w-[312px] text-xl";
-
-  const { themeTextColor, themeBorderColor, themeActive, themeHover } =
-    generatedThemeStyles(theme);
 
   const isActiveStyles = isActive ? themeActive : "";
   const handlerClick = onClick ? onClick : () => {};
