@@ -51,6 +51,7 @@ export const cafeProductList = [
       [SPANISH]: "Nutella Capuchino",
       [ENGLISH]: "Nutella Cappuccino",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Capuchino_de_Nutella_w5lgs4.jpg",
     hotPrice: "12.500",
     coldPrice: "18.500",
   },

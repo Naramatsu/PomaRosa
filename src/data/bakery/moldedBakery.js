@@ -99,6 +99,7 @@ export const whiteSourdoughProductList = [
       [SPANISH]: "3 Quesos",
       [ENGLISH]: "3 Cheeses",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pan_3_quesos_eq2bgq.jpg",
     medium: "14.000",
     big: "17.000",
   },

@@ -33,6 +33,7 @@ export const pizzaProducts = [
       [SPANISH]: "PEPPERONI",
       [ENGLISH]: "PEPPERONI",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pepperoni_qd0fp0.jpg",
     personal: "23.000",
     description: {
       [SPANISH]: "Queso mozzarella, pepperoni y orégano.",
@@ -56,6 +57,7 @@ export const pizzaProducts = [
       [SPANISH]: "POLLO Y CHAMPIÑON",
       [ENGLISH]: "CHICKEN AND MUSHROOM",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pollo_champi%C3%B1ones_ihq2wk.jpg",
     personal: "23.000",
     description: {
       [SPANISH]: "Queso mozzarella, pollo y champiñones.",
