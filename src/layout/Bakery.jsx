@@ -44,9 +44,7 @@ const Bakery = () => {
       ),
       molded: generateRefObject(moldedTitle, MOLDED_BAKERY_TITLE[languaje]),
     };
-
-    if (Object.keys(allRef).every((obj) => allRef[obj].top))
-      setTitle(getTitle(allRef));
+    setTitle(getTitle(allRef));
   }, [individualTitle, moldedTitle, scrollY, languaje, title]);
 
   return (

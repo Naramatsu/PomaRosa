@@ -50,18 +50,18 @@ const FloatPagesMenu = () => {
   return (
     <section
       className="
-      fixed left-[50%] translate-x-[-50%] bottom-0
-      flex gap-2 items-center justify-center  
-      w-full max-w-[600px] p-5 pb-0 z-10 
-    "
+        fixed left-[50%] translate-x-[-50%] bottom-0
+        flex gap-2 items-center justify-center  
+        w-full max-w-[600px] p-5 pb-0 z-10 
+      "
     >
       <section
         className={`
-        relative h-[74px] px-2
-        flex gap-2 items-center justify-center
-        ${floatBtnBg} border-2 border-b-0 ${themeBorderColor}
-        rounded-t-[37px] backdrop-blur-md
-      `}
+          relative h-[74px] px-2
+          flex gap-2 items-center justify-center
+          ${floatBtnBg} border-2 border-b-0 ${themeBorderColor}
+          rounded-t-[37px] backdrop-blur-md
+        `}
       >
         {btnPages.map(({ link, about, icon, label }) => (
           <BtnMenuPage key={about} link={link} icon={icon} label={label} />

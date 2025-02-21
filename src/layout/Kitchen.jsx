@@ -74,9 +74,7 @@ const Kitchen = () => {
         DAILYMENU_TITLE[languaje]
       ),
     };
-
-    if (Object.keys(allRef).every((obj) => allRef[obj].top))
-      setTitle(getTitle(allRef));
+    setTitle(getTitle(allRef));
   }, [
     cafeTitle,
     drinkTitle,
