@@ -9,6 +9,7 @@ export const sandwichProducts = [
       [ENGLISH]: "CHICKEN CAPRESE",
     },
     hotPrice: "34.000",
+    available: true,
     description: {
       [SPANISH]:
         "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
@@ -22,6 +23,8 @@ export const sandwichProducts = [
       [ENGLISH]: "CLUB SANDWICH",
     },
     hotPrice: "28.000",
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
     description: {
       [SPANISH]:
         "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate, lechuga.",
@@ -35,6 +38,7 @@ export const sandwichProducts = [
       [ENGLISH]: "VEGETARIAN",
     },
     hotPrice: "29.000",
+    available: true,
     description: {
       [SPANISH]:
         "Tomates secos, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, queso mozzarella, champiñones salteados y aguacate fresco en pan ciabatta.",
@@ -48,6 +52,7 @@ export const sandwichProducts = [
       [ENGLISH]: "GRILLED AND BACON",
     },
     hotPrice: "29.000",
+    available: true,
     description: {
       [SPANISH]:
         "Variedad de quesos fundidos, con tocineta crujiente, en pan artesanal tostado.",
@@ -61,6 +66,7 @@ export const sandwichProducts = [
       [ENGLISH]: "CHICKEN AND MUSHROOMS",
     },
     hotPrice: "28.000",
+    available: true,
     description: {
       [SPANISH]:
         "Pollo salteado con champiñones y cebollas, salsa cremosa, finas hierbas y queso fundido en pan ciabatta.",

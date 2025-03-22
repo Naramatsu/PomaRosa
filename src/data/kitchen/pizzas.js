@@ -9,6 +9,7 @@ export const pizzaProducts = [
       [ENGLISH]: "NEAPOLITAN",
     },
     personal: "23.000",
+    available: true,
     description: {
       [SPANISH]:
         "Queso mozzarella, tomate fresco, orégano, albahaca y aceite de ajo.",
@@ -22,6 +23,7 @@ export const pizzaProducts = [
       [ENGLISH]: "MOZZARELLA",
     },
     personal: "23.000",
+    available: true,
     description: {
       [SPANISH]: "Queso mozzarella pomodoro, orégano y aceitunas verdes.",
       [ENGLISH]:
@@ -35,6 +37,7 @@ export const pizzaProducts = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pepperoni_qd0fp0.jpg",
     personal: "23.000",
+    available: true,
     description: {
       [SPANISH]: "Queso mozzarella, pepperoni y orégano.",
       [ENGLISH]: "Mozzarella Cheese, Pepperoni, and Oregano.",
@@ -47,6 +50,7 @@ export const pizzaProducts = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813275/Pizzahawapepe_ne94eo.jpg",
     personal: "23.000",
+    available: true,
     description: {
       [SPANISH]: "Queso mozzarella, trocitos de piña dulce y pepperoni.",
       [ENGLISH]: "Mozzarella Cheese, Sweet Pineapple Chunks, and Pepperoni.",
@@ -59,6 +63,7 @@ export const pizzaProducts = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pollo_champi%C3%B1ones_ihq2wk.jpg",
     personal: "23.000",
+    available: true,
     description: {
       [SPANISH]: "Queso mozzarella, pollo y champiñones.",
       [ENGLISH]: "Mozzarella Cheese, Chicken, and Mushrooms.",
@@ -70,6 +75,7 @@ export const pizzaProducts = [
       [ENGLISH]: "MEDITERRANEAN",
     },
     personal: "26.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937791/pizzamediterr%C3%A1nea_mdrdky.jpg",
     description: {
       [SPANISH]:
@@ -78,30 +84,32 @@ export const pizzaProducts = [
         "Sun-Dried Tomatoes, Sautéed Mushrooms, Black Olives, Pesto Sauce, and Balsamic Reduction.",
     },
   },
-  // {
-  //   name: {
-  //     [SPANISH]: "FUGAZZA ESPECIAL",
-  //     [ENGLISH]: "SPECIAL FUGAZZA",
-  //   },
-  //   personal: "24.000",
-  //   img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
-  //   description: {
-  //     [SPANISH]:
-  //       "Queso mozzarella , cebolla, jamón, orégano y aceite de oliva.",
-  //     [ENGLISH]: "Mozzarella Cheese, Onion, Ham, Oregano, and Olive Oil.",
-  //   },
-  // },
-  // {
-  //   name: {
-  //     [SPANISH]: "PRIMAVERA",
-  //     [ENGLISH]: "SPRING",
-  //   },
-  //   personal: "26.000",
-  //   description: {
-  //     [SPANISH]:
-  //       "Queso mozzarella, pomodoro, lomos de atún, maíz tierno, champiñones y orégano.",
-  //     [ENGLISH]:
-  //       "Mozzarella Cheese, Pomodoro Sauce, Tuna Fillets, Sweet Corn, Mushrooms, and Oregano.",
-  //   },
-  // },
+  {
+    name: {
+      [SPANISH]: "FUGAZZA ESPECIAL",
+      [ENGLISH]: "SPECIAL FUGAZZA",
+    },
+    personal: "24.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
+    available: false,
+    description: {
+      [SPANISH]:
+        "Queso mozzarella , cebolla, jamón, orégano y aceite de oliva.",
+      [ENGLISH]: "Mozzarella Cheese, Onion, Ham, Oregano, and Olive Oil.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "PRIMAVERA",
+      [ENGLISH]: "SPRING",
+    },
+    personal: "26.000",
+    available: false,
+    description: {
+      [SPANISH]:
+        "Queso mozzarella, pomodoro, lomos de atún, maíz tierno, champiñones y orégano.",
+      [ENGLISH]:
+        "Mozzarella Cheese, Pomodoro Sauce, Tuna Fillets, Sweet Corn, Mushrooms, and Oregano.",
+    },
+  },
 ];

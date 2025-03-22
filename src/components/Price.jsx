@@ -4,23 +4,27 @@ import useTheme from "../hooks/useTheme";
 
 const Price = ({ value, cold, noLabel = false }) => {
   const [languaje] = useLanguaje();
-  const { themeTextColor, themeTextSecudaryColor } = useTheme();
+  const { themeTextColor, themeTextAlternativeColor } = useTheme();
 
   const label = !cold ? HOT[languaje] : COLD[languaje];
-  const color = !cold ? themeTextColor : themeTextSecudaryColor;
 
   return (
     <section
-      className={`
+      className="
         lexend
         flex flex-col items-center
         font-bold
         min-w-[90px] max-w-[100px]
-        ${color}
-      `}
+      "
     >
-      {!noLabel && <p className="text-sm capitalize">{label}</p>}
-      <p className="text-lg">$ {value}</p>
+      {!noLabel && (
+        <p className={`text-sm capitalize ${themeTextColor}`}>{label}</p>
+      )}
+      <p
+        className={`text-lg italic font-semibold ${themeTextAlternativeColor}`}
+      >
+        $ {value}
+      </p>
     </section>
   );
 };

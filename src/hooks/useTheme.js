@@ -6,28 +6,28 @@ const useTheme = () => {
   const { theme, setTheme } = useContext(PreferencesContext);
   const {
     themeTextColor,
+    themeTitleTextColor,
     themeBorderColor,
     themeBgColor,
     themeActive,
     themeHover,
-    themeGreen,
-    themeTextSecudaryColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,
+    warningThemeBgColor,
   } = generatedThemeStyles(theme);
 
   return {
     theme,
     setTheme,
     themeTextColor,
+    themeTitleTextColor,
     themeBorderColor,
     themeBgColor,
     themeActive,
     themeHover,
-    themeGreen,
-    themeTextSecudaryColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,
+    warningThemeBgColor,
   };
 };
 

@@ -73,7 +73,7 @@ code {
 
 .toggle-switch .checkbox-input {
   -webkit-appearance: none;
-  background: #000;
+  background: #eedbd8;
   border: solid 2px #f0ccac;
   border-radius: 20px;
   border-style: outset;
@@ -87,7 +87,7 @@ code {
 }
 
 .toggle-switch .checkbox-input.bakery {
-  background: #f6f2ee;
+  background: #eedbd8;
 }
 
 .toggle-switch .checkbox-input::before {
@@ -118,11 +118,11 @@ code {
 }
 
 .toggle-switch .checkbox-input:checked {
-  background: #f0ccac !important;
+  background: #40251b !important;
 }
 
 .toggle-switch .checkbox-input.bakery:checked {
-  background: #497771 !important;
+  background: #40251b !important;
 }
 
 .toggle-switch .checkbox-input:checked::before {
@@ -154,4 +154,21 @@ code {
     max-height: 500px;
     overflow: auto;
   }
+}
+
+.polygon {
+  clip-path: polygon(
+    0% 12%,
+    3% 12%,
+    3% 0,
+    97% 0,
+    97% 12%,
+    100% 12%,
+    100% 88%,
+    97% 88%,
+    97% 100%,
+    3% 99%,
+    3% 88%,
+    0% 88%
+  );
 }

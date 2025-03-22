@@ -5,7 +5,7 @@ export const COLD_DRINKS = {
   [ENGLISH]: "Cold drinks",
 };
 
-export const LEMONADE = { [SPANISH]: "Limonada", [ENGLISH]: "Lemonade" };
+export const LEMONADE = { [SPANISH]: "Limonadas", [ENGLISH]: "Lemonades" };
 
 export const lemonadeProductList = [
   {
@@ -13,6 +13,7 @@ export const lemonadeProductList = [
       [SPANISH]: "Clásica",
       [ENGLISH]: "Classic",
     },
+    available: true,
     coldPrice: "9.500",
   },
   {
@@ -20,6 +21,7 @@ export const lemonadeProductList = [
       [SPANISH]: "Con Hierbabuena",
       [ENGLISH]: "With mint",
     },
+    available: true,
     coldPrice: "12.000",
   },
   {
@@ -27,6 +29,7 @@ export const lemonadeProductList = [
       [SPANISH]: "Cerezada",
       [ENGLISH]: "Cherry",
     },
+    available: true,
     coldPrice: "12.000",
   },
   {
@@ -34,6 +37,7 @@ export const lemonadeProductList = [
       [SPANISH]: "De coco",
       [ENGLISH]: "Coconut",
     },
+    available: true,
     coldPrice: "15.000",
   },
 ];
@@ -56,6 +60,7 @@ export const juicesPrices = [
       [SPANISH]: "En agua",
       [ENGLISH]: "In water",
     },
+    available: true,
     coldPrice: "9.000",
   },
   {
@@ -63,6 +68,7 @@ export const juicesPrices = [
       [SPANISH]: "En leche",
       [ENGLISH]: "In milk",
     },
+    available: true,
     coldPrice: "11.000",
   },
 ];
@@ -77,6 +83,7 @@ export const orangeJuiceProductList = [
       [SPANISH]: "Mediano",
       [ENGLISH]: "Medium",
     },
+    available: true,
     coldPrice: "8.000",
   },
   {
@@ -84,6 +91,7 @@ export const orangeJuiceProductList = [
       [SPANISH]: "Grande",
       [ENGLISH]: "Big",
     },
+    available: true,
     coldPrice: "12.000",
   },
 ];
@@ -99,6 +107,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Agua",
       [ENGLISH]: "Water",
     },
+    available: true,
     coldPrice: "6.000",
   },
   {
@@ -106,6 +115,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Gaseosa",
       [ENGLISH]: "Soda",
     },
+    available: true,
     coldPrice: "6.000",
   },
   {
@@ -113,6 +123,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "HATSU soda",
       [ENGLISH]: "HATSU soda",
     },
+    available: true,
     coldPrice: "8.000",
   },
   {
@@ -120,6 +131,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "HATSU té frio",
       [ENGLISH]: "HATSU cold tea",
     },
+    available: true,
     coldPrice: "9.000",
   },
   {
@@ -127,6 +139,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Cerveza",
       [ENGLISH]: "Beer",
     },
+    available: true,
     coldPrice: "9.000",
   },
   {
@@ -134,6 +147,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Tres cordilleras",
       [ENGLISH]: "Three mountain ranges",
     },
+    available: true,
     coldPrice: "12.000",
   },
   {
@@ -141,6 +155,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Corona / Stella",
       [ENGLISH]: "Corona / Stella",
     },
+    available: true,
     coldPrice: "12.000",
   },
   {
@@ -148,6 +163,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Cerveza importada",
       [ENGLISH]: "Imported beer",
     },
+    available: true,
     coldPrice: "12.000",
   },
   {
@@ -155,6 +171,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Adicional michelada",
       [ENGLISH]: "Add Michelada",
     },
+    available: true,
     coldPrice: "3.000",
   },
 ];
@@ -167,6 +184,8 @@ export const sodasProductList = [
       [ENGLISH]: "Red fruits",
     },
     coldPrice: "13.000",
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_de_frutos_rojos_converted_dedjxe.webp",
     description: {
       [SPANISH]: "Mermelada artesanal de fresa y mora con hierbabuena y limón",
       [ENGLISH]: "Artisanal Strawberry and Blackberry Jam with Mint and Lime",
@@ -178,6 +197,8 @@ export const sodasProductList = [
       [ENGLISH]: "Passion fruit",
     },
     coldPrice: "13.000",
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_maracuya_converted_zmx648.webp",
     description: {
       [SPANISH]: "Pulpa de maracuyá con limón y hierbabuena",
       [ENGLISH]: "Passion Fruit Pulp with Lime and Mint",
@@ -189,6 +210,7 @@ export const sodasProductList = [
       [ENGLISH]: "Michelada",
     },
     coldPrice: "8.000",
+    available: true,
     description: {
       [SPANISH]: "Limón y sal",
       [ENGLISH]: "Lemon and salt",

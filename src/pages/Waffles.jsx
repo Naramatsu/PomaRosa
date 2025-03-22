@@ -21,8 +21,9 @@ const Waffles = () => {
         <Title subTitle>{SAVORY_WAFFLES[languaje]}</Title>
 
         <Box className="gap-5 flex-col py-10">
-          {savoryWafflesProducts.map(
-            ({ name, hotPrice, description, img }, index) => (
+          {savoryWafflesProducts
+            .filter((product) => product.available)
+            .map(({ name, hotPrice, description, img }, index) => (
               <Product
                 key={index}
                 name={name[languaje]}
@@ -31,28 +32,28 @@ const Waffles = () => {
                 img={img}
                 description={description[languaje]}
               />
-            )
-          )}
+            ))}
         </Box>
       </section>
-      <section className="py-10 border-2 border-white/50 border-dashed p-5">
-        <Title subTitle>{SWEET_WAFFLES[languaje]}</Title>
-        <Box className="gap-5 flex-col py-10">
-          {sweetWafflesProducts.map(
-            ({ name, coldPrice, description, img }, index) => (
-              <Product
-                key={index}
-                name={name[languaje]}
-                coldPrice={coldPrice}
-                noLabel
-                img={img}
-                description={description[languaje]}
-              />
-            )
-          )}
-        </Box>
+      <Box
+        bordered
+        title={SWEET_WAFFLES[languaje]}
+        className="flex-col gap-5 p-2 my-10"
+      >
+        {sweetWafflesProducts
+          .filter((product) => product.available)
+          .map(({ name, coldPrice, description, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              noLabel
+              img={img}
+              description={description[languaje]}
+            />
+          ))}
         <TextWarning>{WAFFLE_WARNING[languaje]}</TextWarning>
-      </section>
+      </Box>
     </section>
   );
 };

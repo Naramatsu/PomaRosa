@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { SiCoffeescript } from "react-icons/si";
 import { GiSlicedBread } from "react-icons/gi";
 import useTheme from "../hooks/useTheme";
-// import { GiCakeSlice } from "react-icons/gi";
+import { GiCakeSlice } from "react-icons/gi";
 
 export const btnPages = [
   {
@@ -10,19 +10,22 @@ export const btnPages = [
     about: "cafe",
     icon: <SiCoffeescript size={20} />,
     label: "Cafe",
+    available: true,
   },
   {
     link: "/bakery",
     about: "bakery",
     icon: <GiSlicedBread size={20} />,
     label: "Bakery",
+    available: true,
   },
-  // {
-  //   link: "/pastry",
-  //   about: "pastry",
-  //   icon: <GiCakeSlice size={20} />,
-  //   label: "Pastry",
-  // },
+  {
+    link: "/pastry",
+    about: "pastry",
+    icon: <GiCakeSlice size={20} />,
+    label: "Pastry",
+    available: false,
+  },
 ];
 
 export const BtnMenuPage = ({ link, icon, label }) => {
@@ -34,7 +37,7 @@ export const BtnMenuPage = ({ link, icon, label }) => {
         relative size-14
         flex flex-col gap-0 justify-center items-center 
         ${themeTextColor} border ${themeBorderColor}
-        rounded-full
+        rounded-full bg-white/50
         hover:cursor-pointer ${themeHover}
       `}
     >
@@ -45,7 +48,7 @@ export const BtnMenuPage = ({ link, icon, label }) => {
 };
 
 const FloatPagesMenu = () => {
-  const { floatBtnBg, themeBorderColor } = useTheme();
+  const { themeBorderColor } = useTheme();
 
   return (
     <section
@@ -59,13 +62,15 @@ const FloatPagesMenu = () => {
         className={`
           relative h-[74px] px-2
           flex gap-2 items-center justify-center
-          ${floatBtnBg} border-2 border-b-0 ${themeBorderColor}
+          border-2 border-b-0 ${themeBorderColor}
           rounded-t-[37px] backdrop-blur-md
         `}
       >
-        {btnPages.map(({ link, about, icon, label }) => (
-          <BtnMenuPage key={about} link={link} icon={icon} label={label} />
-        ))}
+        {btnPages
+          .filter((btn) => btn.available)
+          .map(({ link, about, icon, label }) => (
+            <BtnMenuPage key={about} link={link} icon={icon} label={label} />
+          ))}
       </section>
     </section>
   );

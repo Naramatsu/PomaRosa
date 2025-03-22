@@ -124,6 +124,7 @@ export const semisweetDoughProductList = [
       [SPANISH]: "Mogolla de 3 quesos",
       [ENGLISH]: "3 Cheeses bread",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650906/Mogolla_3_quesos_converted_yr3gkw.webp",
     hotPrice: "4.000",
   },
   {
@@ -166,6 +167,7 @@ export const semisweetDoughProductList = [
       [SPANISH]: "Mogolla Choco Arándanos",
       [ENGLISH]: "Choco-Blueberries bread",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Chocolate_con_ar%C3%A1ndanos_converted_kgef9v.webp",
     hotPrice: "7.500",
   },
 ];
@@ -175,7 +177,6 @@ export const WHOLE_WHEAT_BREAD_SUBTITLE = {
   [ENGLISH]: "Whole wheat bread",
 };
 
-// no labeled
 export const wholeWheatBreadProductList = [
   {
     name: {

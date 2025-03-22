@@ -10,7 +10,7 @@ import useTheme from "../hooks/useTheme";
 const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
   const scrollY = useScrollY();
   const [languaje] = useLanguaje();
-  const { themeBgColor, themeTextColor, themeBorderColor } = useTheme();
+  const { themeBgColor, themeBorderColor, themeTitleTextColor } = useTheme();
   const [isMenuActive, setIsMenuActive] = useState(false);
   const isNotMenu = title !== data[0].label[languaje];
   const subTitle = isNotMenu ? title : "";
@@ -19,9 +19,9 @@ const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
     scrollY > window.innerHeight - 100
       ? `fixed top-0 left-0
         w-full h-[100px]
-        ${themeBgColor} ${themeTextColor}
+        ${themeBgColor} ${themeTitleTextColor}
         border-b-2 ${themeBorderColor}
-        z-10`
+        z-30`
       : "hidden";
 
   const isMenuActiveClassName = isMenuActive ? "active" : "";
@@ -41,7 +41,7 @@ const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
           className="w-[70px] h-[70px] rounded-full cursor-pointer"
           onClick={() => scrollToSection("menu")}
         />
-        <Title subTitle>{subTitle}</Title>
+        <Title menuTitle>{subTitle}</Title>
         <IoMenuSharp
           size={40}
           className="cursor-pointer"

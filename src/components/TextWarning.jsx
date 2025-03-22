@@ -1,10 +1,14 @@
 import useTheme from "../hooks/useTheme";
 
 const TextWarning = ({ children }) => {
-  const { themeGreen } = useTheme();
+  const { warningThemeBgColor, themeTextAlternativeColor } = useTheme();
 
   return (
-    <p className={`text-xs ${themeGreen} text-center lexend`}>{children}</p>
+    <p
+      className={`text-xs ${themeTextAlternativeColor} ${warningThemeBgColor} p-4 text-center polygon`}
+    >
+      {children}
+    </p>
   );
 };
 

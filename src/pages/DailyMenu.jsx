@@ -16,18 +16,17 @@ const DailyMenu = () => {
   return (
     <section id="dailymenu" className="w-full p-5">
       <Title>{DAILYMENU_TITLE[languaje]}</Title>
-      <Title subTitle>{daymenuPrice[languaje]}</Title>
-      <p
+      <section
         className="
-          font-bold kalam-regular text-white text-xl
+          font-bold kalam-regular text-dark-brown/70 text-xl
           text-center mt-10 mb-5 p-4
-          border-2 border-green
-          bg-green/70 text-shadow
-          rounded-sm
+          border-2 border-brown
+          rounded-sm bg-dark-beige/50
         "
       >
-        {daymenuHours[languaje]}
-      </p>
+        <p className="pt-3">{daymenuHours[languaje]}</p>
+        <Title subTitle>{daymenuPrice[languaje]}</Title>
+      </section>
       <Banner img="https://res.cloudinary.com/dwufyf99d/image/upload/v1738937793/menupastapomarosa_ocdmo6.jpg" />
       <Box className="gap-5 flex-col py-10">
         {daymeuProductList.map(({ name, hotPrice, description }, index) => (
@@ -36,6 +35,7 @@ const DailyMenu = () => {
             name={name[languaje]}
             hotPrice={hotPrice}
             noLabel
+            centered
             description={description[languaje]}
           />
         ))}

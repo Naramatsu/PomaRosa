@@ -35,7 +35,7 @@ import useTheme from "../hooks/useTheme";
 const Kitchen = () => {
   const [title, setTitle] = useState("");
   const [languaje] = useLanguaje();
-  const { setTheme } = useTheme();
+  const { setTheme, themeBgColor } = useTheme();
   const scrollY = useScrollY();
 
   const menuTitle = useRef(null);
@@ -90,7 +90,9 @@ const Kitchen = () => {
   ]);
 
   return (
-    <main className="relative w-full h-full min-h-screen bg-black flex flex-col justify-center">
+    <main
+      className={`relative w-full h-full min-h-screen ${themeBgColor} flex flex-col justify-center`}
+    >
       <Header title={title} data={KITCHEN_MENU_TITLES} />
       <section className="w-full max-w-[600px] m-auto h-full">
         <section id="menu" ref={menuTitle}>

@@ -4,7 +4,15 @@ import Price from "./Price";
 import { descriptionStyles } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 
-const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
+const Product = ({
+  img,
+  name,
+  description,
+  hotPrice,
+  coldPrice,
+  noLabel,
+  centered = false,
+}) => {
   const {
     themeBorderColor,
     themeTextAlternativeColor,
@@ -15,9 +23,11 @@ const Product = ({ img, name, description, hotPrice, coldPrice, noLabel }) => {
   const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
     descriptionStyles(description, img);
 
+  const isCentered = centered ? "text-center" : "";
+
   return (
     <section
-      className={`relative flex flex-col w-full min-w-[300px] ${noDescriptionStyles}`}
+      className={`relative flex flex-col w-full min-w-[300px] ${isCentered} ${noDescriptionStyles}`}
     >
       <section className="relative w-full h-auto flex gap-4 justify-between">
         {img && (

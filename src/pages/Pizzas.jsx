@@ -11,8 +11,9 @@ const Pizzas = () => {
     <section id="pizzas" className="w-full p-5">
       <Title>{PIZZA}</Title>
       <Box className="gap-5 flex-col py-10">
-        {pizzaProducts.map(
-          ({ name, personal, familiar, description, img }, index) => (
+        {pizzaProducts
+          .filter((product) => product.available)
+          .map(({ name, personal, familiar, description, img }, index) => (
             <PizzaItem
               key={index}
               name={name[languaje]}
@@ -21,8 +22,7 @@ const Pizzas = () => {
               description={description[languaje]}
               img={img}
             />
-          )
-        )}
+          ))}
       </Box>
     </section>
   );

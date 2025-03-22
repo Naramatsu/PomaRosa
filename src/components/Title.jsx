@@ -1,18 +1,18 @@
 import useTheme from "../hooks/useTheme";
 
-const Title = ({ children, subTitle }) => {
-  const { themeTextColor, themeBorderColor } = useTheme();
-  const size = subTitle ? "text-2xl" : "text-3xl uppercase";
-  const showBorder = subTitle
-    ? ""
-    : `border-b-2 border-dashed ${themeBorderColor}`;
+const Title = ({ children, subTitle, menuTitle }) => {
+  const { themeTitleTextColor, themeBorderColor, themeTextColor } = useTheme();
+  const size = subTitle || menuTitle ? "text-2xl" : "text-3xl uppercase";
+  const showBorder =
+    subTitle || menuTitle ? "" : `border-b-2 border-dashed ${themeBorderColor}`;
+  const textColor = subTitle ? themeTextColor : themeTitleTextColor;
 
   return (
     <section
       className={`
         lexend uppercase
         w-full py-3
-        ${themeTextColor} text-center
+        ${textColor} text-center
         ${showBorder}
       `}
     >

@@ -23,6 +23,11 @@ export const BIG = {
   [ENGLISH]: "Big",
 };
 
+export const SLICES = {
+  [SPANISH]: "porciones",
+  [ENGLISH]: "slices",
+};
+
 export const whatsAppLink = "https://wa.me/573146343249";
 
 export const MENU_TITLE = {
@@ -125,41 +130,32 @@ export const descriptionStyles = (description, img) => {
   const noDescriptionStyles = !description ? "gap-0" : "gap-3";
   const noDescriptionMargin = !description ? "-mt-0" : "";
   const descriptionImageStyles = img
-    ? "text-sm text-white/70 dancing-script first-letter:capitalize"
-    : "text-sm text-white/70 dancing-script first-letter:capitalize pl-4";
+    ? "text-md text-dark-brown/70 italic first-letter:capitalize"
+    : "text-md text-dark-brown/70 italic first-letter:capitalize pl-4";
 
   return { noDescriptionStyles, noDescriptionMargin, descriptionImageStyles };
 };
 
-export const generatedThemeStyles = (theme = KITCHEN) => {
-  const isKitchen = theme === KITCHEN;
-  const themeTextColor = isKitchen ? "text-beige" : "text-dark-green";
-  const themeTextSecudaryColor = isKitchen ? "text-green" : "text-dark-green";
-  const themeTextAlternativeColor = isKitchen ? "text-white" : "text-brown";
-  const themeBorderColor = isKitchen ? "border-beige" : "border-brown";
-  const themeBorderAlternativeColor = isKitchen
-    ? "border-white"
-    : "border-black";
-  const themeBgColor = isKitchen ? "bg-black" : "bg-light-beige";
-  const themeActive = isKitchen ? "bg-beige text-black" : "bg-brown text-white";
-  const themeHover = isKitchen
-    ? "hover:bg-beige hover:text-black"
-    : "hover:bg-brown hover:text-beige";
-  const themeGreen = isKitchen ? "text-green" : "text-dark-green";
-  const floatBtnBg = isKitchen
-    ? "bg-black/70 border-white/50"
-    : "bg-white/70 border-black";
+export const generatedThemeStyles = () => {
+  const themeTextColor = "text-brown";
+  const themeTitleTextColor = "text-green";
+  const themeTextAlternativeColor = "text-dark-brown";
+  const themeBorderColor = "border-brown";
+  const themeBorderAlternativeColor = "border-brown";
+  const themeBgColor = "bg-beige";
+  const themeActive = "bg-brown text-white";
+  const themeHover = "hover:bg-brown hover:text-beige";
+  const warningThemeBgColor = "bg-dark-beige";
 
   return {
     themeTextColor,
+    themeTitleTextColor,
     themeBorderColor,
     themeBgColor,
     themeActive,
     themeHover,
-    themeGreen,
-    floatBtnBg,
-    themeTextSecudaryColor,
     themeTextAlternativeColor,
     themeBorderAlternativeColor,
+    warningThemeBgColor,
   };
 };

@@ -75,6 +75,6 @@ export const daymenuHours = {
 };
 
 export const daymenuPrice = {
-  [SPANISH]: "+ Postre + Bebida $25.000",
-  [ENGLISH]: "+ Dessert + Drink $25,000",
+  [SPANISH]: "$25.000 con Bebida + Postre",
+  [ENGLISH]: "$25,000 with Drink + Dessert",
 };

@@ -16,6 +16,7 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Revueltos o fritos",
       [ENGLISH]: "Scrambled or fried",
     },
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
     hotPrice: "8.500",
   },
@@ -24,6 +25,7 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Tomate y cebolla",
       [ENGLISH]: "Tomato and onion",
     },
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
     hotPrice: "11.500",
   },
@@ -32,6 +34,8 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Maíz tierno",
       [ENGLISH]: "Tender corn",
     },
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Huevos_con_ma%C3%ADz_converted_sjk7gl.webp",
     hotPrice: "10.900",
   },
   {
@@ -39,6 +43,8 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Chorizo santarrosano",
       [ENGLISH]: "Santarrosano chorizo",
     },
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/huevos_con_chorizo_converted_ajjzdi.webp",
     hotPrice: "11.900",
   },
   {
@@ -46,6 +52,7 @@ export const eggsToTasteProducts = [
       [SPANISH]: "Jamón y queso",
       [ENGLISH]: "Ham and cheese",
     },
+    available: true,
     hotPrice: "10.900",
   },
 ];
@@ -61,6 +68,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Tostadas artesanales con mantequilla",
       [ENGLISH]: "Artisan Toast with Butter",
     },
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
     hotPrice: "7.500",
   },
@@ -69,6 +77,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Arepa de maíz blanco con mantequilla",
       [ENGLISH]: "White Corn Arepa with Butter",
     },
+    available: true,
     hotPrice: "8.500",
   },
   {
@@ -76,6 +85,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Arepa de maiz con mantequilla y queso",
       [ENGLISH]: "Corn arepa with butter and cheese",
     },
+    available: true,
     hotPrice: "13.000",
   },
   {
@@ -83,6 +93,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Wafles con miel o mantequilla",
       [ENGLISH]: "Waffles with honey or butter.",
     },
+    available: true,
     hotPrice: "15.000",
   },
   {
@@ -90,6 +101,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Arepa con queso, jamón y huevos fritos",
       [ENGLISH]: "Arepa with Cheese, Ham, and Fried Eggs",
     },
+    available: true,
     hotPrice: "16.000",
   },
 ];
@@ -111,6 +123,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "SAVAGES",
     },
     hotPrice: "22.500",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
     description: {
       [SPANISH]:
@@ -125,6 +138,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "CREOLES",
     },
     hotPrice: "22.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
@@ -137,6 +151,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "Rustic Style",
     },
     hotPrice: "27.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscampestres_oxispa.jpg",
     description: {
       [SPANISH]:
@@ -160,6 +175,7 @@ export const healthyProducts = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
     coldPrice: "16.000",
+    available: true,
     description: {
       [SPANISH]: "Variedad de frutas frescas con semillas de amapola.",
       [ENGLISH]: "Assorted Fresh Fruits with Poppy Seeds.",
@@ -171,6 +187,7 @@ export const healthyProducts = [
       [ENGLISH]: "PARFAIT GLASS",
     },
     coldPrice: "17.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
     description: {
       [SPANISH]:
@@ -185,6 +202,7 @@ export const healthyProducts = [
       [ENGLISH]: "SMOOTHIE BOWL",
     },
     coldPrice: "28.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/smothiebowl_chtj8m.jpg",
     description: {
       [SPANISH]:
@@ -199,7 +217,8 @@ export const healthyProducts = [
       [ENGLISH]: "TOAST WITH AVOCADO",
     },
     coldPrice: "28.000",
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/tostadadeaguacate_fq4aai.jpg",
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650907/Tostada_de_aguacate_converted_mbohk4.webp",
     description: {
       [SPANISH]:
         "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos y tomates cherry.",
@@ -213,6 +232,7 @@ export const healthyProducts = [
       [ENGLISH]: "Fruit Bowl",
     },
     coldPrice: "28.000",
+    available: false,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
     description: {
       [SPANISH]:

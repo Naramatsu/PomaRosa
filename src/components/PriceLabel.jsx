@@ -1,9 +1,7 @@
 import useTheme from "../hooks/useTheme";
 
-const PriceLabel = ({ value, label, cold }) => {
-  const { themeTextColor, themeTextSecudaryColor } = useTheme();
-
-  const color = !cold ? themeTextColor : themeTextSecudaryColor;
+const PriceLabel = ({ value, label, subLabel }) => {
+  const { themeTextColor, themeTextAlternativeColor } = useTheme();
 
   return (
     <section
@@ -12,11 +10,17 @@ const PriceLabel = ({ value, label, cold }) => {
         flex flex-col items-center
         font-bold
         min-w-[100px] max-w-[100px]
-        ${color}
       `}
     >
-      <p className="text-sm capitalize">{label}</p>
-      <p className="text-lg">$ {value}</p>
+      <p className={`text-md capitalize text-center ${themeTextColor}`}>
+        {label}
+      </p>
+      <p className="text-brown/70 text-xs font-normal">{subLabel}</p>
+      <p
+        className={`text-lg italic font-semibold ${themeTextAlternativeColor}`}
+      >
+        $ {value}
+      </p>
     </section>
   );
 };

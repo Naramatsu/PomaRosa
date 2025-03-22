@@ -7,7 +7,7 @@ const Banner = ({ img = "" }) => {
           relative
           rounded-md
           w-full h-[300px] my-2 p-2
-          border-2 border-dashed border-white
+          border-2 border-dashed border-brown
         "
       >
         <section className="w-full h-full relative">

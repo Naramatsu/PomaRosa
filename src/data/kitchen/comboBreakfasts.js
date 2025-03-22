@@ -7,6 +7,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "EXPRESS",
     },
     hotPrice: "20.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunoexpress_gy6l0a.jpg",
     description: {
       [SPANISH]:
@@ -21,6 +22,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "SANDWICH",
     },
     hotPrice: "18.500",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/sanduche_eqa95g.jpg",
     description: {
       [SPANISH]:
@@ -34,6 +36,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "EGG SANDWICH",
     },
     hotPrice: "23.500",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/sanduchedehuevo_uw4ysa.jpg",
     description: {
       [SPANISH]:
@@ -48,6 +51,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "TRADITIONAL",
     },
     hotPrice: "25.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunotradicional_zm5txw.jpg",
     description: {
       [SPANISH]:
@@ -62,6 +66,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "RANCHERO",
     },
     hotPrice: "29.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941119/desayunoranchero_amh8mi.jpg",
     description: {
       [SPANISH]:
@@ -76,6 +81,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "AMERICANO",
     },
     hotPrice: "34.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
     description: {
       [SPANISH]:
@@ -90,6 +96,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "WILD",
     },
     hotPrice: "35.000",
+    available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunosilvestre_njxrc8.webp",
     description: {
       [SPANISH]:

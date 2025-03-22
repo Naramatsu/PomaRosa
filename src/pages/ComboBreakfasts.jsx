@@ -16,8 +16,9 @@ const ComboBreakfasts = () => {
     <section id="combo-breakfasts" className="w-full p-5">
       <Title>{COMBOS_BREAKFASTS_TITLE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
-        {comboBreakfastsProducts.map(
-          ({ name, hotPrice, description, img }, index) => (
+        {comboBreakfastsProducts
+          .filter((product) => product.available)
+          .map(({ name, hotPrice, description, img }, index) => (
             <Product
               key={index}
               name={name[languaje]}
@@ -26,8 +27,7 @@ const ComboBreakfasts = () => {
               img={img}
               description={description[languaje]}
             />
-          )
-        )}
+          ))}
       </Box>
       <TextWarning>{comboWarning[languaje]}</TextWarning>
     </section>
