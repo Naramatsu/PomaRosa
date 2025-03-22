@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Box from "../components/Box";
 import Product from "../components/Product";
 import Title from "../components/Title";
@@ -16,9 +17,16 @@ import {
   sodasProductList,
 } from "../data/kitchen/drinks";
 import useLanguaje from "../hooks/useLanguaje";
+import useProduct from "../hooks/useProduct";
 
 const Drinks = () => {
   const [languaje] = useLanguaje();
+
+  const lemonades = useProduct(lemonadeProductList);
+  const juicesPricesList = useProduct(juicesPrices);
+  const orangeJuices = useProduct(orangeJuiceProductList);
+  const otherDrinks = useProduct(otherDrinksProductList);
+  const sodas = useProduct(sodasProductList);
 
   return (
     <section id={COLD_DRINKS[languaje]} className="w-full p-5">
@@ -29,17 +37,15 @@ const Drinks = () => {
         className="flex-col gap-5 p-2 my-10"
       >
         <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-          {lemonadeProductList
-            .filter((product) => product.available)
-            .map(({ name, coldPrice, img }, index) => (
-              <Product
-                key={index}
-                name={name[languaje]}
-                coldPrice={coldPrice}
-                img={img}
-                noLabel
-              />
-            ))}
+          {lemonades.map(({ name, coldPrice, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              img={img}
+              noLabel
+            />
+          ))}
         </section>
       </Box>
       <Box
@@ -50,17 +56,15 @@ const Drinks = () => {
         <p className="text-dark-brown/70 text-xl text-center">
           {juicesList[languaje]}
         </p>
-        {juicesPrices
-          .filter((product) => product.available)
-          .map(({ name, coldPrice, img }, index) => (
-            <Product
-              key={index}
-              name={name[languaje]}
-              coldPrice={coldPrice}
-              img={img}
-              noLabel
-            />
-          ))}
+        {juicesPricesList.map(({ name, coldPrice, img }, index) => (
+          <Product
+            key={index}
+            name={name[languaje]}
+            coldPrice={coldPrice}
+            img={img}
+            noLabel
+          />
+        ))}
       </Box>
 
       <Box
@@ -69,17 +73,15 @@ const Drinks = () => {
         className="flex-col gap-5 p-2 my-10"
       >
         <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-          {orangeJuiceProductList
-            .filter((product) => product.available)
-            .map(({ name, coldPrice, img }, index) => (
-              <Product
-                key={index}
-                name={name[languaje]}
-                coldPrice={coldPrice}
-                img={img}
-                noLabel
-              />
-            ))}
+          {orangeJuices.map(({ name, coldPrice, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              img={img}
+              noLabel
+            />
+          ))}
         </section>
       </Box>
 
@@ -89,17 +91,15 @@ const Drinks = () => {
         className="flex-col gap-5 p-2 my-10"
       >
         <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-          {otherDrinksProductList
-            .filter((product) => product.available)
-            .map(({ name, coldPrice, img }, index) => (
-              <Product
-                key={index}
-                name={name[languaje]}
-                coldPrice={coldPrice}
-                img={img}
-                noLabel
-              />
-            ))}
+          {otherDrinks.map(({ name, coldPrice, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              img={img}
+              noLabel
+            />
+          ))}
         </section>
       </Box>
 
@@ -109,22 +109,20 @@ const Drinks = () => {
         className="flex-col gap-5 p-2 my-10"
       >
         <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
-          {sodasProductList
-            .filter((product) => product.available)
-            .map(({ name, description, coldPrice, img }, index) => (
-              <Product
-                key={index}
-                name={name[languaje]}
-                coldPrice={coldPrice}
-                description={description[languaje]}
-                img={img}
-                noLabel
-              />
-            ))}
+          {sodas.map(({ name, description, coldPrice, img }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              coldPrice={coldPrice}
+              description={description[languaje]}
+              img={img}
+              noLabel
+            />
+          ))}
         </section>
       </Box>
     </section>
   );
 };
 
-export default Drinks;
+export default memo(Drinks);
