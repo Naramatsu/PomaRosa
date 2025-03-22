@@ -16,9 +16,7 @@ const PriceLabel = ({ value, label, subLabel }) => {
         {label}
       </p>
       <p className="text-brown/70 text-xs font-normal">{subLabel}</p>
-      <p
-        className={`text-lg italic font-semibold ${themeTextAlternativeColor}`}
-      >
+      <p className={`text-lg italic font-bold ${themeTextAlternativeColor}`}>
         $ {value}
       </p>
     </section>

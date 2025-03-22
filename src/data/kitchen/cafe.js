@@ -11,6 +11,22 @@ export const cafeProductList = [
   },
   {
     name: {
+      [SPANISH]: "Latte Pequeño",
+      [ENGLISH]: "Small Latte",
+    },
+    available: true,
+    hotPrice: "7.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Aromática frutas",
+      [ENGLISH]: "Fruit Herbal Tea",
+    },
+    available: true,
+    hotPrice: "7.500",
+  },
+  {
+    name: {
       [SPANISH]: "Americano",
       [ENGLISH]: "Americano",
     },
@@ -26,22 +42,6 @@ export const cafeProductList = [
     available: true,
     hotPrice: "10.000",
     coldPrice: "12.000",
-  },
-  {
-    name: {
-      [SPANISH]: "Latte Pequeño",
-      [ENGLISH]: "Small Latte",
-    },
-    available: true,
-    hotPrice: "7.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Aromática frutas",
-      [ENGLISH]: "Fruit Herbal Tea",
-    },
-    available: true,
-    hotPrice: "7.500",
   },
   {
     name: {

@@ -20,9 +20,7 @@ const Price = ({ value, cold, noLabel = false }) => {
       {!noLabel && (
         <p className={`text-sm capitalize ${themeTextColor}`}>{label}</p>
       )}
-      <p
-        className={`text-lg italic font-semibold ${themeTextAlternativeColor}`}
-      >
+      <p className={`text-lg italic font-bold ${themeTextAlternativeColor}`}>
         $ {value}
       </p>
     </section>
