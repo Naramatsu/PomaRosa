@@ -5,20 +5,6 @@ export const SANDWICH = "SANDWICH";
 export const sandwichProducts = [
   {
     name: {
-      [SPANISH]: "POLLO CAPRESE",
-      [ENGLISH]: "CHICKEN CAPRESE",
-    },
-    hotPrice: "34.000",
-    available: true,
-    description: {
-      [SPANISH]:
-        "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
-      [ENGLISH]:
-        "Breaded Chicken Breast, Mixed Greens with Balsamic Reduction, Pesto Sauce, Sun-Dried Tomatoes, Mozzarella Cheese.",
-    },
-  },
-  {
-    name: {
       [SPANISH]: "CLUB SANDWICH",
       [ENGLISH]: "CLUB SANDWICH",
     },
@@ -30,6 +16,20 @@ export const sandwichProducts = [
         "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate, lechuga.",
       [ENGLISH]:
         "Chicken, Egg, Ham, Crispy Bacon, Cheese, Aioli, Mustard, Tomato, Lettuce.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "POLLO CAPRESE",
+      [ENGLISH]: "CHICKEN CAPRESE",
+    },
+    hotPrice: "34.000",
+    available: true,
+    description: {
+      [SPANISH]:
+        "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
+      [ENGLISH]:
+        "Breaded Chicken Breast, Mixed Greens with Balsamic Reduction, Pesto Sauce, Sun-Dried Tomatoes, Mozzarella Cheese.",
     },
   },
   {

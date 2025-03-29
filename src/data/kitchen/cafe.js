@@ -11,14 +11,6 @@ export const cafeProductList = [
   },
   {
     name: {
-      [SPANISH]: "Latte Pequeño",
-      [ENGLISH]: "Small Latte",
-    },
-    available: true,
-    hotPrice: "7.500",
-  },
-  {
-    name: {
       [SPANISH]: "Aromática frutas",
       [ENGLISH]: "Fruit Herbal Tea",
     },
@@ -27,9 +19,19 @@ export const cafeProductList = [
   },
   {
     name: {
+      [SPANISH]: "Latte Pequeño",
+      [ENGLISH]: "Small Latte",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Latte_peque%C3%B1o_dbuhpp.webp",
+    available: true,
+    hotPrice: "7.500",
+  },
+  {
+    name: {
       [SPANISH]: "Americano",
       [ENGLISH]: "Americano",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257904/Americano_maqxoh.webp",
     available: true,
     hotPrice: "6.500",
     coldPrice: "8.000",
@@ -39,6 +41,7 @@ export const cafeProductList = [
       [SPANISH]: "Café doble",
       [ENGLISH]: "Double coffee",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
     available: true,
     hotPrice: "10.000",
     coldPrice: "12.000",
@@ -48,6 +51,7 @@ export const cafeProductList = [
       [SPANISH]: "Chocolate de la casa",
       [ENGLISH]: "House Hot Chocolate",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
     available: true,
     hotPrice: "9.500",
     coldPrice: "13.000",
@@ -67,6 +71,7 @@ export const cafeProductList = [
       [SPANISH]: "Té negro",
       [ENGLISH]: "Black Tea",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743259187/Te_negro_lcwgp4.webp",
     available: true,
     hotPrice: "7.500",
     coldPrice: "12.000",
@@ -76,6 +81,7 @@ export const cafeProductList = [
       [SPANISH]: "Latte",
       [ENGLISH]: "Latte",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Latte_grande_qadcub.webp",
     available: true,
     hotPrice: "9.500",
     coldPrice: "13.500",
@@ -104,6 +110,7 @@ export const cafeProductList = [
       [SPANISH]: "Milo",
       [ENGLISH]: "Milo (Chocolate Drink)",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Milo_hyy4fz.webp",
     available: true,
     hotPrice: "10.500",
     coldPrice: "14.000",
@@ -113,6 +120,7 @@ export const cafeProductList = [
       [SPANISH]: "Mocachino",
       [ENGLISH]: "Mocha",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Moca_Chino_lkg9na.webp",
     available: true,
     hotPrice: "10.500",
     coldPrice: "14.000",
@@ -122,6 +130,7 @@ export const cafeProductList = [
       [SPANISH]: "Té Chai",
       [ENGLISH]: "Chai Tea",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Te_chai_i5hdnt.webp",
     available: true,
     hotPrice: "11.000",
     coldPrice: "14.000",
@@ -146,6 +155,30 @@ export const TO_ACCOMPANY = {
 export const accompanyProductList = [
   {
     name: {
+      [SPANISH]: "Mogolla brioche de queso",
+      [ENGLISH]: "Cheese Brioche Roll",
+    },
+    available: true,
+    hotPrice: "3.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Pan de tres quesos",
+      [ENGLISH]: "Three-Cheese Bread",
+    },
+    available: true,
+    hotPrice: "7.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Empanada de carne y aceitunas",
+      [ENGLISH]: "Beef and Olive Empanada",
+    },
+    available: true,
+    hotPrice: "11.000",
+  },
+  {
+    name: {
       [SPANISH]: "Pan de yuca",
       [ENGLISH]: "Yuca Bread",
     },
@@ -164,14 +197,6 @@ export const accompanyProductList = [
   },
   {
     name: {
-      [SPANISH]: "Mogolla brioche de queso",
-      [ENGLISH]: "Cheese Brioche Roll",
-    },
-    available: true,
-    hotPrice: "3.500",
-  },
-  {
-    name: {
       [SPANISH]: "Pan de chocolate",
       [ENGLISH]: "Chocolate bread",
     },
@@ -187,14 +212,6 @@ export const accompanyProductList = [
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941124/jamonyqueso_qrxxrt.jpg",
     hotPrice: "5.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Pan de tres quesos",
-      [ENGLISH]: "Three-Cheese Bread",
-    },
-    available: true,
-    hotPrice: "7.000",
   },
   {
     name: {
@@ -220,14 +237,6 @@ export const accompanyProductList = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadadepollo_mpiq3t.jpg",
-    hotPrice: "11.000",
-  },
-  {
-    name: {
-      [SPANISH]: "Empanada de carne y aceitunas",
-      [ENGLISH]: "Beef and Olive Empanada",
-    },
-    available: true,
     hotPrice: "11.000",
   },
   {

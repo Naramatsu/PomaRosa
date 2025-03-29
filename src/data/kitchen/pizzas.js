@@ -24,6 +24,7 @@ export const pizzaProducts = [
     },
     personal: "23.000",
     available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Pizza_mozarella_lfzy2a.webp",
     description: {
       [SPANISH]: "Queso mozzarella pomodoro, orégano y aceitunas verdes.",
       [ENGLISH]:

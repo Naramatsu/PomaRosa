@@ -18,6 +18,7 @@ import {
 } from "../data/kitchen/drinks";
 import useLanguaje from "../hooks/useLanguaje";
 import useProduct from "../hooks/useProduct";
+import IndividualImage from "../components/IndividualImage";
 
 const Drinks = () => {
   const [languaje] = useLanguaje();
@@ -27,6 +28,9 @@ const Drinks = () => {
   const orangeJuices = useProduct(orangeJuiceProductList);
   const otherDrinks = useProduct(otherDrinksProductList);
   const sodas = useProduct(sodasProductList);
+
+  const orangeJuiceImg =
+    "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Jugo_naranja_r5weoe.webp";
 
   return (
     <section id={COLD_DRINKS[languaje]} className="w-full p-5">
@@ -72,6 +76,7 @@ const Drinks = () => {
         title={ORANGE_JUICE[languaje]}
         className="flex-col gap-5 p-2 my-10"
       >
+        <IndividualImage img={orangeJuiceImg} />
         <section className="w-full flex flex-col gap-5 justify-center items-center py-2">
           {orangeJuices.map(({ name, coldPrice, img }, index) => (
             <Product
