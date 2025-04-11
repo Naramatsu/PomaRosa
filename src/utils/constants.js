@@ -94,7 +94,7 @@ export const KITCHEN_MENU_TITLES = [
   { label: WAFFLES_TITLE, link: "waffles" },
   { label: SANDWICH_TITLE, link: "sandwichs" },
   { label: PIZZA_TITLE, link: "pizzas" },
-  { label: DAILYMENU_TITLE, link: "dailymenu" },
+  // { label: DAILYMENU_TITLE, link: "dailymenu" },
 ];
 
 export const BAKERY_MENU_TITLES = [
