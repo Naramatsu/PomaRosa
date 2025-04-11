@@ -141,7 +141,7 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Te_chai_i5hdnt.webp",
     available: true,
-    hotPrice: "12.000",
+    hotPrice: "13.000",
     coldPrice: "15.500",
   },
 ];
