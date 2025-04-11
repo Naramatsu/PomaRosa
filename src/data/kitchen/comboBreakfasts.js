@@ -6,14 +6,14 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "EXPRESS",
       [ENGLISH]: "EXPRESS",
     },
-    hotPrice: "20.000",
+    hotPrice: "22.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunoexpress_gy6l0a.jpg",
     description: {
       [SPANISH]:
-        "Huevos revueltos, con pan artesanal de la casa, mantequilla y café negro.",
+        "Huevos revueltos, con pan artesanal de la casa, mantequilla + bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with house-made artisan bread, butter, and black coffee.",
+        "Scrambled eggs with house-made artisan bread, butter + hot drink.",
     },
   },
   {
@@ -21,13 +21,14 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH",
       [ENGLISH]: "SANDWICH",
     },
-    hotPrice: "18.500",
+    hotPrice: "23.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/sanduche_eqa95g.jpg",
     description: {
       [SPANISH]:
-        "Jamón, queso mozzarella y tomate + bebida caliente a elección*",
-      [ENGLISH]: "Ham, mozzarella cheese, and tomato + hot drink of choice*",
+        "Jamón de cerdo, queso mozzarella y tomate + bebida caliente a elección*",
+      [ENGLISH]:
+        "Pork ham, mozzarella cheese, and tomato + hot drink of choice*",
     },
   },
   {
@@ -35,14 +36,14 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH DE HUEVO",
       [ENGLISH]: "EGG SANDWICH",
     },
-    hotPrice: "23.500",
+    hotPrice: "24.500",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/sanduchedehuevo_uw4ysa.jpg",
     description: {
       [SPANISH]:
-        "Huevos revueltos tocineta, queso mozzarella y alioli de ajo en pan artesanal de la casa.",
+        "Huevos revueltos con mayonesa, tocineta y queso en pan artesanal y bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs, bacon, mozzarella cheese, and garlic aioli on homemade artisan bread.",
+        "Scrambled eggs with mayonnaise, bacon, and cheese on artisan bread and hot drink.",
     },
   },
   {
@@ -50,7 +51,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    hotPrice: "25.000",
+    hotPrice: "28.050",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunotradicional_zm5txw.jpg",
     description: {
@@ -65,7 +66,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "RANCHERO",
       [ENGLISH]: "RANCHERO",
     },
-    hotPrice: "29.000",
+    hotPrice: "31.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941119/desayunoranchero_amh8mi.jpg",
     description: {
@@ -80,14 +81,14 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "AMERICANO",
       [ENGLISH]: "AMERICANO",
     },
-    hotPrice: "34.000",
+    hotPrice: "36.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
     description: {
       [SPANISH]:
-        "Waffles con miel de maple + tocineta crocante + huevos revueltos o fritos + café negro.",
+        "Waffles con miel de maple + tocineta crocante + huevos revueltos o fritos + bebida caliente.",
       [ENGLISH]:
-        "Waffles with maple syrup + crispy bacon + scrambled or fried eggs + black coffee.",
+        "Waffles with maple syrup + crispy bacon + scrambled or fried eggs + hot drink.",
     },
   },
   {
@@ -96,7 +97,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "WILD",
     },
     hotPrice: "35.000",
-    available: true,
+    available: false,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunosilvestre_njxrc8.webp",
     description: {
       [SPANISH]:
@@ -109,7 +110,7 @@ export const comboBreakfastsProducts = [
 
 export const comboWarning = {
   [SPANISH]:
-    "*Bebidas calientes a eleccion : cafe negro, chocolate, aromatica, cafe con leche, cambio de bebida fria desde $ 4.000 en adelante. *Aplica restricciones, consultar opciones. cualquier cambio tiene un costo adicional.",
+    "*Bebidas calientes a elección : café negro, chocolate,  café con leche. Aplica restricciones, cualquier cambio tiene un costo adicional.",
   [ENGLISH]:
-    "*Hot drinks of your choice: black coffee, chocolate, aromatic, coffee with milk, change of cold drink from $ 4,000 onwards. *Restrictions apply, check available options. Any substitutions incur an additional cost.",
+    "*Hot beverages of your choice: black coffee, hot chocolate, or coffee with milk. Restrictions apply. Any substitutions may have an additional cost.",
 };

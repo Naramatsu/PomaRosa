@@ -5,7 +5,10 @@ import Title from "../components/Title";
 import {
   ACCOMPANIMENTS,
   accompanimentsProducts,
+  ADDITIONAL_EGGS_LIST,
+  additionalEggsProducts,
   EGGS_TO_TASTE,
+  EGGS_TO_TASTE_SUBTITLE,
   eggsToTasteProducts,
   HEALTHY,
   healthyProducts,
@@ -24,12 +27,18 @@ const Breakfasts = () => {
   const accompaniments = useProduct(accompanimentsProducts);
   const specialEggs = useProduct(specialEggsProducts);
   const healthy = useProduct(healthyProducts);
+  const additionalEggs = useProduct(additionalEggsProducts);
 
   return (
     <section id="breakfasts" className="w-full p-5">
       <Title>{BREAKFASTS_TITLE[languaje]}</Title>
       <section className="py-10">
-        <Title subTitle>{EGGS_TO_TASTE[languaje]}</Title>
+        <Title subTitle>
+          {EGGS_TO_TASTE[languaje]}
+          <p className="text-[1rem] text-brown/70">
+            {EGGS_TO_TASTE_SUBTITLE[languaje]}
+          </p>
+        </Title>
         <Box className="gap-5 flex-col py-2">
           {eggsToTaste.map(({ name, hotPrice, img }, index) => (
             <Product
@@ -40,6 +49,20 @@ const Breakfasts = () => {
               noLabel
             />
           ))}
+          <Box className="gap-5 flex-col p-2 mt-5 " bordered>
+            <p className="text-dark-brown/70 text-xl kalam-regular text-center">
+              {ADDITIONAL_EGGS_LIST[languaje]}
+            </p>
+            {additionalEggs.map(({ name, hotPrice, img }, index) => (
+              <Product
+                key={index}
+                name={name[languaje]}
+                hotPrice={hotPrice}
+                img={img}
+                noLabel
+              />
+            ))}
+          </Box>
         </Box>
         <section className="pt-10">
           <Title subTitle>{ACCOMPANIMENTS[languaje]}</Title>

@@ -8,15 +8,14 @@ export const SAVORY_WAFFLES = {
 export const savoryWafflesProducts = [
   {
     name: {
-      [SPANISH]: "CLÁSICO",
-      [ENGLISH]: "CLASSIC",
+      [SPANISH]: "CLÁSICO DE PAN DE YUCA",
+      [ENGLISH]: "CLASSIC YUCA BREAD",
     },
-    hotPrice: "18.000",
+    hotPrice: "24.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
     description: {
-      [SPANISH]: "Con miel de maple y Mantequilla.",
-      [ENGLISH]: "With maple syrup and butter.",
+      [SPANISH]: "Con queso crema y mermelada.",
+      [ENGLISH]: "With cream cheese and jam",
     },
   },
   {
@@ -24,13 +23,13 @@ export const savoryWafflesProducts = [
       [SPANISH]: "WAFFLE YUCA",
       [ENGLISH]: "YUCA WAFFLE",
     },
-    hotPrice: "26.000",
-    available: false,
+    hotPrice: "30.500",
+    available: true,
     description: {
       [SPANISH]:
-        "Acompañado de fresas frescas, arándanos, jalea de guayaba y dulce de arequipe.",
+        "Con aguacate fresco, huevos revueltos con espinaca y salsa de yogurt griego.",
       [ENGLISH]:
-        "Accompanied by fresh strawberries, blueberries, guava jelly and Dulce de Leche.",
+        "With fresh avocado, scrambled eggs with spinach, and greek yogurt sauce.",
     },
   },
   {
@@ -38,13 +37,26 @@ export const savoryWafflesProducts = [
       [SPANISH]: "FRUTAL",
       [ENGLISH]: "FRUITY",
     },
-    hotPrice: "25.000",
-    available: false,
+    hotPrice: "27.000",
+    available: true,
     description: {
       [SPANISH]:
-        "Fruta fresca, miel de agave orgánica y almendras tostadas fileteadas.",
+        "Fruta fresca del día con miel de agave orgánica y almendras tostadas fileteadas.",
       [ENGLISH]:
-        "Fresh Fruit, Organic Agave Syrup, and Sliced Toasted Almonds.",
+        "Fresh Fruit of the day with organic agave honey and sliced toasted almonds.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "CLÁSICO",
+      [ENGLISH]: "CLASSIC",
+    },
+    hotPrice: "19.000",
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
+    description: {
+      [SPANISH]: "Con miel de maple y Mantequilla.",
+      [ENGLISH]: "With maple syrup and butter.",
     },
   },
   {
@@ -67,14 +79,14 @@ export const savoryWafflesProducts = [
       [SPANISH]: "WAFFLE SANDWICH",
       [ENGLISH]: "WAFFLE SANDWICH",
     },
-    hotPrice: "29.500",
+    hotPrice: "30.500",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/wafflesanduche_ec3ptv.jpg",
     description: {
       [SPANISH]:
-        "Jamón de cerdo, queso mozzarella, queso amarillo, huevos revuelos y alioli de ajo.",
+        "Jamón de cerdo, tocineta crujiente, queso mozzarella, huevos revueltos y alioli de ajo.",
       [ENGLISH]:
-        "Pork ham, mozzarella cheese, yellow cheese, scrambled eggs and garlic aioli.",
+        "Pork ham, crispy bacon, mozzarella cheese, scrambled eggs, and garlic aioli.",
     },
   },
 ];
@@ -84,13 +96,18 @@ export const SWEET_WAFFLES = {
   [ENGLISH]: "SWEET WAFFLES",
 };
 
+export const SWEET_WAFFLES_SUBTITLE = {
+  [SPANISH]: "Todos nuestros waffles vienen con helado y crema chantilly.",
+  [ENGLISH]: "All our waffles come with ice cream and whipped cream.",
+};
+
 export const sweetWafflesProducts = [
   {
     name: {
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    coldPrice: "18.000",
+    coldPrice: "19.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffletradicional_ngc9w1.jpg",
     description: {
@@ -103,7 +120,7 @@ export const sweetWafflesProducts = [
       [SPANISH]: "BANANO",
       [ENGLISH]: "BANANA",
     },
-    coldPrice: "22.000",
+    coldPrice: "23.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
     description: {
@@ -117,7 +134,7 @@ export const sweetWafflesProducts = [
       [SPANISH]: "NUTELLA",
       [ENGLISH]: "NUTELLA",
     },
-    coldPrice: "23.000",
+    coldPrice: "25.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
     description: {
@@ -131,7 +148,7 @@ export const sweetWafflesProducts = [
       [SPANISH]: "BERRIES",
       [ENGLISH]: "BERRIES",
     },
-    coldPrice: "23.000",
+    coldPrice: "24.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
     description: {
@@ -144,7 +161,7 @@ export const sweetWafflesProducts = [
       [SPANISH]: "DÚO",
       [ENGLISH]: "DUO",
     },
-    coldPrice: "23.000",
+    coldPrice: "25.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffleduo_ahubnf.jpg",
     description: {

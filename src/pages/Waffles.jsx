@@ -7,6 +7,7 @@ import {
   SAVORY_WAFFLES,
   savoryWafflesProducts,
   SWEET_WAFFLES,
+  SWEET_WAFFLES_SUBTITLE,
   sweetWafflesProducts,
   WAFFLE_WARNING,
 } from "../data/kitchen/waffles";
@@ -38,11 +39,17 @@ const Waffles = () => {
           ))}
         </Box>
       </section>
+
       <Box
         bordered
         title={SWEET_WAFFLES[languaje]}
         className="flex-col gap-5 p-2 my-10"
       >
+        <Title>
+          <p className="text-[1rem] text-brown/70 -mt-[30px]">
+            {SWEET_WAFFLES_SUBTITLE[languaje]}
+          </p>
+        </Title>
         {sweetWaffles.map(({ name, coldPrice, description, img }, index) => (
           <Product
             key={index}

@@ -6,8 +6,8 @@ export const EGGS_TO_TASTE = {
 };
 
 export const EGGS_TO_TASTE_SUBTITLE = {
-  [SPANISH]: "( 3 unidades )",
-  [ENGLISH]: "( 3 units )",
+  [SPANISH]: "Huevos al gusto (3 unidades)",
+  [ENGLISH]: "Eggs to taste (3 units)",
 };
 
 export const eggsToTasteProducts = [
@@ -18,16 +18,58 @@ export const eggsToTasteProducts = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
-    hotPrice: "8.500",
+    hotPrice: "9.800",
   },
   {
     name: {
       [SPANISH]: "Tomate y cebolla",
       [ENGLISH]: "Tomato and onion",
     },
-    available: true,
+    available: false,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
-    hotPrice: "11.500",
+    hotPrice: "12.800",
+  },
+  {
+    name: {
+      [SPANISH]: "Maíz tierno",
+      [ENGLISH]: "Tender corn",
+    },
+    available: false,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Huevos_con_ma%C3%ADz_converted_sjk7gl.webp",
+    hotPrice: "12.800",
+  },
+  {
+    name: {
+      [SPANISH]: "Chorizo santarrosano",
+      [ENGLISH]: "Santarrosano chorizo",
+    },
+    available: false,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/huevos_con_chorizo_converted_ajjzdi.webp",
+    hotPrice: "14.800",
+  },
+  {
+    name: {
+      [SPANISH]: "Jamón y queso",
+      [ENGLISH]: "Ham and cheese",
+    },
+    available: false,
+    hotPrice: "10.900",
+  },
+];
+
+export const ADDITIONAL_EGGS_LIST = {
+  [SPANISH]: "Agregale a tus huevos tu sabor preferido por un adicional de:",
+  [ENGLISH]: "Add your favorite flavor to your eggs for an additional:",
+};
+
+export const additionalEggsProducts = [
+  {
+    name: {
+      [SPANISH]: "Tomate y cebolla",
+      [ENGLISH]: "Tomato and onion",
+    },
+    available: true,
+    hotPrice: "3.000",
   },
   {
     name: {
@@ -35,8 +77,23 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Tender corn",
     },
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Huevos_con_ma%C3%ADz_converted_sjk7gl.webp",
-    hotPrice: "10.900",
+    hotPrice: "3.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Espinaca",
+      [ENGLISH]: "Spinach",
+    },
+    available: true,
+    hotPrice: "4.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Queso",
+      [ENGLISH]: "Cheese",
+    },
+    available: true,
+    hotPrice: "4.000",
   },
   {
     name: {
@@ -44,8 +101,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Santarrosano chorizo",
     },
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/huevos_con_chorizo_converted_ajjzdi.webp",
-    hotPrice: "11.900",
+    hotPrice: "5.000",
   },
   {
     name: {
@@ -53,7 +109,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Ham and cheese",
     },
     available: true,
-    hotPrice: "10.900",
+    hotPrice: "5.000",
   },
 ];
 
@@ -70,7 +126,7 @@ export const accompanimentsProducts = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
-    hotPrice: "7.500",
+    hotPrice: "8.500",
   },
   {
     name: {
@@ -93,7 +149,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Wafles con miel o mantequilla",
       [ENGLISH]: "Waffles with honey or butter.",
     },
-    available: true,
+    available: false,
     hotPrice: "15.000",
   },
   {
@@ -101,7 +157,7 @@ export const accompanimentsProducts = [
       [SPANISH]: "Arepa con queso, jamón y huevos fritos",
       [ENGLISH]: "Arepa with Cheese, Ham, and Fried Eggs",
     },
-    available: true,
+    available: false,
     hotPrice: "16.000",
   },
 ];
@@ -122,7 +178,7 @@ export const specialEggsProducts = [
       [SPANISH]: "SALVAJES",
       [ENGLISH]: "SAVAGES",
     },
-    hotPrice: "22.500",
+    hotPrice: "25.500",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
     description: {
@@ -170,15 +226,43 @@ export const HEALTHY = {
 export const healthyProducts = [
   {
     name: {
+      [SPANISH]: "Yogurt bowl",
+      [ENGLISH]: "Yogurt bowl",
+    },
+    coldPrice: "32.000",
+    available: true,
+    description: {
+      [SPANISH]:
+        "Bowl de yogurt griego, con fresa, mango y banano fresco, granola artesanal con nueces, escamas de coco , semillas de chia y arándanos.",
+      [ENGLISH]:
+        "Greek yogurt bowl with fresh strawberries, mango, and banana, artisan granola with nuts, coconut flakes, chia seeds, and blueberries.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "TOSTADA DE AGUACATE Y QUESO",
+      [ENGLISH]: "AVOCADO AND CHEESE TOAST",
+    },
+    coldPrice: "28.000",
+    available: true,
+    description: {
+      [SPANISH]:
+        "Tostada de pan de masa madre con aceite de oliva, queso crema, aguacate fresco y huevos fritos con una redución de miel picante.",
+      [ENGLISH]:
+        "Sourdough toast with olive oil, cream cheese, fresh avocado, and fried eggs with a spicy honey reduction.",
+    },
+  },
+  {
+    name: {
       [SPANISH]: "PLATO DE FRUTA",
       [ENGLISH]: "FRUIT PLATE",
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
-    coldPrice: "16.000",
+    coldPrice: "16.900",
     available: true,
     description: {
-      [SPANISH]: "Variedad de frutas frescas con semillas de amapola.",
-      [ENGLISH]: "Assorted Fresh Fruits with Poppy Seeds.",
+      [SPANISH]: "Variedad de frutas frescas con semillas de chia.",
+      [ENGLISH]: "Assorted Fresh Fruits with chia seeds",
     },
   },
   {
@@ -186,7 +270,7 @@ export const healthyProducts = [
       [SPANISH]: "COPA PARFAIT",
       [ENGLISH]: "PARFAIT GLASS",
     },
-    coldPrice: "17.000",
+    coldPrice: "19.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
     description: {
@@ -202,7 +286,7 @@ export const healthyProducts = [
       [ENGLISH]: "SMOOTHIE BOWL",
     },
     coldPrice: "28.000",
-    available: true,
+    available: false,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/smothiebowl_chtj8m.jpg",
     description: {
       [SPANISH]:
@@ -221,9 +305,9 @@ export const healthyProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650907/Tostada_de_aguacate_converted_mbohk4.webp",
     description: {
       [SPANISH]:
-        "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos y tomates cherry.",
+        "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos con tomates cherrys y aceite de oliva con finas hierbas.",
       [ENGLISH]:
-        "Sourdough Toast with Avocado Purée, Scrambled Egg Tortilla, and Cherry Tomatoes.",
+        "Sourdough Toast with Avocado Purée, Scrambled Egg tortilla with cherry tomatoes, and olive oil with fine herbs.",
     },
   },
   {

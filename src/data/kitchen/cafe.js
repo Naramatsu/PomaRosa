@@ -19,6 +19,14 @@ export const cafeProductList = [
   },
   {
     name: {
+      [SPANISH]: "Malteada",
+      [ENGLISH]: "Milkshake",
+    },
+    available: true,
+    coldPrice: "15.500",
+  },
+  {
+    name: {
       [SPANISH]: "Latte Pequeño",
       [ENGLISH]: "Small Latte",
     },
@@ -28,13 +36,23 @@ export const cafeProductList = [
   },
   {
     name: {
+      [SPANISH]: "Chocolate de la casa",
+      [ENGLISH]: "House Hot Chocolate",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
+    available: true,
+    hotPrice: "10.500",
+    // coldPrice: "13.000",
+  },
+  {
+    name: {
       [SPANISH]: "Americano",
       [ENGLISH]: "Americano",
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257904/Americano_maqxoh.webp",
     available: true,
-    hotPrice: "6.500",
-    coldPrice: "8.000",
+    hotPrice: "7.000",
+    coldPrice: "10.000",
   },
   {
     name: {
@@ -43,38 +61,18 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
     available: true,
-    hotPrice: "10.000",
+    hotPrice: "10.500",
     coldPrice: "12.000",
   },
   {
     name: {
-      [SPANISH]: "Chocolate de la casa",
-      [ENGLISH]: "House Hot Chocolate",
-    },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
-    available: true,
-    hotPrice: "9.500",
-    coldPrice: "13.000",
-  },
-  {
-    name: {
-      [SPANISH]: "Nutella Capuchino",
+      [SPANISH]: "Capuchino Nutella",
       [ENGLISH]: "Nutella Cappuccino",
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Capuchino_de_Nutella_w5lgs4.jpg",
-    hotPrice: "12.500",
-    coldPrice: "18.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Té negro",
-      [ENGLISH]: "Black Tea",
-    },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743259187/Te_negro_lcwgp4.webp",
-    available: true,
-    hotPrice: "7.500",
-    coldPrice: "12.000",
+    hotPrice: "15.500",
+    coldPrice: "19.500",
   },
   {
     name: {
@@ -83,18 +81,28 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Latte_grande_qadcub.webp",
     available: true,
-    hotPrice: "9.500",
-    coldPrice: "13.500",
+    hotPrice: "10.500",
+    coldPrice: "14.000",
   },
   {
     name: {
-      [SPANISH]: "Capuchino canela",
-      [ENGLISH]: "Cinnamon cappuccino",
+      [SPANISH]: "Té negro",
+      [ENGLISH]: "Black Tea",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743259187/Te_negro_lcwgp4.webp",
+    available: true,
+    hotPrice: "8.500",
+    coldPrice: "11.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Capuchino",
+      [ENGLISH]: "cappuccino",
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Moca_Chino_lkg9na.webp",
     available: true,
     hotPrice: "10.500",
-    coldPrice: "14.000",
+    coldPrice: "14.500",
   },
   {
     name: {
@@ -104,7 +112,7 @@ export const cafeProductList = [
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/capuccinocaramel_dbs5yf.jpg",
     hotPrice: "11.500",
-    coldPrice: "18.500",
+    coldPrice: "17.500",
   },
   {
     name: {
@@ -113,28 +121,52 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Milo_hyy4fz.webp",
     available: true,
-    hotPrice: "10.500",
-    coldPrice: "14.000",
+    hotPrice: "11.500",
+    coldPrice: "16.000",
   },
   {
     name: {
-      [SPANISH]: "Mocachino",
+      [SPANISH]: "Mocacchino",
       [ENGLISH]: "Mocha",
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
     available: true,
     hotPrice: "10.500",
-    coldPrice: "14.000",
+    // coldPrice: "14.000",
   },
   {
     name: {
-      [SPANISH]: "Té Chai",
-      [ENGLISH]: "Chai Tea",
+      [SPANISH]: "Té Chai Latte",
+      [ENGLISH]: "Chai Tea Latte",
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Te_chai_i5hdnt.webp",
     available: true,
-    hotPrice: "11.000",
-    coldPrice: "14.000",
+    hotPrice: "12.000",
+    coldPrice: "15.500",
+  },
+];
+
+export const TEA_E_INFUSIONS = {
+  [SPANISH]: "Té e infusiones",
+  [ENGLISH]: "Tea and infusions",
+};
+
+export const teaAndInfusionsProductList = [
+  {
+    name: {
+      [SPANISH]: "Aromatica de yerba buena",
+      [ENGLISH]: "Peppermint herbal tea",
+    },
+    available: true,
+    hotPrice: "6.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Aromatica de furtos rojos",
+      [ENGLISH]: "Red fruits herbal tea",
+    },
+    available: true,
+    hotPrice: "8.000",
   },
 ];
 
@@ -159,16 +191,8 @@ export const accompanyProductList = [
       [SPANISH]: "Mogolla brioche de queso",
       [ENGLISH]: "Cheese Brioche Roll",
     },
-    available: true,
+    available: false,
     hotPrice: "3.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Pan de tres quesos",
-      [ENGLISH]: "Three-Cheese Bread",
-    },
-    available: true,
-    hotPrice: "7.000",
   },
   {
     name: {
@@ -176,7 +200,24 @@ export const accompanyProductList = [
       [ENGLISH]: "Beef and Olive Empanada",
     },
     available: true,
-    hotPrice: "11.000",
+    hotPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Empanada arabe",
+      [ENGLISH]: "Arabian empanada",
+    },
+    available: true,
+    hotPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Pan de tres quesos",
+      [ENGLISH]: "Three-Cheese Bread",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pan_3_quesos_eq2bgq.jpg",
+    available: true,
+    hotPrice: "7.000",
   },
   {
     name: {
@@ -238,7 +279,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadadepollo_mpiq3t.jpg",
-    hotPrice: "11.000",
+    hotPrice: "13.000",
   },
   {
     name: {
@@ -247,7 +288,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadacaprese_k5mqqp.jpg",
-    hotPrice: "11.000",
+    hotPrice: "13.000",
   },
   {
     name: {

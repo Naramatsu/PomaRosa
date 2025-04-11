@@ -17,7 +17,7 @@ const Box = ({ children, className, bordered, title }) => {
         <section
           className="
           bg-beige
-            w-fit px-4 -mt-[48px]
+            w-fit px-4 sm:-mt-[48px] -mt-[36px]
           "
         >
           <Title subTitle>{title}</Title>

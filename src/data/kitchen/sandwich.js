@@ -8,7 +8,7 @@ export const sandwichProducts = [
       [SPANISH]: "CLUB SANDWICH",
       [ENGLISH]: "CLUB SANDWICH",
     },
-    hotPrice: "28.000",
+    hotPrice: "34.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
     description: {
@@ -20,10 +20,10 @@ export const sandwichProducts = [
   },
   {
     name: {
-      [SPANISH]: "POLLO CAPRESE",
+      [SPANISH]: "POLLO CAPRESSE",
       [ENGLISH]: "CHICKEN CAPRESE",
     },
-    hotPrice: "34.000",
+    hotPrice: "37.500",
     available: true,
     description: {
       [SPANISH]:
@@ -37,7 +37,7 @@ export const sandwichProducts = [
       [SPANISH]: "VEGETARIANO",
       [ENGLISH]: "VEGETARIAN",
     },
-    hotPrice: "29.000",
+    hotPrice: "31.000",
     available: true,
     description: {
       [SPANISH]:
@@ -52,7 +52,7 @@ export const sandwichProducts = [
       [ENGLISH]: "GRILLED AND BACON",
     },
     hotPrice: "29.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Variedad de quesos fundidos, con tocineta crujiente, en pan artesanal tostado.",
@@ -65,13 +65,13 @@ export const sandwichProducts = [
       [SPANISH]: "POLLO Y CHAMPIÑONES",
       [ENGLISH]: "CHICKEN AND MUSHROOMS",
     },
-    hotPrice: "28.000",
+    hotPrice: "32.000",
     available: true,
     description: {
       [SPANISH]:
-        "Pollo salteado con champiñones y cebollas, salsa cremosa, finas hierbas y queso fundido en pan ciabatta.",
+        "Pollo salteado con champiñones, ajo y cebolla salsa cremosa con finas hierbas y queso fundido en pan ciabatta.",
       [ENGLISH]:
-        "Sautéed Chicken with Mushrooms and Onions, Creamy Sauce, Fine Herbs, and Melted Cheese on Ciabatta Bread.",
+        "Sautéed chicken with mushrooms, garlic, and onion creamy sauce with herbs and melted cheese on ciabatta bread.",
     },
   },
 ];
