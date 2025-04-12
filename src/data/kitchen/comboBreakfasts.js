@@ -51,7 +51,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    hotPrice: "28.050",
+    hotPrice: "28.500",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/desayunotradicional_zm5txw.jpg",
     description: {
