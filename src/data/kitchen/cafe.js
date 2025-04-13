@@ -25,7 +25,7 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Malteada_de_caf%C3%A9_wvymhy.jpg",
     available: true,
-    coldPrice: "15.500",
+    coldPrice: "17.000",
   },
   {
     name: {

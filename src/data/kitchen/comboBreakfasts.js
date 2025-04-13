@@ -36,7 +36,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH DE HUEVO",
       [ENGLISH]: "EGG SANDWICH",
     },
-    hotPrice: "24.500",
+    hotPrice: "25.000",
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/sanduchedehuevo_uw4ysa.jpg",
     description: {
