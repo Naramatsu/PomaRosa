@@ -3,14 +3,6 @@ import { ENGLISH, SPANISH } from "../../utils/constants";
 export const cafeProductList = [
   {
     name: {
-      [SPANISH]: "Café del día (tinto)",
-      [ENGLISH]: "Coffee of the day (black)",
-    },
-    available: true,
-    hotPrice: "5.500",
-  },
-  {
-    name: {
       [SPANISH]: "Aromática frutas",
       [ENGLISH]: "Fruit Herbal Tea",
     },
@@ -19,9 +11,19 @@ export const cafeProductList = [
   },
   {
     name: {
+      [SPANISH]: "Café del día (tinto)",
+      [ENGLISH]: "Coffee of the day (black)",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
+    available: true,
+    hotPrice: "5.500",
+  },
+  {
+    name: {
       [SPANISH]: "Malteada",
       [ENGLISH]: "Milkshake",
     },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Malteada_de_caf%C3%A9_wvymhy.jpg",
     available: true,
     coldPrice: "15.500",
   },
@@ -32,7 +34,7 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Latte_peque%C3%B1o_dbuhpp.webp",
     available: true,
-    hotPrice: "7.500",
+    hotPrice: "8.500",
   },
   {
     name: {
@@ -122,7 +124,7 @@ export const cafeProductList = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Milo_hyy4fz.webp",
     available: true,
     hotPrice: "11.500",
-    coldPrice: "16.000",
+    coldPrice: "17.500",
   },
   {
     name: {
@@ -193,14 +195,6 @@ export const accompanyProductList = [
     },
     available: false,
     hotPrice: "3.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Empanada de carne y aceitunas",
-      [ENGLISH]: "Beef and Olive Empanada",
-    },
-    available: true,
-    hotPrice: "13.000",
   },
   {
     name: {
@@ -289,6 +283,24 @@ export const accompanyProductList = [
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941123/empanadacaprese_k5mqqp.jpg",
     hotPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Empanada de carne y aceitunas",
+      [ENGLISH]: "Beef and Olive Empanada",
+    },
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511858/empanadadecarne_hbz03x.webp",
+    available: true,
+    hotPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Empanada de espinaca",
+      [ENGLISH]: "Spinach Empanada",
+    },
+    available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511739/Empanada-espinaca_f4jjtu.webp",
+    hotPrice: "15.000",
   },
   {
     name: {

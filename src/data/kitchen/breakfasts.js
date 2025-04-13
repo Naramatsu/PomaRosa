@@ -226,20 +226,6 @@ export const HEALTHY = {
 export const healthyProducts = [
   {
     name: {
-      [SPANISH]: "Yogurt bowl",
-      [ENGLISH]: "Yogurt bowl",
-    },
-    coldPrice: "32.000",
-    available: true,
-    description: {
-      [SPANISH]:
-        "Bowl de yogurt griego, con fresa, mango y banano fresco, granola artesanal con nueces, escamas de coco , semillas de chia y arándanos.",
-      [ENGLISH]:
-        "Greek yogurt bowl with fresh strawberries, mango, and banana, artisan granola with nuts, coconut flakes, chia seeds, and blueberries.",
-    },
-  },
-  {
-    name: {
       [SPANISH]: "TOSTADA DE AGUACATE Y QUESO",
       [ENGLISH]: "AVOCADO AND CHEESE TOAST",
     },
@@ -250,6 +236,21 @@ export const healthyProducts = [
         "Tostada de pan de masa madre con aceite de oliva, queso crema, aguacate fresco y huevos fritos con una redución de miel picante.",
       [ENGLISH]:
         "Sourdough toast with olive oil, cream cheese, fresh avocado, and fried eggs with a spicy honey reduction.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "Yogurt bowl",
+      [ENGLISH]: "Yogurt bowl",
+    },
+    coldPrice: "32.000",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
+    available: true,
+    description: {
+      [SPANISH]:
+        "Bowl de yogurt griego, con fresa, mango y banano fresco, granola artesanal con nueces, escamas de coco , semillas de chia y arándanos.",
+      [ENGLISH]:
+        "Greek yogurt bowl with fresh strawberries, mango, and banana, artisan granola with nuts, coconut flakes, chia seeds, and blueberries.",
     },
   },
   {

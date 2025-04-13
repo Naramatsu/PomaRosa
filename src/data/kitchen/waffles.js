@@ -53,7 +53,7 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "19.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/desayunoamericano_n3xyyw.webp",
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
       [ENGLISH]: "With maple syrup and butter.",

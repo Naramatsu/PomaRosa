@@ -10,6 +10,7 @@ export const pizzaProducts = [
     },
     personal: "23.000",
     available: true,
+    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511477/pizza-napolitana_a9ykhj.webp",
     description: {
       [SPANISH]:
         "Queso mozzarella, tomate fresco, orégano, albahaca fresca o pesto y aceite de ajo.",
