@@ -1,12 +1,13 @@
 import { useReducer } from "react";
 import Reducer from "./reducer";
 import { PreferencesContext } from ".";
-import { KITCHEN, SPANISH } from "../utils/constants";
+import { getUserLang, KITCHEN, SPANISH } from "../utils/constants";
 import { CLEAR_IMAGE, SELECT_IMAGE, SET_LANGUAJE, SET_THEME } from "./actions";
 
 const PreferencesState = ({ children }) => {
+  const languaje = getUserLang() || SPANISH;
   const initialState = {
-    languaje: localStorage.getItem("languaje") || SPANISH,
+    languaje,
     image: null,
     theme: KITCHEN,
   };

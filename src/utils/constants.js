@@ -159,3 +159,9 @@ export const generatedThemeStyles = () => {
     warningThemeBgColor,
   };
 };
+
+export const getUserLang = () => {
+  const lang = navigator.language || navigator.userLanguage;
+  if (lang.startsWith("es")) return SPANISH;
+  return ENGLISH;
+};
