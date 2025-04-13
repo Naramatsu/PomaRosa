@@ -164,7 +164,7 @@ export const teaAndInfusionsProductList = [
   },
   {
     name: {
-      [SPANISH]: "Aromatica de furtos rojos",
+      [SPANISH]: "Aromatica de frutos rojos",
       [ENGLISH]: "Red fruits herbal tea",
     },
     available: true,
