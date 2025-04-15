@@ -54,7 +54,7 @@ export const cafeProductList = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257904/Americano_maqxoh.webp",
     available: true,
     hotPrice: "7.000",
-    coldPrice: "10.000",
+    coldPrice: "9.000",
   },
   {
     name: {
@@ -73,8 +73,8 @@ export const cafeProductList = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Capuchino_de_Nutella_w5lgs4.jpg",
-    hotPrice: "15.500",
-    coldPrice: "19.500",
+    hotPrice: "14.500",
+    coldPrice: "18.500",
   },
   {
     name: {
@@ -83,8 +83,8 @@ export const cafeProductList = [
     },
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Latte_grande_qadcub.webp",
     available: true,
-    hotPrice: "10.500",
-    coldPrice: "14.000",
+    hotPrice: "9.500",
+    coldPrice: "13.500",
   },
   {
     name: {
@@ -124,7 +124,7 @@ export const cafeProductList = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Milo_hyy4fz.webp",
     available: true,
     hotPrice: "11.500",
-    coldPrice: "17.500",
+    coldPrice: "16.000",
   },
   {
     name: {
@@ -144,7 +144,7 @@ export const cafeProductList = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Te_chai_i5hdnt.webp",
     available: true,
     hotPrice: "13.000",
-    coldPrice: "15.500",
+    coldPrice: "16.000",
   },
 ];
 
@@ -168,7 +168,7 @@ export const teaAndInfusionsProductList = [
       [ENGLISH]: "Red fruits herbal tea",
     },
     available: true,
-    hotPrice: "8.000",
+    hotPrice: "7.500",
   },
 ];
 
@@ -247,7 +247,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941124/jamonyqueso_qrxxrt.jpg",
-    hotPrice: "5.500",
+    hotPrice: "6.000",
   },
   {
     name: {
