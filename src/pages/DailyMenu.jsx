@@ -8,10 +8,20 @@ import {
   daymeuProductList,
 } from "../data/kitchen/daymenu";
 import useLanguaje from "../hooks/useLanguaje";
+import useProduct from "../hooks/useProduct";
 import { DAILYMENU_TITLE } from "../utils/constants";
 
 const DailyMenu = () => {
   const [languaje] = useLanguaje();
+
+  const daymeuProducts = useProduct(daymeuProductList).map((product) => ({
+    ...product,
+    options:
+      product?.options?.map((option) => ({
+        name: option.name[languaje],
+        description: option.description[languaje],
+      })) || [],
+  }));
 
   return (
     <section id="dailymenu" className="w-full p-5">
@@ -27,18 +37,24 @@ const DailyMenu = () => {
         <p className="pt-3">{daymenuHours[languaje]}</p>
         <Title subTitle>{daymenuPrice[languaje]}</Title>
       </section>
-      <Banner img="https://res.cloudinary.com/dwufyf99d/image/upload/v1738937793/menupastapomarosa_ocdmo6.jpg" />
+      <Banner
+        visible={false}
+        img="https://res.cloudinary.com/dwufyf99d/image/upload/v1738937793/menupastapomarosa_ocdmo6.jpg"
+      />
       <Box className="gap-5 flex-col py-10">
-        {daymeuProductList.map(({ name, hotPrice, description }, index) => (
-          <Product
-            key={index}
-            name={name[languaje]}
-            hotPrice={hotPrice}
-            noLabel
-            centered
-            description={description[languaje]}
-          />
-        ))}
+        {daymeuProducts.map(
+          ({ name, hotPrice, description, options }, index) => (
+            <Product
+              key={index}
+              name={name[languaje]}
+              hotPrice={hotPrice}
+              noLabel
+              centered
+              description={description ? description[languaje] : ""}
+              options={options}
+            />
+          )
+        )}
       </Box>
     </section>
   );

@@ -12,6 +12,7 @@ const Product = ({
   coldPrice,
   noLabel,
   centered = false,
+  options = [],
 }) => {
   const {
     themeBorderColor,
@@ -20,10 +21,15 @@ const Product = ({
   } = useTheme();
 
   const { selectImage } = useContext(PreferencesContext);
-  const { descriptionImageStyles, noDescriptionMargin, noDescriptionStyles } =
-    descriptionStyles(description, img);
+  const {
+    descriptionImageStyles,
+    noDescriptionMargin,
+    noDescriptionStyles,
+    optionalDescriptionStyles,
+  } = descriptionStyles(description, img);
 
   const isCentered = centered ? "text-center" : "";
+  const showOptions = !!options?.length;
 
   return (
     <section
@@ -58,6 +64,13 @@ const Product = ({
               {description?.toLowerCase()}
             </p>
           )}
+          {showOptions &&
+            options.map((option, index) => (
+              <p key={index} className={optionalDescriptionStyles}>
+                <span className="font-bold text-brown">{option.name}: </span>
+                {option.description?.toLowerCase()}
+              </p>
+            ))}
         </section>
       </section>
       <section className={`flex gap-4 ${noDescriptionMargin}`}>

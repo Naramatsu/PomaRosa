@@ -85,7 +85,7 @@ export const pizzaProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937791/pizzamediterr%C3%A1nea_mdrdky.jpg",
     description: {
       [SPANISH]:
-        "Queso muzarella, Tomates secos, champiñones, salsa pesto, reducción balsámico.",
+        "Queso mozarella, Tomates secos, champiñones, salsa pesto, reducción balsámico.",
       [ENGLISH]:
         "Mozzarella cheese, sun-dried tomatoes, mushrooms, pesto sauce, and balsamic reduction.",
     },

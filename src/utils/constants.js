@@ -94,7 +94,7 @@ export const KITCHEN_MENU_TITLES = [
   { label: WAFFLES_TITLE, link: "waffles" },
   { label: SANDWICH_TITLE, link: "sandwichs" },
   { label: PIZZA_TITLE, link: "pizzas" },
-  // { label: DAILYMENU_TITLE, link: "dailymenu" },
+  { label: DAILYMENU_TITLE, link: "dailymenu" },
 ];
 
 export const BAKERY_MENU_TITLES = [
@@ -132,8 +132,15 @@ export const descriptionStyles = (description, img) => {
   const descriptionImageStyles = img
     ? "text-md text-dark-brown/70 italic first-letter:capitalize"
     : "text-md text-dark-brown/70 italic first-letter:capitalize pl-4";
+  const optionalDescriptionStyles =
+    "text-left text-md text-dark-brown/70 italic first-letter:capitalize last:pb-4";
 
-  return { noDescriptionStyles, noDescriptionMargin, descriptionImageStyles };
+  return {
+    noDescriptionStyles,
+    noDescriptionMargin,
+    descriptionImageStyles,
+    optionalDescriptionStyles,
+  };
 };
 
 export const generatedThemeStyles = () => {

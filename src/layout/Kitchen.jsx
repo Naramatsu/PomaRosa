@@ -11,7 +11,7 @@ import Breakfasts from "../pages/Breakfasts";
 import Waffles from "../pages/Waffles";
 import Sandwich from "../pages/Sandwich";
 import Pizzas from "../pages/Pizzas";
-// import DailyMenu from "../pages/DailyMenu";
+import DailyMenu from "../pages/DailyMenu";
 import Footer from "../components/Footer";
 import ModalImage from "../components/ModalImage";
 
@@ -119,9 +119,9 @@ const Kitchen = () => {
         <section id="pizzas" ref={pizzasTitle}>
           <Pizzas />
         </section>
-        {/* <section id="dailymenu" ref={dailyMenuTitle}>
+        <section id="dailymenu" ref={dailyMenuTitle}>
           <DailyMenu />
-        </section> */}
+        </section>
       </section>
       <Footer />
       <ModalImage />

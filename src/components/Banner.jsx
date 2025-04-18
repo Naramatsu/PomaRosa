@@ -1,5 +1,5 @@
-const Banner = ({ img = "" }) => {
-  if (img)
+const Banner = ({ img = "", visible = true }) => {
+  if (img && visible)
     return (
       <section
         role="banner"
