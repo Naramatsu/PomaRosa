@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Box from "../components/Box";
 import PizzaItem from "../components/PizzaItem";
 import Product from "../components/Product";
@@ -11,17 +12,22 @@ import {
   semisweetDoughProductList,
 } from "../data/bakery/individualBakery";
 import useLanguaje from "../hooks/useLanguaje";
+import useProduct from "../hooks/useProduct";
 import { INDIVIDUAL_BAKERY_TITLE } from "../utils/constants";
 
 const IndividualBakery = () => {
   const [languaje] = useLanguaje();
+
+  const countryDoughProducts = useProduct(countryDoughProductList);
+  const baguetteProducts = useProduct(baguetteProductList);
+  const semisweetDoughProducts = useProduct(semisweetDoughProductList);
 
   return (
     <section id={INDIVIDUAL_BAKERY_TITLE[languaje]} className="w-full p-5">
       <Title>{INDIVIDUAL_BAKERY_TITLE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
         <Title subTitle>{COUNTRY_DOUGH_SUBTITLE[languaje]}</Title>
-        {countryDoughProductList.map(({ name, medium, big, img }, index) => (
+        {countryDoughProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
             key={index}
             name={name[languaje]}
@@ -34,7 +40,7 @@ const IndividualBakery = () => {
 
       <Box className="gap-5 flex-col py-10">
         <Title subTitle>{BAGUETTE_SUBTITLE[languaje]}</Title>
-        {baguetteProductList.map(({ name, medium, big, img }, index) => (
+        {baguetteProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
             key={index}
             name={name[languaje]}
@@ -47,7 +53,7 @@ const IndividualBakery = () => {
 
       <Box className="gap-5 flex-col py-10">
         <Title subTitle>{SEMISWEET_DOUGH_SUBTITLE[languaje]}</Title>
-        {semisweetDoughProductList.map(
+        {semisweetDoughProducts.map(
           ({ name, hotPrice, img, noLabel = true }, index) => (
             <Product
               key={index}
@@ -63,4 +69,4 @@ const IndividualBakery = () => {
   );
 };
 
-export default IndividualBakery;
+export default memo(IndividualBakery);
