@@ -156,7 +156,7 @@ export const TEA_E_INFUSIONS = {
 export const teaAndInfusionsProductList = [
   {
     name: {
-      [SPANISH]: "Aromatica de yerba buena",
+      [SPANISH]: "Aromatica de hierbabuena",
       [ENGLISH]: "Peppermint herbal tea",
     },
     available: true,

@@ -26,9 +26,8 @@ export const comboBreakfastsProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/sanduche_eqa95g.jpg",
     description: {
       [SPANISH]:
-        "Jamón de cerdo, queso mozzarella y tomate + bebida caliente a elección*",
-      [ENGLISH]:
-        "Pork ham, mozzarella cheese, and tomato + hot drink of choice*",
+        "Jamón de cerdo, queso mozzarella, tomate + bebida caliente a elección*",
+      [ENGLISH]: "Pork ham, mozzarella cheese, tomato + hot drink of choice*",
     },
   },
   {
@@ -41,9 +40,9 @@ export const comboBreakfastsProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/sanduchedehuevo_uw4ysa.jpg",
     description: {
       [SPANISH]:
-        "Huevos revueltos con mayonesa, tocineta y queso en pan artesanal y bebida caliente.",
+        "Huevos revueltos con mayonesa, tocineta, queso en pan artesanal y bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with mayonnaise, bacon, and cheese on artisan bread and hot drink.",
+        "Scrambled eggs with mayonnaise, bacon, cheese on artisan bread and hot drink.",
     },
   },
   {
@@ -71,9 +70,9 @@ export const comboBreakfastsProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941119/desayunoranchero_amh8mi.jpg",
     description: {
       [SPANISH]:
-        "Huevos revueltos con tomate, cebolla y chorizo santarrosano, arepa de maíz con queso costeño, mantequilla + bebida caliente.",
+        "Huevos revueltos con tomate, cebolla, chorizo santarrosano, arepa de maíz con queso costeño, mantequilla + bebida caliente.",
       [ENGLISH]:
-        "Scrambled eggs with tomato, onion, and Santarrosano chorizo, corn arepa with coastal cheese, butter + hot drink.",
+        "Scrambled eggs with tomato, onion, Santarrosano chorizo, corn arepa with coastal cheese, butter + hot drink.",
     },
   },
   {

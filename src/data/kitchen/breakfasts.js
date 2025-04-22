@@ -248,9 +248,9 @@ export const healthyProducts = [
     available: true,
     description: {
       [SPANISH]:
-        "Bowl de yogurt griego, con fresa, mango y banano fresco, granola artesanal con nueces, escamas de coco , semillas de chia y arándanos.",
+        "Bowl de yogurt griego, con fresa, mango, banano fresco, granola artesanal con nueces, escamas de coco , semillas de chía y arándanos.",
       [ENGLISH]:
-        "Greek yogurt bowl with fresh strawberries, mango, and banana, artisan granola with nuts, coconut flakes, chia seeds, and blueberries.",
+        "Greek yogurt bowl with fresh strawberries, mango, banana, artisan granola with nuts, coconut flakes, chia seeds, and blueberries.",
     },
   },
   {
@@ -262,7 +262,7 @@ export const healthyProducts = [
     coldPrice: "16.900",
     available: true,
     description: {
-      [SPANISH]: "Variedad de frutas frescas con semillas de chia.",
+      [SPANISH]: "Variedad de frutas frescas con semillas de chía.",
       [ENGLISH]: "Assorted Fresh Fruits with chia seeds",
     },
   },
@@ -276,9 +276,9 @@ export const healthyProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
     description: {
       [SPANISH]:
-        "Yogurt griego sin azúcar, mermelada casera de frutos rojos y granola artesanal con nueces y coco.",
+        "Yogurt griego sin azúcar, mermelada casera de frutos rojos, granola artesanal con nueces y coco.",
       [ENGLISH]:
-        "Unsweetened Greek Yogurt, Homemade Berry Jam, and Artisan Granola with Nuts and Coconut.",
+        "Unsweetened Greek Yogurt, Homemade Berry Jam, Artisan Granola with Nuts and Coconut.",
     },
   },
   {
@@ -321,7 +321,7 @@ export const healthyProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
     description: {
       [SPANISH]:
-        "Porción de fruta fresca de estación, acompañada con yogurt griego sin azúcar, granola artesanal, coco deshidratado nueces y semillas de amapola y chia.",
+        "Porción de fruta fresca de estación, acompañada con yogurt griego sin azúcar, granola artesanal, coco deshidratado nueces y semillas de amapola y chía.",
       [ENGLISH]:
         "Portion of fresh seasonal fruit, served with unsweetened Greek yogurt, artisan granola, dried coconut, nuts, and poppy and chia seeds.",
     },

@@ -13,9 +13,9 @@ export const sandwichProducts = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
     description: {
       [SPANISH]:
-        "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate, lechuga.",
+        "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate y lechuga.",
       [ENGLISH]:
-        "Chicken, Egg, Ham, Crispy Bacon, Cheese, Aioli, Mustard, Tomato, Lettuce.",
+        "Chicken, Egg, Ham, Crispy Bacon, Cheese, Aioli, Mustard, Tomato and Lettuce.",
     },
   },
   {
@@ -27,9 +27,9 @@ export const sandwichProducts = [
     available: true,
     description: {
       [SPANISH]:
-        "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos, queso mozzarella.",
+        "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos y queso mozzarella.",
       [ENGLISH]:
-        "Breaded Chicken Breast, Mixed Greens with Balsamic Reduction, Pesto Sauce, Sun-Dried Tomatoes, Mozzarella Cheese.",
+        "Breaded Chicken Breast, Mixed Greens with Balsamic Reduction, Pesto Sauce, Sun-Dried Tomatoes and Mozzarella Cheese.",
     },
   },
   {

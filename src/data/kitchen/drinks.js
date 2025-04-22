@@ -228,8 +228,8 @@ export const sodasProductList = [
     img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_maracuya_converted_zmx648.webp",
     description: {
       [SPANISH]:
-        "Pulpa de maracuyá con limón y hierbabuena y un toque de almibar",
-      [ENGLISH]: "Passion Fruit Pulp with Lime and Mint and a touch of syrup",
+        "Pulpa de maracuyá con limón, hierbabuena y un toque de almibar",
+      [ENGLISH]: "Passion fruit pulp with lemon, mint and a touch of syrup",
     },
   },
   {
@@ -252,8 +252,8 @@ export const sodasProductList = [
     coldPrice: "14.000",
     available: true,
     description: {
-      [SPANISH]: "Jugo de naranja, con limón y almibar de naranja y romero",
-      [ENGLISH]: "Orange juice, with lemon and orange and rosemary syrup",
+      [SPANISH]: "Jugo de naranja, con limón, almibar de naranja y romero",
+      [ENGLISH]: "Orange juice, with lemon, orange syrup and rosemary",
     },
   },
 ];
