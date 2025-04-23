@@ -12,15 +12,15 @@ export const countryDoughProductList = [
       [ENGLISH]: "Molded",
     },
     available: true,
-    medium: "7.500",
-    big: "9.500",
+    medium: "8.000",
+    big: "11.000",
   },
   {
     name: {
       [SPANISH]: "Hogaza",
       [ENGLISH]: "Loaf",
     },
-    available: true,
+    available: false,
     medium: "5.500",
     big: "11.000",
   },
@@ -73,7 +73,7 @@ export const baguetteProductList = [
       [SPANISH]: "Queso costeño + Mantequilla de ajo",
       [ENGLISH]: "Costeño cheese + Garlic butter",
     },
-    available: true,
+    available: false,
     big: "15.000",
   },
   {
@@ -81,7 +81,7 @@ export const baguetteProductList = [
       [SPANISH]: "Jalapeños",
       [ENGLISH]: "Jalapeños",
     },
-    available: true,
+    available: false,
     big: "15.000",
   },
   {
@@ -89,7 +89,7 @@ export const baguetteProductList = [
       [SPANISH]: "Paté de aceitunas",
       [ENGLISH]: "Olive pate",
     },
-    available: true,
+    available: false,
     big: "15.000",
   },
   {
@@ -97,7 +97,7 @@ export const baguetteProductList = [
       [SPANISH]: "Pesto + 3 Quesos",
       [ENGLISH]: "Pesto + 3 Cheeses",
     },
-    available: true,
+    available: false,
     big: "15.000",
   },
 ];
@@ -110,8 +110,8 @@ export const SEMISWEET_DOUGH_SUBTITLE = {
 export const semisweetDoughProductList = [
   {
     name: {
-      [SPANISH]: "Mogolla de chocolate semiagrio",
-      [ENGLISH]: "Semi-sweet chocolate bread",
+      [SPANISH]: "Mogolla de chocolate semiamargo",
+      [ENGLISH]: "Semi-bitter chocolate bread",
     },
     available: true,
     hotPrice: "5.500",
@@ -130,7 +130,7 @@ export const semisweetDoughProductList = [
       [ENGLISH]: "Ham and cheese bread",
     },
     available: true,
-    hotPrice: "5.500",
+    hotPrice: "6.000",
   },
   {
     name: {
@@ -138,7 +138,7 @@ export const semisweetDoughProductList = [
       [ENGLISH]: "3 Cheeses bread",
     },
     // img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650906/Mogolla_3_quesos_converted_yr3gkw.webp",
-    available: true,
+    available: false,
     hotPrice: "4.000",
   },
   {
@@ -154,7 +154,7 @@ export const semisweetDoughProductList = [
       [SPANISH]: "Trenzado de canela + Chocolate blanco + Almendras",
       [ENGLISH]: "Cinnamon braid + White chocolate + Almonds",
     },
-    available: true,
+    available: false,
     hotPrice: "22.000",
   },
   {
@@ -204,6 +204,6 @@ export const wholeWheatBreadProductList = [
       [ENGLISH]: "Medium",
     },
     available: true,
-    hotPrice: "6.000",
+    medium: "6.500",
   },
 ];

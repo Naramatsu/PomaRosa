@@ -10,6 +10,8 @@ import {
   countryDoughProductList,
   SEMISWEET_DOUGH_SUBTITLE,
   semisweetDoughProductList,
+  WHOLE_WHEAT_BREAD_SUBTITLE,
+  wholeWheatBreadProductList,
 } from "../data/bakery/individualBakery";
 import useLanguaje from "../hooks/useLanguaje";
 import useProduct from "../hooks/useProduct";
@@ -21,6 +23,7 @@ const IndividualBakery = () => {
   const countryDoughProducts = useProduct(countryDoughProductList);
   const baguetteProducts = useProduct(baguetteProductList);
   const semisweetDoughProducts = useProduct(semisweetDoughProductList);
+  const wholeWheatBreadProducts = useProduct(wholeWheatBreadProductList);
 
   return (
     <section id={INDIVIDUAL_BAKERY_TITLE[languaje]} className="w-full p-5">
@@ -64,6 +67,19 @@ const IndividualBakery = () => {
             />
           )
         )}
+      </Box>
+
+      <Box className="gap-5 flex-col py-10">
+        <Title subTitle>{WHOLE_WHEAT_BREAD_SUBTITLE[languaje]}</Title>
+        {wholeWheatBreadProducts.map(({ name, medium, big, img }, index) => (
+          <PizzaItem
+            key={index}
+            name={name[languaje]}
+            medium={medium}
+            big={big}
+            img={img}
+          />
+        ))}
       </Box>
     </section>
   );
