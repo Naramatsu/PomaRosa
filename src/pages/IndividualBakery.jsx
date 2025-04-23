@@ -28,8 +28,12 @@ const IndividualBakery = () => {
   return (
     <section id={INDIVIDUAL_BAKERY_TITLE[languaje]} className="w-full p-5">
       <Title>{INDIVIDUAL_BAKERY_TITLE[languaje]}</Title>
-      <Box className="gap-5 flex-col py-10">
-        <Title subTitle>{COUNTRY_DOUGH_SUBTITLE[languaje]}</Title>
+
+      <Box
+        bordered
+        title={COUNTRY_DOUGH_SUBTITLE[languaje]}
+        className="flex-col gap-10 p-2 mt-10 mb-10"
+      >
         {countryDoughProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
             key={index}
@@ -41,7 +45,7 @@ const IndividualBakery = () => {
         ))}
       </Box>
 
-      <Box className="gap-5 flex-col py-10">
+      <Box className="gap-10 flex-col py-10">
         <Title subTitle>{BAGUETTE_SUBTITLE[languaje]}</Title>
         {baguetteProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
@@ -54,7 +58,7 @@ const IndividualBakery = () => {
         ))}
       </Box>
 
-      <Box className="gap-5 flex-col py-10">
+      <Box className="gap-10 flex-col py-10">
         <Title subTitle>{SEMISWEET_DOUGH_SUBTITLE[languaje]}</Title>
         {semisweetDoughProducts.map(
           ({ name, hotPrice, img, noLabel = true }, index) => (
@@ -69,8 +73,11 @@ const IndividualBakery = () => {
         )}
       </Box>
 
-      <Box className="gap-5 flex-col py-10">
-        <Title subTitle>{WHOLE_WHEAT_BREAD_SUBTITLE[languaje]}</Title>
+      <Box
+        bordered
+        title={WHOLE_WHEAT_BREAD_SUBTITLE[languaje]}
+        className="flex-col gap-10 p-2 mt-10 mb-10"
+      >
         {wholeWheatBreadProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
             key={index}

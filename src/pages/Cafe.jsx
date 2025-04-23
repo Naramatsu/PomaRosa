@@ -52,13 +52,15 @@ const Cafe = () => {
             )}
           </Box>
         </section>
-        <Box className="gap-2 p-2" bordered>
-          <p className="text-dark-brown/70 text-lg kalam-regular">
+        <Box className="gap-2 p-2 flex-col sm:flex-row" bordered>
+          <p className="text-dark-brown/70 text-lg kalam-regular w-full text-center">
             {ADDITIONAL_MILK[languaje]}
           </p>
-          {almondMilkAdditionalPrices.map(({ value, cold }, index) => (
-            <Price key={index} value={value} cold={cold} />
-          ))}
+          <Box className="flex gap-2">
+            {almondMilkAdditionalPrices.map(({ value, cold }, index) => (
+              <Price key={index} value={value} cold={cold} />
+            ))}
+          </Box>
         </Box>
       </Box>
       <section className="w-full py-5">

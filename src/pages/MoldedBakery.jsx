@@ -26,7 +26,7 @@ const MoldedBakery = () => {
   return (
     <section id={MOLDED_BAKERY_TITLE[languaje]} className="w-full p-5">
       <Title>{MOLDED_BAKERY_TITLE[languaje]}</Title>
-      <Box className="gap-5 flex-col py-10">
+      <Box className="gap-10 flex-col py-10">
         <Title subTitle>{WHOLE_WHEAT_SOURDOUGH_TITLE[languaje]}</Title>
         {wholeWheatSourdoughProducts.map(
           ({ name, medium, big, img }, index) => (
@@ -41,7 +41,7 @@ const MoldedBakery = () => {
         )}
       </Box>
 
-      <Box className="gap-5 flex-col py-10">
+      <Box className="gap-10 flex-col py-10">
         <Title subTitle>{WHITE_SOURDOUGH_TITLE[languaje]}</Title>
         {whiteSourdoughProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
@@ -54,7 +54,7 @@ const MoldedBakery = () => {
         ))}
       </Box>
 
-      <Box className="gap-5 flex-col py-10">
+      <Box className="gap-10 flex-col py-10">
         <Title subTitle>{BRIOCHE_TITLE[languaje]}</Title>
         {briocheProducts.map(({ name, medium, big, img }, index) => (
           <PizzaItem
