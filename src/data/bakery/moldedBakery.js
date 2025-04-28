@@ -104,8 +104,8 @@ export const whiteSourdoughProductList = [
   },
   {
     name: {
-      [SPANISH]: "Orégano + Mantequilla de ajo",
-      [ENGLISH]: "Oregano + Garlic butter",
+      [SPANISH]: "Orégano + ajo",
+      [ENGLISH]: "Oregano + Garlic",
     },
     available: true,
     medium: "13.000",
@@ -132,8 +132,8 @@ export const whiteSourdoughProductList = [
   },
   {
     name: {
-      [SPANISH]: "Orégano + 3 Quesos + Mantequilla de ajo",
-      [ENGLISH]: "Oregano + 3 Cheeses + Garlic butter",
+      [SPANISH]: "Orégano + 3 Quesos + ajo",
+      [ENGLISH]: "Oregano + 3 Cheeses + Garlic",
     },
     available: true,
     medium: "18.900",

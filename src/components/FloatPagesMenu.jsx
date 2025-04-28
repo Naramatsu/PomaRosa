@@ -3,41 +3,53 @@ import { SiCoffeescript } from "react-icons/si";
 import { GiSlicedBread } from "react-icons/gi";
 import useTheme from "../hooks/useTheme";
 import { GiCakeSlice } from "react-icons/gi";
+import { ENGLISH, SPANISH } from "../utils/constants";
+import useLanguaje from "../hooks/useLanguaje";
 
 export const btnPages = [
   {
     link: "",
     about: "cafe",
     icon: <SiCoffeescript size={20} />,
-    label: "Cafe",
+    label: {
+      [SPANISH]: "Café",
+      [ENGLISH]: "Café",
+    },
     available: true,
   },
   {
     link: "/bakery",
     about: "bakery",
     icon: <GiSlicedBread size={20} />,
-    label: "Bakery",
+    label: {
+      [SPANISH]: "Panadería",
+      [ENGLISH]: "Bakery",
+    },
     available: true,
   },
   {
     link: "/pastry",
     about: "pastry",
     icon: <GiCakeSlice size={20} />,
-    label: "Pastry",
+    label: {
+      [SPANISH]: "Repostería",
+      [ENGLISH]: "Pastry",
+    },
     available: false,
   },
 ];
 
 export const BtnMenuPage = ({ link, icon, label }) => {
   const { themeHover, themeTextColor, themeBorderColor } = useTheme();
+
   return (
     <Link
       to={link}
       className={`
-        relative size-14
+        relative h-14 w-20
         flex flex-col gap-0 justify-center items-center 
         ${themeTextColor} border ${themeBorderColor}
-        rounded-full bg-white/50
+        rounded-t-3xl bg-white/50
         hover:cursor-pointer ${themeHover}
       `}
     >
@@ -49,6 +61,7 @@ export const BtnMenuPage = ({ link, icon, label }) => {
 
 const FloatPagesMenu = () => {
   const { themeBorderColor } = useTheme();
+  const [languaje] = useLanguaje();
 
   return (
     <section
@@ -69,7 +82,12 @@ const FloatPagesMenu = () => {
         {btnPages
           .filter((btn) => btn.available)
           .map(({ link, about, icon, label }) => (
-            <BtnMenuPage key={about} link={link} icon={icon} label={label} />
+            <BtnMenuPage
+              key={about}
+              link={link}
+              icon={icon}
+              label={label[languaje]}
+            />
           ))}
       </section>
     </section>
