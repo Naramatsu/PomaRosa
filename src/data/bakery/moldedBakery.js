@@ -117,7 +117,7 @@ export const whiteSourdoughProductList = [
       [ENGLISH]: "3 Cheeses",
     },
     available: true,
-    // img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pan_3_quesos_eq2bgq.jpg",
+    // // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pan_3_quesos_eq2bgq.jpg",
     medium: "16.500",
     big: "20.000",
   },

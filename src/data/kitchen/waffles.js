@@ -53,7 +53,7 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "19.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
       [ENGLISH]: "With maple syrup and butter.",
@@ -66,7 +66,7 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "32.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con maíz tierno, jamón de cerdo, queso mozzarella, cebolla y alioli.",
@@ -81,7 +81,7 @@ export const savoryWafflesProducts = [
     },
     hotPrice: "30.500",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/wafflesanduche_ec3ptv.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/wafflesanduche_ec3ptv.jpg",
     description: {
       [SPANISH]:
         "Jamón de cerdo, tocineta crujiente, queso mozzarella, huevos revueltos y alioli de ajo.",
@@ -109,7 +109,7 @@ export const sweetWafflesProducts = [
     },
     coldPrice: "19.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffletradicional_ngc9w1.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffletradicional_ngc9w1.jpg",
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
       [ENGLISH]: "Artisan Waffle with Hershey's Chocolate Sauce.",
@@ -122,7 +122,7 @@ export const sweetWafflesProducts = [
     },
     coldPrice: "23.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
     description: {
       [SPANISH]: "Fresco fileteado con salsa caseras de arequipe y caramelo.",
       [ENGLISH]:
@@ -136,7 +136,7 @@ export const sweetWafflesProducts = [
     },
     coldPrice: "25.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
     description: {
       [SPANISH]:
         "Waffle bañado con Nutella y lluvia de trozos de fresas frescas.",
@@ -150,7 +150,7 @@ export const sweetWafflesProducts = [
     },
     coldPrice: "24.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
     description: {
       [SPANISH]: "Salsa de frutos rojos con fresas y arándanos frescos.",
       [ENGLISH]: "Berry Sauce with Fresh Strawberries and Blueberries.",
@@ -163,7 +163,7 @@ export const sweetWafflesProducts = [
     },
     coldPrice: "25.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffleduo_ahubnf.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffleduo_ahubnf.jpg",
     description: {
       [SPANISH]:
         "Con trozos de fresas, banano y salsa de chocolate y arequipe.",

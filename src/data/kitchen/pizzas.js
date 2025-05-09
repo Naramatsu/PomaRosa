@@ -10,7 +10,7 @@ export const pizzaProducts = [
     },
     personal: "23.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511477/pizza-napolitana_a9ykhj.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511477/pizza-napolitana_a9ykhj.webp",
     description: {
       [SPANISH]:
         "Queso mozzarella, tomate fresco, orégano, albahaca fresca o pesto y aceite de ajo.",
@@ -25,7 +25,7 @@ export const pizzaProducts = [
     },
     personal: "23.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Pizza_mozarella_lfzy2a.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Pizza_mozarella_lfzy2a.webp",
     description: {
       [SPANISH]: "Queso mozzarella pomodoro, orégano y aceitunas verdes.",
       [ENGLISH]:
@@ -37,7 +37,7 @@ export const pizzaProducts = [
       [SPANISH]: "PEPPERONI",
       [ENGLISH]: "PEPPERONI",
     },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pepperoni_qd0fp0.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pepperoni_qd0fp0.jpg",
     personal: "23.000",
     available: true,
     description: {
@@ -50,7 +50,7 @@ export const pizzaProducts = [
       [SPANISH]: "HAWAPEPE",
       [ENGLISH]: "HAWAPEPE",
     },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813275/Pizzahawapepe_ne94eo.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813275/Pizzahawapepe_ne94eo.jpg",
     personal: "23.000",
     available: true,
     description: {
@@ -65,7 +65,7 @@ export const pizzaProducts = [
       [SPANISH]: "POLLO Y CHAMPIÑON Y MAIZ",
       [ENGLISH]: "CHICKEN AND MUSHROOM AND CORN",
     },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pollo_champi%C3%B1ones_ihq2wk.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pollo_champi%C3%B1ones_ihq2wk.jpg",
     personal: "26.000",
     available: true,
     description: {
@@ -82,7 +82,7 @@ export const pizzaProducts = [
     },
     personal: "26.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937791/pizzamediterr%C3%A1nea_mdrdky.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937791/pizzamediterr%C3%A1nea_mdrdky.jpg",
     description: {
       [SPANISH]:
         "Queso mozarella, Tomates secos, champiñones, salsa pesto, reducción balsámico.",
@@ -96,7 +96,7 @@ export const pizzaProducts = [
       [ENGLISH]: "SPECIAL FUGAZZA",
     },
     personal: "23.000",
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
     available: true,
     description: {
       [SPANISH]:

@@ -212,7 +212,7 @@ export const sodasProductList = [
     },
     coldPrice: "14.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_de_frutos_rojos_converted_dedjxe.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_de_frutos_rojos_converted_dedjxe.webp",
     description: {
       [SPANISH]: "Mermelada artesanal de fresa y mora con hierbabuena y limón",
       [ENGLISH]: "Artisanal Strawberry and Blackberry Jam with Mint and Lime",
@@ -225,7 +225,7 @@ export const sodasProductList = [
     },
     coldPrice: "14.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_maracuya_converted_zmx648.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_maracuya_converted_zmx648.webp",
     description: {
       [SPANISH]:
         "Pulpa de maracuyá con limón, hierbabuena y un toque de almibar",

@@ -17,7 +17,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Scrambled or fried",
     },
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
     hotPrice: "9.800",
   },
   {
@@ -26,7 +26,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Tomato and onion",
     },
     available: false,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
     hotPrice: "12.800",
   },
   {
@@ -35,7 +35,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Tender corn",
     },
     available: false,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Huevos_con_ma%C3%ADz_converted_sjk7gl.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Huevos_con_ma%C3%ADz_converted_sjk7gl.webp",
     hotPrice: "12.800",
   },
   {
@@ -44,7 +44,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Santarrosano chorizo",
     },
     available: false,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/huevos_con_chorizo_converted_ajjzdi.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/huevos_con_chorizo_converted_ajjzdi.webp",
     hotPrice: "14.800",
   },
   {
@@ -125,7 +125,7 @@ export const accompanimentsProducts = [
       [ENGLISH]: "Artisan Toast with Butter",
     },
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
     hotPrice: "8.500",
   },
   {
@@ -180,7 +180,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "25.500",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con chorizo santarrosano, maíz tierno, jamón, queso mozzarella y tocineta.",
@@ -195,7 +195,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "22.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
       [ENGLISH]: "Fried Eggs with Hogao Sauce, Pomodoro Sauce, and Cilantro",
@@ -208,7 +208,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "27.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscampestres_oxispa.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscampestres_oxispa.jpg",
     description: {
       [SPANISH]:
         "Omellet de huevos, con espinaca, champiñones y queso muzzarella.",
@@ -244,7 +244,7 @@ export const healthyProducts = [
       [ENGLISH]: "Yogurt bowl",
     },
     coldPrice: "32.000",
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
     available: true,
     description: {
       [SPANISH]:
@@ -258,7 +258,7 @@ export const healthyProducts = [
       [SPANISH]: "PLATO DE FRUTA",
       [ENGLISH]: "FRUIT PLATE",
     },
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
     coldPrice: "16.900",
     available: true,
     description: {
@@ -273,7 +273,7 @@ export const healthyProducts = [
     },
     coldPrice: "19.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
     description: {
       [SPANISH]:
         "Yogurt griego sin azúcar, mermelada casera de frutos rojos, granola artesanal con nueces y coco.",
@@ -288,7 +288,7 @@ export const healthyProducts = [
     },
     coldPrice: "28.000",
     available: false,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/smothiebowl_chtj8m.jpg",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/smothiebowl_chtj8m.jpg",
     description: {
       [SPANISH]:
         "Batido de fresa, banano y mora natural con yogur griego, acompañado con: granola artesanal con coco y nueces, banano, fresa, arándanos, miel de agave, semillas de amapola y chía.",
@@ -303,7 +303,7 @@ export const healthyProducts = [
     },
     coldPrice: "28.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650907/Tostada_de_aguacate_converted_mbohk4.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650907/Tostada_de_aguacate_converted_mbohk4.webp",
     description: {
       [SPANISH]:
         "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos con tomates cherrys y aceite de oliva con finas hierbas.",
@@ -318,7 +318,7 @@ export const healthyProducts = [
     },
     coldPrice: "28.000",
     available: false,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
     description: {
       [SPANISH]:
         "Porción de fruta fresca de estación, acompañada con yogurt griego sin azúcar, granola artesanal, coco deshidratado nueces y semillas de amapola y chía.",

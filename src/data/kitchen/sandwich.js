@@ -10,7 +10,7 @@ export const sandwichProducts = [
     },
     hotPrice: "34.000",
     available: true,
-    img: "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
     description: {
       [SPANISH]:
         "Pollo, huevo, jamón, tocineta crocante, queso, alioli, mostaza, tomate y lechuga.",
