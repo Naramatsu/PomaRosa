@@ -12,24 +12,10 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "CLASSIC YUCA BREAD",
     },
     hotPrice: "24.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]: "Con queso crema y mermelada.",
       [ENGLISH]: "With cream cheese and jam",
-    },
-  },
-  {
-    name: {
-      [SPANISH]: "WAFFLE YUCA",
-      [ENGLISH]: "YUCA WAFFLE",
-    },
-    hotPrice: "30.500",
-    available: true,
-    description: {
-      [SPANISH]:
-        "Con aguacate fresco, huevos revueltos con espinaca y salsa de yogurt griego.",
-      [ENGLISH]:
-        "With fresh avocado, scrambled eggs with spinach, and greek yogurt sauce.",
     },
   },
   {
@@ -38,7 +24,7 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "FRUITY",
     },
     hotPrice: "27.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Fruta fresca del día con miel de agave orgánica y almendras tostadas fileteadas.",
@@ -52,7 +38,7 @@ export const savoryWafflesProducts = [
       [ENGLISH]: "CLASSIC",
     },
     hotPrice: "19.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
@@ -61,26 +47,11 @@ export const savoryWafflesProducts = [
   },
   {
     name: {
-      [SPANISH]: "SANDWICH EN WAFFLE YUCA",
-      [ENGLISH]: "YUCA WAFFLE SANDWICH",
-    },
-    hotPrice: "32.000",
-    available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
-    description: {
-      [SPANISH]:
-        "Huevos revueltos con maíz tierno, jamón de cerdo, queso mozzarella, cebolla y alioli.",
-      [ENGLISH]:
-        "Scrambled Eggs with Sweet Corn, Pork Ham, Mozzarella Cheese, Onion, and Aioli.",
-    },
-  },
-  {
-    name: {
       [SPANISH]: "WAFFLE SANDWICH",
       [ENGLISH]: "WAFFLE SANDWICH",
     },
     hotPrice: "30.500",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/wafflesanduche_ec3ptv.jpg",
     description: {
       [SPANISH]:
@@ -108,7 +79,7 @@ export const sweetWafflesProducts = [
       [ENGLISH]: "TRADITIONAL",
     },
     coldPrice: "19.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffletradicional_ngc9w1.jpg",
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
@@ -121,7 +92,7 @@ export const sweetWafflesProducts = [
       [ENGLISH]: "BANANA",
     },
     coldPrice: "23.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
     description: {
       [SPANISH]: "Fresco fileteado con salsa caseras de arequipe y caramelo.",
@@ -135,7 +106,7 @@ export const sweetWafflesProducts = [
       [ENGLISH]: "NUTELLA",
     },
     coldPrice: "25.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
     description: {
       [SPANISH]:
@@ -149,7 +120,7 @@ export const sweetWafflesProducts = [
       [ENGLISH]: "BERRIES",
     },
     coldPrice: "24.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
     description: {
       [SPANISH]: "Salsa de frutos rojos con fresas y arándanos frescos.",
@@ -162,7 +133,7 @@ export const sweetWafflesProducts = [
       [ENGLISH]: "DUO",
     },
     coldPrice: "25.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffleduo_ahubnf.jpg",
     description: {
       [SPANISH]:
@@ -179,3 +150,69 @@ export const WAFFLE_WARNING = {
   [ENGLISH]:
     "All our sweet waffles are served with ice cream and whipped cream.",
 };
+
+export const WAFFLES_TITLE = {
+  [SPANISH]: "WAFFLES",
+  [ENGLISH]: "WAFFLES",
+};
+
+export const wafflesProducts = [
+  {
+    name: {
+      [SPANISH]: "CLÁSICO",
+      [ENGLISH]: "CLASSIC",
+    },
+    hotPrice: "19.000",
+    available: true,
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
+    description: {
+      [SPANISH]: "Con miel de maple y Mantequilla.",
+      [ENGLISH]: "With maple syrup and butter.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "BANANO",
+      [ENGLISH]: "BANANA",
+    },
+    hotPrice: "23.000",
+    available: true,
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
+    description: {
+      [SPANISH]:
+        "Fresco fileteado con salsa caseras de arequipe y caramelo. Incluyen helado y crema chantillí.",
+      [ENGLISH]:
+        "Freshly Sliced with House-Made Dulce de Leche and Caramel Sauce. Included ice cream and whipped cream.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "NUTELLA",
+      [ENGLISH]: "NUTELLA",
+    },
+    hotPrice: "25.000",
+    available: true,
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
+    description: {
+      [SPANISH]:
+        "Waffle bañado con Nutella y lluvia de trozos de fresas frescas. Incluyen helado y crema chantillí.",
+      [ENGLISH]:
+        "Waffle with Nutella and Fresh Strawberry Pieces. Included ice cream and whipped cream.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "BERRIES",
+      [ENGLISH]: "BERRIES",
+    },
+    hotPrice: "24.000",
+    available: true,
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
+    description: {
+      [SPANISH]:
+        "Salsa de frutos rojos con fresas y arándanos frescos. Incluyen helado y crema chantillí.",
+      [ENGLISH]:
+        "Berry Sauce with Fresh Strawberries and Blueberries. Included ice cream and whipped cream.",
+    },
+  },
+];

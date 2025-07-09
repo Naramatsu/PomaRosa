@@ -24,7 +24,7 @@ export const pizzaProducts = [
       [ENGLISH]: "MOZZARELLA",
     },
     personal: "23.000",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257903/Pizza_mozarella_lfzy2a.webp",
     description: {
       [SPANISH]: "Queso mozzarella pomodoro, orégano y aceitunas verdes.",
@@ -67,7 +67,7 @@ export const pizzaProducts = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pizza_pollo_champi%C3%B1ones_ihq2wk.jpg",
     personal: "26.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Queso mozzarella, pomodoro, pollo en finas hierbas con maiz desgranado y champiñones.",
@@ -97,7 +97,7 @@ export const pizzaProducts = [
     },
     personal: "23.000",
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941121/pizzafugazaespecial_m9yiqr.jpg",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Queso mozzarella , cebolla en julianas, jamón, orégano y aceite de oliva.",

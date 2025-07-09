@@ -48,8 +48,8 @@ export const JUICES = {
 };
 
 export const juicesList = {
-  [SPANISH]: "Guanábana, Mango, Papaya, Banano y Mora",
-  [ENGLISH]: "Soursop, Mango, Papaya, Banana and Blackberry",
+  [SPANISH]: "Guanábana, Mango y Mora",
+  [ENGLISH]: "Soursop, Mango and Blackberry",
 };
 
 export const juicesPrices = [
@@ -77,8 +77,8 @@ export const SPECIAL_JUICES = {
 };
 
 export const specialJuicesList = {
-  [SPANISH]: "Zapote, Corozo, Tamarindo, Fresa, Maracuyá",
-  [ENGLISH]: "Sapote, Corozo, Tamarind, Strawberry, Passion Fruit",
+  [SPANISH]: "Corozo, Fresa, Maracuyá",
+  [ENGLISH]: "Corozo, Strawberry, Passion Fruit",
 };
 
 export const specialJuicesPrices = [
@@ -250,7 +250,7 @@ export const sodasProductList = [
       [ENGLISH]: "Orange",
     },
     coldPrice: "14.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]: "Jugo de naranja, con limón, almibar de naranja y romero",
       [ENGLISH]: "Orange juice, with lemon, orange syrup and rosemary",

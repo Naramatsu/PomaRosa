@@ -230,12 +230,41 @@ export const healthyProducts = [
       [ENGLISH]: "AVOCADO AND CHEESE TOAST",
     },
     coldPrice: "28.000",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Tostada de pan de masa madre con aceite de oliva, queso crema, aguacate fresco y huevos fritos con una redución de miel picante.",
       [ENGLISH]:
         "Sourdough toast with olive oil, cream cheese, fresh avocado, and fried eggs with a spicy honey reduction.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "SANDWICH EN WAFFLE YUCA",
+      [ENGLISH]: "YUCA WAFFLE SANDWICH",
+    },
+    coldPrice: "32.000",
+    available: true,
+    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
+    description: {
+      [SPANISH]:
+        "Huevos revueltos con maíz tierno, jamón de cerdo, queso mozzarella, cebolla y alioli.",
+      [ENGLISH]:
+        "Scrambled Eggs with Sweet Corn, Pork Ham, Mozzarella Cheese, Onion, and Aioli.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "WAFFLE YUCA",
+      [ENGLISH]: "YUCA WAFFLE",
+    },
+    coldPrice: "30.500",
+    available: true,
+    description: {
+      [SPANISH]:
+        "Con aguacate fresco, huevos revueltos con espinaca y salsa de yogurt griego.",
+      [ENGLISH]:
+        "With fresh avocado, scrambled eggs with spinach, and greek yogurt sauce.",
     },
   },
   {
