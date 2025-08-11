@@ -164,7 +164,7 @@ export const wafflesProducts = [
     },
     hotPrice: "19.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937789/waffleclasico_fe6bra.webp",
+    img: "assets/waffleclasico.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
       [ENGLISH]: "With maple syrup and butter.",
@@ -177,7 +177,7 @@ export const wafflesProducts = [
     },
     hotPrice: "23.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledebanano_zfsypl.jpg",
+    img: "assets/waffledebanano.jpeg",
     description: {
       [SPANISH]:
         "Fresco fileteado con salsa caseras de arequipe y caramelo. Incluyen helado y crema chantillí.",
@@ -192,7 +192,7 @@ export const wafflesProducts = [
     },
     hotPrice: "25.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffledenutella_nqdpcm.jpg",
+    img: "assets/waffledenutella.jpeg",
     description: {
       [SPANISH]:
         "Waffle bañado con Nutella y lluvia de trozos de fresas frescas. Incluyen helado y crema chantillí.",
@@ -207,7 +207,7 @@ export const wafflesProducts = [
     },
     hotPrice: "24.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196275/waffleberries_sma8mr.jpg",
+    img: "assets/waffleberries.jpeg",
     description: {
       [SPANISH]:
         "Salsa de frutos rojos con fresas y arándanos frescos. Incluyen helado y crema chantillí.",

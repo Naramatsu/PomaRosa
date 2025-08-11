@@ -17,7 +17,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Scrambled or fried",
     },
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevosrevueltos_fvdzxu.jpg",
+    img: "assets/huevosrevueltos.jpeg",
     hotPrice: "9.800",
   },
   {
@@ -26,7 +26,7 @@ export const eggsToTasteProducts = [
       [ENGLISH]: "Tomato and onion",
     },
     available: false,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscontomateycebolla_hh23fo.jpg",
+    img: "assets/huevoscontomateycebolla.jpeg",
     hotPrice: "12.800",
   },
   {
@@ -180,7 +180,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "25.500",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Huevosalvajes_uluizh.jpg",
+    img: "assets/huevosalvajes.jpg",
     description: {
       [SPANISH]:
         "Huevos revueltos con chorizo santarrosano, maíz tierno, jamón, queso mozzarella y tocineta.",
@@ -195,7 +195,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "22.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738941120/huevoscriollos_mse2ba.jpg",
+    img: "assets/huevoscriollos.jpg",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
       [ENGLISH]: "Fried Eggs with Hogao Sauce, Pomodoro Sauce, and Cilantro",
@@ -208,7 +208,7 @@ export const specialEggsProducts = [
     },
     hotPrice: "27.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/huevoscampestres_oxispa.jpg",
+    img: "assets/huevoscampestres.jpeg",
     description: {
       [SPANISH]:
         "Omellet de huevos, con espinaca, champiñones y queso muzzarella.",
@@ -287,7 +287,7 @@ export const healthyProducts = [
       [SPANISH]: "PLATO DE FRUTA",
       [ENGLISH]: "FRUIT PLATE",
     },
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/Ensalada_de_fruta_moogke.jpg",
+    img: "assets/platodefruta.jpg",
     coldPrice: "16.900",
     available: true,
     description: {
@@ -302,7 +302,7 @@ export const healthyProducts = [
     },
     coldPrice: "19.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/copaparfait_owon1n.jpg",
+    img: "assets/copaparfait.jpeg",
     description: {
       [SPANISH]:
         "Yogurt griego sin azúcar, mermelada casera de frutos rojos, granola artesanal con nueces y coco.",
@@ -332,7 +332,7 @@ export const healthyProducts = [
     },
     coldPrice: "28.000",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650907/Tostada_de_aguacate_converted_mbohk4.webp",
+    img: "assets/tostadadeaguacate.jpg",
     description: {
       [SPANISH]:
         "Tostada en pan de masa madre con pure de aguacate, tortillita de huevos revueltos con tomates cherrys y aceite de oliva con finas hierbas.",

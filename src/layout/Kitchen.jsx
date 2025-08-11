@@ -31,9 +31,11 @@ import {
   WAFFLES_TITLE,
 } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
+import useMenuHours from "../hooks/useMenuHours";
 
 const Kitchen = () => {
   const [title, setTitle] = useState("");
+  const [menuTitles, setMenuTitles] = useState(KITCHEN_MENU_TITLES);
   const [languaje] = useLanguaje();
   const { setTheme, themeBgColor } = useTheme();
   const scrollY = useScrollY();
@@ -53,6 +55,8 @@ const Kitchen = () => {
     window.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const { showDailyMenu } = useMenuHours();
 
   useEffect(() => {
     const allRef = {
@@ -89,11 +93,21 @@ const Kitchen = () => {
     title,
   ]);
 
+  useEffect(() => {
+    setMenuTitles(
+      KITCHEN_MENU_TITLES.filter((item) => {
+        if (!showDailyMenu)
+          return item.label[languaje] !== DAILYMENU_TITLE[languaje];
+        return item;
+      })
+    );
+  }, [showDailyMenu, languaje]);
+
   return (
     <main
       className={`relative w-full h-full min-h-screen ${themeBgColor} flex flex-col justify-center`}
     >
-      <Header title={title} data={KITCHEN_MENU_TITLES} />
+      <Header title={title} data={menuTitles} />
       <section className="w-full max-w-[600px] m-auto h-full">
         <section id="menu" ref={menuTitle}>
           <Menu />
@@ -119,9 +133,11 @@ const Kitchen = () => {
         <section id="pizzas" ref={pizzasTitle}>
           <Pizzas />
         </section>
-        <section id="dailymenu" ref={dailyMenuTitle}>
-          <DailyMenu />
-        </section>
+        {showDailyMenu && (
+          <section id="dailymenu" ref={dailyMenuTitle}>
+            <DailyMenu />
+          </section>
+        )}
       </section>
       <Footer />
       <ModalImage />
