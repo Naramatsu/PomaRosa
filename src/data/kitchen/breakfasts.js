@@ -18,7 +18,7 @@ export const eggsToTasteProducts = [
     },
     available: true,
     img: "assets/huevosrevueltos.jpeg",
-    hotPrice: "9.800",
+    hotPrice: "10.900",
   },
   {
     name: {
@@ -69,7 +69,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Tomato and onion",
     },
     available: true,
-    hotPrice: "3.000",
+    hotPrice: "3.500",
   },
   {
     name: {
@@ -77,7 +77,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Tender corn",
     },
     available: true,
-    hotPrice: "3.000",
+    hotPrice: "3.500",
   },
   {
     name: {
@@ -85,7 +85,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Spinach",
     },
     available: true,
-    hotPrice: "4.000",
+    hotPrice: "4.500",
   },
   {
     name: {
@@ -93,7 +93,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Cheese",
     },
     available: true,
-    hotPrice: "4.000",
+    hotPrice: "4.500",
   },
   {
     name: {
@@ -101,7 +101,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Santarrosano chorizo",
     },
     available: true,
-    hotPrice: "5.000",
+    hotPrice: "5.500",
   },
   {
     name: {
@@ -109,7 +109,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Ham and cheese",
     },
     available: true,
-    hotPrice: "5.000",
+    hotPrice: "5.500",
   },
 ];
 
@@ -126,7 +126,7 @@ export const accompanimentsProducts = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
-    hotPrice: "8.500",
+    hotPrice: "9.500",
   },
   {
     name: {
@@ -134,7 +134,7 @@ export const accompanimentsProducts = [
       [ENGLISH]: "White Corn Arepa with Butter",
     },
     available: true,
-    hotPrice: "8.500",
+    hotPrice: "9.500",
   },
   {
     name: {
@@ -142,7 +142,7 @@ export const accompanimentsProducts = [
       [ENGLISH]: "Corn arepa with butter and cheese",
     },
     available: true,
-    hotPrice: "13.000",
+    hotPrice: "14.500",
   },
   {
     name: {
@@ -178,7 +178,7 @@ export const specialEggsProducts = [
       [SPANISH]: "SALVAJES",
       [ENGLISH]: "SAVAGES",
     },
-    hotPrice: "25.500",
+    hotPrice: "28.000",
     available: true,
     img: "assets/huevosalvajes.jpg",
     description: {
@@ -193,7 +193,7 @@ export const specialEggsProducts = [
       [SPANISH]: "CRIOLLOS",
       [ENGLISH]: "CREOLES",
     },
-    hotPrice: "22.000",
+    hotPrice: "24.200",
     available: true,
     img: "assets/huevoscriollos.jpg",
     description: {
@@ -206,7 +206,7 @@ export const specialEggsProducts = [
       [SPANISH]: "Campestres",
       [ENGLISH]: "Rustic Style",
     },
-    hotPrice: "27.000",
+    hotPrice: "29.900",
     available: true,
     img: "assets/huevoscampestres.jpeg",
     description: {
@@ -243,7 +243,7 @@ export const healthyProducts = [
       [SPANISH]: "SANDWICH EN WAFFLE YUCA",
       [ENGLISH]: "YUCA WAFFLE SANDWICH",
     },
-    coldPrice: "32.000",
+    coldPrice: "35.500",
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
     description: {
@@ -258,7 +258,7 @@ export const healthyProducts = [
       [SPANISH]: "WAFFLE YUCA",
       [ENGLISH]: "YUCA WAFFLE",
     },
-    coldPrice: "30.500",
+    coldPrice: "33.500",
     available: true,
     description: {
       [SPANISH]:
@@ -272,7 +272,7 @@ export const healthyProducts = [
       [SPANISH]: "Yogurt bowl",
       [ENGLISH]: "Yogurt bowl",
     },
-    coldPrice: "32.000",
+    coldPrice: "35.500",
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
     available: true,
     description: {
@@ -288,7 +288,7 @@ export const healthyProducts = [
       [ENGLISH]: "FRUIT PLATE",
     },
     img: "assets/platodefruta.jpg",
-    coldPrice: "16.900",
+    coldPrice: "18.600",
     available: true,
     description: {
       [SPANISH]: "Variedad de frutas frescas con semillas de chía.",
@@ -300,7 +300,7 @@ export const healthyProducts = [
       [SPANISH]: "COPA PARFAIT",
       [ENGLISH]: "PARFAIT GLASS",
     },
-    coldPrice: "19.000",
+    coldPrice: "20.900",
     available: true,
     img: "assets/copaparfait.jpeg",
     description: {
@@ -330,7 +330,7 @@ export const healthyProducts = [
       [SPANISH]: "TOSTADA CON AGUACATE",
       [ENGLISH]: "TOAST WITH AVOCADO",
     },
-    coldPrice: "28.000",
+    coldPrice: "30.900",
     available: true,
     img: "assets/tostadadeaguacate.jpg",
     description: {

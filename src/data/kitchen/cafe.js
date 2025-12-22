@@ -15,7 +15,7 @@ export const cafeProductList = [
       [ENGLISH]: "Coffee of the day (black)",
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
-    available: true,
+    available: false,
     hotPrice: "5.500",
   },
   {
@@ -24,7 +24,7 @@ export const cafeProductList = [
       [ENGLISH]: "Milkshake",
     },
     img: "assets/malteadadecafe.jpeg",
-    available: true,
+    available: false,
     coldPrice: "17.000",
   },
   {
@@ -33,7 +33,7 @@ export const cafeProductList = [
       [ENGLISH]: "Small Latte",
     },
     img: "assets/lattesmall.jpg",
-    available: true,
+    available: false,
     hotPrice: "8.500",
   },
   {
@@ -45,6 +45,16 @@ export const cafeProductList = [
     available: true,
     hotPrice: "10.500",
     // coldPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Té negro",
+      [ENGLISH]: "Black Tea",
+    },
+    img: "assets/tenegro.jpg",
+    available: true,
+    hotPrice: "9.500",
+    // coldPrice: "11.000",
   },
   {
     name: {
@@ -85,16 +95,6 @@ export const cafeProductList = [
     available: true,
     hotPrice: "9.500",
     coldPrice: "13.500",
-  },
-  {
-    name: {
-      [SPANISH]: "Té negro",
-      [ENGLISH]: "Black Tea",
-    },
-    img: "assets/tenegro.jpg",
-    available: true,
-    hotPrice: "8.500",
-    coldPrice: "11.000",
   },
   {
     name: {
@@ -271,7 +271,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada de pollo, queso y uvas pasas",
       [ENGLISH]: "Chicken, Cheese, and Raisin Empanada",
     },
-    available: true,
+    available: false,
     img: "assets/empanadadepollo.jpg",
     hotPrice: "13.000",
   },
@@ -280,7 +280,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada caprese",
       [ENGLISH]: "Caprese empanada",
     },
-    available: true,
+    available: false,
     img: "assets/empanadacaprese.jpg",
     hotPrice: "13.000",
   },
@@ -290,7 +290,7 @@ export const accompanyProductList = [
       [ENGLISH]: "Beef and Olive Empanada",
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511858/empanadadecarne_hbz03x.webp",
-    available: true,
+    available: false,
     hotPrice: "13.000",
   },
   {
@@ -298,7 +298,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada de espinaca",
       [ENGLISH]: "Spinach Empanada",
     },
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511739/Empanada-espinaca_f4jjtu.webp",
     hotPrice: "15.000",
   },

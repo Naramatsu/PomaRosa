@@ -78,8 +78,8 @@ export const sweetWafflesProducts = [
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    coldPrice: "19.000",
-    available: false,
+    coldPrice: "20.0900",
+    available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196276/waffletradicional_ngc9w1.jpg",
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
@@ -159,11 +159,35 @@ export const WAFFLES_TITLE = {
 export const wafflesProducts = [
   {
     name: {
+      [SPANISH]: "TRADICIONAL",
+      [ENGLISH]: "TRADITIONAL",
+    },
+    coldPrice: "20.900",
+    available: true,
+    description: {
+      [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
+      [ENGLISH]: "Artisan Waffle with Hershey's Chocolate Sauce.",
+    },
+  },
+  {
+    name: {
+      [SPANISH]: "CARIBE",
+      [ENGLISH]: "CARIBBEAN",
+    },
+    coldPrice: "25.500",
+    available: true,
+    description: {
+      [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
+      [ENGLISH]: "Artisan Waffle with Hershey's Chocolate Sauce.",
+    },
+  },
+  {
+    name: {
       [SPANISH]: "CLÁSICO",
       [ENGLISH]: "CLASSIC",
     },
     hotPrice: "19.000",
-    available: true,
+    available: false,
     img: "assets/waffleclasico.webp",
     description: {
       [SPANISH]: "Con miel de maple y Mantequilla.",
@@ -176,7 +200,7 @@ export const wafflesProducts = [
       [ENGLISH]: "BANANA",
     },
     hotPrice: "23.000",
-    available: true,
+    available: false,
     img: "assets/waffledebanano.jpeg",
     description: {
       [SPANISH]:
@@ -190,7 +214,7 @@ export const wafflesProducts = [
       [SPANISH]: "NUTELLA",
       [ENGLISH]: "NUTELLA",
     },
-    hotPrice: "25.000",
+    hotPrice: "27.500",
     available: true,
     img: "assets/waffledenutella.jpeg",
     description: {
@@ -205,7 +229,7 @@ export const wafflesProducts = [
       [SPANISH]: "BERRIES",
       [ENGLISH]: "BERRIES",
     },
-    hotPrice: "24.000",
+    hotPrice: "26.500",
     available: true,
     img: "assets/waffleberries.jpeg",
     description: {

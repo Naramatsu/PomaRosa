@@ -6,7 +6,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "EXPRESS",
       [ENGLISH]: "EXPRESS",
     },
-    hotPrice: "20.000",
+    hotPrice: "22.000",
     available: true,
     img: "assets/desayunoexpress.jpg",
     description: {
@@ -21,7 +21,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH",
       [ENGLISH]: "SANDWICH",
     },
-    hotPrice: "21.000",
+    hotPrice: "23.500",
     available: true,
     img: "assets/sanduche.jpeg",
     description: {
@@ -35,7 +35,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "SANDWICH DE HUEVO",
       [ENGLISH]: "EGG SANDWICH",
     },
-    hotPrice: "23.500",
+    hotPrice: "25.900",
     available: true,
     img: "assets/sanduchedehuevo.jpeg",
     description: {
@@ -50,7 +50,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    hotPrice: "27.000",
+    hotPrice: "29.900",
     available: true,
     img: "assets/desayunotradicional.jpg",
     description: {
@@ -65,7 +65,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "RANCHERO",
       [ENGLISH]: "RANCHERO",
     },
-    hotPrice: "31.000",
+    hotPrice: "34.500",
     available: true,
     img: "assets/desayunoranchero.jpg",
     description: {
@@ -80,7 +80,7 @@ export const comboBreakfastsProducts = [
       [SPANISH]: "AMERICANO",
       [ENGLISH]: "AMERICANO",
     },
-    hotPrice: "36.000",
+    hotPrice: "39.500",
     available: true,
     img: "assets/desayunoamericano.webp",
     description: {
@@ -96,7 +96,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "WILD",
     },
     hotPrice: "39.000",
-    available: true,
+    available: false,
     img: "assets/desayunosilvestre.webp",
     description: {
       [SPANISH]:

@@ -8,7 +8,7 @@ export const pizzaProducts = [
       [SPANISH]: "NAPOLITANA",
       [ENGLISH]: "NEAPOLITAN",
     },
-    personal: "23.000",
+    personal: "25.500",
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511477/pizza-napolitana_a9ykhj.webp",
     description: {
@@ -38,7 +38,7 @@ export const pizzaProducts = [
       [ENGLISH]: "PEPPERONI",
     },
     img: "assets/pizzapepperoni.jpeg",
-    personal: "23.000",
+    personal: "25.500",
     available: true,
     description: {
       [SPANISH]: "Queso mozzarella, pepperoni y orégano.",
@@ -51,7 +51,7 @@ export const pizzaProducts = [
       [ENGLISH]: "HAWAPEPE",
     },
     img: "assets/pizzahawapepe.jpeg",
-    personal: "23.000",
+    personal: "25.500",
     available: true,
     description: {
       [SPANISH]:
@@ -80,7 +80,7 @@ export const pizzaProducts = [
       [SPANISH]: "Mediterránea",
       [ENGLISH]: "MEDITERRANEAN",
     },
-    personal: "26.000",
+    personal: "28.500",
     available: true,
     img: "assets/pizzamediterránea.jpg",
     description: {

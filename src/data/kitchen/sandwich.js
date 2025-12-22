@@ -8,7 +8,7 @@ export const sandwichProducts = [
       [SPANISH]: "CLUB SANDWICH",
       [ENGLISH]: "CLUB SANDWICH",
     },
-    hotPrice: "34.000",
+    hotPrice: "37.500",
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Club_sandwich_converted_dp29bb.webp",
     description: {
@@ -23,7 +23,7 @@ export const sandwichProducts = [
       [SPANISH]: "POLLO CAPRESSE",
       [ENGLISH]: "CHICKEN CAPRESE",
     },
-    hotPrice: "37.500",
+    hotPrice: "41.500",
     available: true,
     description: {
       [SPANISH]:
@@ -37,7 +37,7 @@ export const sandwichProducts = [
       [SPANISH]: "VEGETARIANO",
       [ENGLISH]: "VEGETARIAN",
     },
-    hotPrice: "31.000",
+    hotPrice: "34.500",
     available: true,
     description: {
       [SPANISH]:
@@ -65,7 +65,7 @@ export const sandwichProducts = [
       [SPANISH]: "POLLO Y CHAMPIÑONES",
       [ENGLISH]: "CHICKEN AND MUSHROOMS",
     },
-    hotPrice: "32.000",
+    hotPrice: "35.500",
     available: true,
     description: {
       [SPANISH]:

@@ -48,8 +48,8 @@ export const JUICES = {
 };
 
 export const juicesList = {
-  [SPANISH]: "Guanábana, Mango y Mora",
-  [ENGLISH]: "Soursop, Mango and Blackberry",
+  [SPANISH]: "Mango y Mora",
+  [ENGLISH]: "Mango and Blackberry",
 };
 
 export const juicesPrices = [
@@ -77,8 +77,8 @@ export const SPECIAL_JUICES = {
 };
 
 export const specialJuicesList = {
-  [SPANISH]: "Corozo, Fresa, Maracuyá",
-  [ENGLISH]: "Corozo, Strawberry, Passion Fruit",
+  [SPANISH]: "Corozo, Guanabana, Fresa, Maracuyá",
+  [ENGLISH]: "Corozo, Soursop, Strawberry, Passion Fruit",
 };
 
 export const specialJuicesPrices = [
