@@ -12,7 +12,8 @@ const useMenuHours = () => {
       });
 
       const dayHour = parseInt(date);
-      setShowDailyMenu(dayHour >= 12 && dayHour < 15);
+      // setShowDailyMenu(dayHour >= 12 && dayHour < 15);
+      setShowDailyMenu(dayHour && false);
     };
 
     checkHours();
