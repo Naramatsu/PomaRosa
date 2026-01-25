@@ -24,7 +24,7 @@ export const sandwichProducts = [
       [ENGLISH]: "CHICKEN CAPRESE",
     },
     hotPrice: "41.500",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Pechuga de pollo apanada, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, tomates secos y queso mozzarella.",
@@ -38,7 +38,7 @@ export const sandwichProducts = [
       [ENGLISH]: "VEGETARIAN",
     },
     hotPrice: "34.500",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Tomates secos, mix de hojas verdes con reducción de aceto balsámico, salsa pesto, queso mozzarella, champiñones salteados y aguacate fresco en pan ciabatta.",

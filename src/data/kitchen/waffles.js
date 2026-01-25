@@ -162,7 +162,7 @@ export const wafflesProducts = [
       [SPANISH]: "TRADICIONAL",
       [ENGLISH]: "TRADITIONAL",
     },
-    coldPrice: "20.900",
+    hotPrice: "21.900",
     available: true,
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
@@ -174,7 +174,7 @@ export const wafflesProducts = [
       [SPANISH]: "CARIBE",
       [ENGLISH]: "CARIBBEAN",
     },
-    coldPrice: "25.500",
+    hotPrice: "25.500",
     available: true,
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",

@@ -9,8 +9,8 @@ import {
   cafeProductList,
   TO_ACCOMPANY,
   accompanyProductList,
-  TEA_E_INFUSIONS,
-  teaAndInfusionsProductList,
+  // TEA_E_INFUSIONS,
+  // teaAndInfusionsProductList,
 } from "../data/kitchen/cafe";
 import useLanguaje from "../hooks/useLanguaje";
 import useProduct from "../hooks/useProduct";
@@ -21,7 +21,7 @@ const Cafe = () => {
 
   const cafeProducts = useProduct(cafeProductList);
   const accompanyProducts = useProduct(accompanyProductList);
-  const teaAndInfusionProducts = useProduct(teaAndInfusionsProductList);
+  // const teaAndInfusionProducts = useProduct(teaAndInfusionsProductList);
 
   return (
     <section id={CAFE_TILTE[languaje]} className="w-full p-5">
@@ -36,7 +36,7 @@ const Cafe = () => {
             img={img}
           />
         ))}
-        <section className="w-full py-5">
+        {/* <section className="w-full py-5">
           <Title subTitle>{TEA_E_INFUSIONS[languaje]}</Title>
           <Box className="gap-5 flex-col pt-10">
             {teaAndInfusionProducts.map(
@@ -51,7 +51,7 @@ const Cafe = () => {
               )
             )}
           </Box>
-        </section>
+        </section> */}
         <Box className="gap-2 p-2 flex-col sm:flex-row" bordered>
           <p className="text-dark-brown/70 text-lg kalam-regular w-full text-center">
             {ADDITIONAL_MILK[languaje]}

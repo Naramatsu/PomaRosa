@@ -115,7 +115,7 @@ export const urlGenerator = (url) => {
 
 export const getTitle = (items) => {
   const some = Object.keys(items).findLast(
-    (keys) => items[keys].top <= 100 && items[keys].top <= items[keys].height
+    (keys) => items[keys].top <= 100 && items[keys].top <= items[keys].height,
   );
   return items[some].title;
 };

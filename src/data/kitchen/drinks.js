@@ -48,8 +48,8 @@ export const JUICES = {
 };
 
 export const juicesList = {
-  [SPANISH]: "Mango y Mora",
-  [ENGLISH]: "Mango and Blackberry",
+  [SPANISH]: "Maracuyá, Mango, Guanábana, Mora, Corozo",
+  [ENGLISH]: "Pasion fruit, Mango, Soursop, Blackberry,  Corozo",
 };
 
 export const juicesPrices = [
@@ -59,7 +59,7 @@ export const juicesPrices = [
       [ENGLISH]: "In water",
     },
     available: true,
-    coldPrice: "10.000",
+    coldPrice: "11.000",
   },
   {
     name: {
@@ -67,7 +67,7 @@ export const juicesPrices = [
       [ENGLISH]: "In milk",
     },
     available: true,
-    coldPrice: "12.000",
+    coldPrice: "13.000",
   },
 ];
 
@@ -135,7 +135,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "Water",
     },
     available: true,
-    coldPrice: "8.000",
+    coldPrice: "7.000",
   },
   {
     name: {
@@ -151,7 +151,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "HATSU soda",
     },
     available: true,
-    coldPrice: "8.000",
+    coldPrice: "9.500",
   },
   {
     name: {
@@ -159,7 +159,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "HATSU cold tea",
     },
     available: true,
-    coldPrice: "9.000",
+    coldPrice: "10.500",
   },
   {
     name: {
@@ -167,7 +167,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "National beer",
     },
     available: true,
-    coldPrice: "9.500",
+    coldPrice: "10.500",
   },
   {
     name: {
@@ -175,7 +175,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "Three mountain ranges",
     },
     available: false,
-    coldPrice: "12.000",
+    coldPrice: "10.500",
   },
   {
     name: {
@@ -198,7 +198,7 @@ export const otherDrinksProductList = [
       [SPANISH]: "Adición michelada",
       [ENGLISH]: "Add Michelada",
     },
-    available: true,
+    available: false,
     coldPrice: "3.000",
   },
 ];
@@ -223,7 +223,7 @@ export const sodasProductList = [
       [SPANISH]: "Maracuyá",
       [ENGLISH]: "Passion fruit",
     },
-    coldPrice: "14.000",
+    coldPrice: "15.000",
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650898/Soda_maracuya_converted_zmx648.webp",
     description: {
@@ -237,7 +237,7 @@ export const sodasProductList = [
       [SPANISH]: "Michelada",
       [ENGLISH]: "Michelada",
     },
-    coldPrice: "9.500",
+    coldPrice: "11.500",
     available: true,
     description: {
       [SPANISH]: "Limón y sal",

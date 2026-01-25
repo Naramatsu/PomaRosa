@@ -65,18 +65,18 @@ const Kitchen = () => {
       drinkTitle: generateRefObject(drinkTitle, DRINKS_TILTE[languaje]),
       comboBfTitle: generateRefObject(
         comboBfTitle,
-        COMBOS_BREAKFASTS_TITLE[languaje]
+        COMBOS_BREAKFASTS_TITLE[languaje],
       ),
       breakfastsTitle: generateRefObject(
         breakfastsTitle,
-        BREAKFASTS_TITLE[languaje]
+        BREAKFASTS_TITLE[languaje],
       ),
       wafflesTitle: generateRefObject(wafflesTitle, WAFFLES_TITLE[languaje]),
       sandwichTitle: generateRefObject(sandwichTitle, SANDWICH_TITLE[languaje]),
       pizzasTitle: generateRefObject(pizzasTitle, PIZZA_TITLE[languaje]),
       dailyMenuTitle: generateRefObject(
         dailyMenuTitle,
-        DAILYMENU_TITLE[languaje]
+        DAILYMENU_TITLE[languaje],
       ),
     };
     setTitle(getTitle(allRef));
@@ -99,7 +99,7 @@ const Kitchen = () => {
         if (!showDailyMenu)
           return item.label[languaje] !== DAILYMENU_TITLE[languaje];
         return item;
-      })
+      }),
     );
   }, [showDailyMenu, languaje]);
 

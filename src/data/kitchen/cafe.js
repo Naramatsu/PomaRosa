@@ -7,7 +7,7 @@ export const cafeProductList = [
       [ENGLISH]: "Fruit Herbal Tea",
     },
     available: true,
-    hotPrice: "7.500",
+    hotPrice: "8.500",
   },
   {
     name: {
@@ -17,6 +17,24 @@ export const cafeProductList = [
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
     available: false,
     hotPrice: "5.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Latte con leche de almendras",
+      [ENGLISH]: "Almond Milk Latte",
+    },
+    // img: "assets/techai.jpg",
+    available: true,
+    hotPrice: "12.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Capucchino con leche de almendras",
+      [ENGLISH]: "Almond Milk Cappuccino",
+    },
+    // img: "assets/techai.jpg",
+    available: true,
+    hotPrice: "13.000",
   },
   {
     name: {
@@ -43,7 +61,7 @@ export const cafeProductList = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
     available: true,
-    hotPrice: "10.500",
+    hotPrice: "9.500",
     // coldPrice: "13.000",
   },
   {
@@ -53,7 +71,7 @@ export const cafeProductList = [
     },
     img: "assets/tenegro.jpg",
     available: true,
-    hotPrice: "9.500",
+    hotPrice: "8.000",
     // coldPrice: "11.000",
   },
   {
@@ -63,8 +81,8 @@ export const cafeProductList = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257904/Americano_maqxoh.webp",
     available: true,
-    hotPrice: "7.000",
-    coldPrice: "9.000",
+    hotPrice: "8.000",
+    coldPrice: "12.000",
   },
   {
     name: {
@@ -73,7 +91,7 @@ export const cafeProductList = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
     available: true,
-    hotPrice: "10.500",
+    hotPrice: "11.500",
     coldPrice: "12.000",
   },
   {
@@ -113,7 +131,7 @@ export const cafeProductList = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/capuccinocaramel_dbs5yf.jpg",
-    hotPrice: "11.500",
+    hotPrice: "12.500",
     coldPrice: "17.500",
   },
   {
@@ -201,7 +219,7 @@ export const accompanyProductList = [
       [SPANISH]: "Empanada arabe",
       [ENGLISH]: "Arabian empanada",
     },
-    available: true,
+    available: false,
     hotPrice: "13.000",
   },
   {
@@ -211,7 +229,7 @@ export const accompanyProductList = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1740163677/Pan_3_quesos_eq2bgq.jpg",
     available: true,
-    hotPrice: "7.000",
+    hotPrice: "7.500",
   },
   {
     name: {
@@ -220,7 +238,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "assets/pandeyuca.jpg",
-    hotPrice: "4.000",
+    hotPrice: "4.500",
   },
   {
     name: {
@@ -238,7 +256,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "assets/pandechocolate.jpg",
-    hotPrice: "5.500",
+    hotPrice: "6.000",
   },
   {
     name: {
@@ -247,7 +265,7 @@ export const accompanyProductList = [
     },
     available: true,
     img: "assets/jamonyqueso.jpg",
-    hotPrice: "6.000",
+    hotPrice: "6.500",
   },
   {
     name: {
@@ -256,7 +274,7 @@ export const accompanyProductList = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Chocolate_con_ar%C3%A1ndanos_converted_kgef9v.webp",
-    hotPrice: "7.500",
+    hotPrice: "8.000",
   },
   {
     name: {
@@ -309,5 +327,13 @@ export const accompanyProductList = [
     },
     available: false,
     hotPrice: "10.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Fatay al horno",
+      [ENGLISH]: "Baked Fatay",
+    },
+    available: true,
+    hotPrice: "13.000",
   },
 ];

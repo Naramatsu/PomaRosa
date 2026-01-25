@@ -22,7 +22,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "SANDWICH",
     },
     hotPrice: "23.500",
-    available: true,
+    available: false,
     img: "assets/sanduche.jpeg",
     description: {
       [SPANISH]:
@@ -81,7 +81,7 @@ export const comboBreakfastsProducts = [
       [ENGLISH]: "AMERICANO",
     },
     hotPrice: "39.500",
-    available: true,
+    available: false,
     img: "assets/desayunoamericano.webp",
     description: {
       [SPANISH]:

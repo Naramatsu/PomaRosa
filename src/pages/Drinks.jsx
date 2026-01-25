@@ -16,9 +16,9 @@ import {
   otherDrinksProductList,
   SODAS,
   sodasProductList,
-  SPECIAL_JUICES,
-  specialJuicesList,
-  specialJuicesPrices,
+  // SPECIAL_JUICES,
+  // specialJuicesList,
+  // specialJuicesPrices,
 } from "../data/kitchen/drinks";
 import useLanguaje from "../hooks/useLanguaje";
 import useProduct from "../hooks/useProduct";
@@ -74,7 +74,7 @@ const Drinks = () => {
           />
         ))}
       </Box>
-      <Box
+      {/* <Box
         bordered
         title={SPECIAL_JUICES[languaje]}
         className="flex-col gap-5 p-2 my-16"
@@ -91,7 +91,7 @@ const Drinks = () => {
             noLabel
           />
         ))}
-      </Box>
+      </Box> */}
 
       <Box
         bordered

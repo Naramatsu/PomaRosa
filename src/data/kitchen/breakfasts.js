@@ -18,7 +18,7 @@ export const eggsToTasteProducts = [
     },
     available: true,
     img: "assets/huevosrevueltos.jpeg",
-    hotPrice: "10.900",
+    hotPrice: "9.800",
   },
   {
     name: {
@@ -69,14 +69,14 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Tomato and onion",
     },
     available: true,
-    hotPrice: "3.500",
+    hotPrice: "4.000",
   },
   {
     name: {
       [SPANISH]: "Maíz tierno",
       [ENGLISH]: "Tender corn",
     },
-    available: true,
+    available: false,
     hotPrice: "3.500",
   },
   {
@@ -92,7 +92,7 @@ export const additionalEggsProducts = [
       [SPANISH]: "Queso",
       [ENGLISH]: "Cheese",
     },
-    available: true,
+    available: false,
     hotPrice: "4.500",
   },
   {
@@ -101,7 +101,7 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Santarrosano chorizo",
     },
     available: true,
-    hotPrice: "5.500",
+    hotPrice: "6.500",
   },
   {
     name: {
@@ -109,7 +109,15 @@ export const additionalEggsProducts = [
       [ENGLISH]: "Ham and cheese",
     },
     available: true,
-    hotPrice: "5.500",
+    hotPrice: "6.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Pollo",
+      [ENGLISH]: "Chicken",
+    },
+    available: true,
+    hotPrice: "7.000",
   },
 ];
 
@@ -126,7 +134,7 @@ export const accompanimentsProducts = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739813274/tostadas_ja2whz.jpg",
-    hotPrice: "9.500",
+    hotPrice: "8.000",
   },
   {
     name: {
@@ -143,6 +151,14 @@ export const accompanimentsProducts = [
     },
     available: true,
     hotPrice: "14.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Waffle",
+      [ENGLISH]: "Waffle",
+    },
+    available: true,
+    hotPrice: "15.000",
   },
   {
     name: {
@@ -194,7 +210,7 @@ export const specialEggsProducts = [
       [ENGLISH]: "CREOLES",
     },
     hotPrice: "24.200",
-    available: true,
+    available: false,
     img: "assets/huevoscriollos.jpg",
     description: {
       [SPANISH]: "Huevos fritos bañados con hogao, salsa pomodoro y cilantro.",
@@ -244,7 +260,7 @@ export const healthyProducts = [
       [ENGLISH]: "YUCA WAFFLE SANDWICH",
     },
     coldPrice: "35.500",
-    available: true,
+    available: false,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/waffleyucasanduche_rt69mj.jpg",
     description: {
       [SPANISH]:
@@ -274,7 +290,7 @@ export const healthyProducts = [
     },
     coldPrice: "35.500",
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1738937790/bowldefruta_vhfbhh.webp",
-    available: true,
+    available: false,
     description: {
       [SPANISH]:
         "Bowl de yogurt griego, con fresa, mango, banano fresco, granola artesanal con nueces, escamas de coco , semillas de chía y arándanos.",
@@ -300,7 +316,7 @@ export const healthyProducts = [
       [SPANISH]: "COPA PARFAIT",
       [ENGLISH]: "PARFAIT GLASS",
     },
-    coldPrice: "20.900",
+    coldPrice: "21.900",
     available: true,
     img: "assets/copaparfait.jpeg",
     description: {
@@ -330,7 +346,7 @@ export const healthyProducts = [
       [SPANISH]: "TOSTADA CON AGUACATE",
       [ENGLISH]: "TOAST WITH AVOCADO",
     },
-    coldPrice: "30.900",
+    coldPrice: "29.500",
     available: true,
     img: "assets/tostadadeaguacate.jpg",
     description: {
