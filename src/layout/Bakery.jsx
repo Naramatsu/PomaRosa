@@ -10,15 +10,19 @@ import ModalImage from "../components/ModalImage";
 import {
   BAKERY,
   BAKERY_MENU_TITLES,
+  BRIOCHE_BAKERY_TITLE,
   generateRefObject,
   getTitle,
   INDIVIDUAL_BAKERY_TITLE,
   MENU_TITLE,
   MOLDED_BAKERY_TITLE,
+  SOURDOUGH_BAKERY_TITLE,
 } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
-import IndividualBakery from "../pages/IndividualBakery";
-import MoldedBakery from "../pages/MoldedBakery";
+import IndividualBakeryV2 from "../pages/IndividualBakeryV2";
+import MoldedBakeryV2 from "../pages/MoldedBakeryV2";
+import Brioche from "../pages/Brioche";
+import Sourdough from "../pages/Sourdough";
 
 const Bakery = () => {
   const [title, setTitle] = useState("");
@@ -27,6 +31,8 @@ const Bakery = () => {
   const { themeBgColor, setTheme } = useTheme();
 
   const menuTitle = useRef(null);
+  const sourdoughTitle = useRef(null);
+  const briocheTitle = useRef(null);
   const individualTitle = useRef(null);
   const moldedTitle = useRef(null);
 
@@ -39,9 +45,14 @@ const Bakery = () => {
   useEffect(() => {
     const allRef = {
       menuTitle: generateRefObject(menuTitle, MENU_TITLE[languaje]),
+      sourdough: generateRefObject(
+        sourdoughTitle,
+        SOURDOUGH_BAKERY_TITLE[languaje],
+      ),
+      brioche: generateRefObject(briocheTitle, BRIOCHE_BAKERY_TITLE[languaje]),
       individual: generateRefObject(
         individualTitle,
-        INDIVIDUAL_BAKERY_TITLE[languaje]
+        INDIVIDUAL_BAKERY_TITLE[languaje],
       ),
       molded: generateRefObject(moldedTitle, MOLDED_BAKERY_TITLE[languaje]),
     };
@@ -57,11 +68,17 @@ const Bakery = () => {
         <section id="menu" ref={menuTitle}>
           <Menu />
         </section>
+        <section id="sourdough" ref={sourdoughTitle}>
+          <Sourdough />
+        </section>
+        <section id="brioche" ref={briocheTitle}>
+          <Brioche />
+        </section>
         <section id="individual" ref={individualTitle}>
-          <IndividualBakery />
+          <IndividualBakeryV2 />
         </section>
         <section id="molded" ref={moldedTitle}>
-          <MoldedBakery />
+          <MoldedBakeryV2 />
         </section>
       </section>
       <Footer />

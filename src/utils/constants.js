@@ -85,6 +85,16 @@ export const MOLDED_BAKERY_TITLE = {
   [ENGLISH]: "Molded Bakery",
 };
 
+export const SOURDOUGH_BAKERY_TITLE = {
+  [SPANISH]: "Panadería en masa madre",
+  [ENGLISH]: "Sourdough Bakery",
+};
+
+export const BRIOCHE_BAKERY_TITLE = {
+  [SPANISH]: "Panadería en brioche",
+  [ENGLISH]: "Brioche Bakery",
+};
+
 export const KITCHEN_MENU_TITLES = [
   { label: MENU_TITLE, link: "menu" },
   { label: CAFE_TILTE, link: "cafe" },
@@ -99,6 +109,8 @@ export const KITCHEN_MENU_TITLES = [
 
 export const BAKERY_MENU_TITLES = [
   { label: MENU_TITLE, link: "menu" },
+  { label: SOURDOUGH_BAKERY_TITLE, link: "sourdough" },
+  { label: BRIOCHE_BAKERY_TITLE, link: "brioche" },
   { label: INDIVIDUAL_BAKERY_TITLE, link: "individual" },
   { label: MOLDED_BAKERY_TITLE, link: "molded" },
 ];

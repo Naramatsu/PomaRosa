@@ -11,7 +11,7 @@ import {
 export const menuList = (theme = KITCHEN) => [
   {
     label: MENU_TITLE,
-    link: theme === KITCHEN ? "cafe" : "individual",
+    link: theme === KITCHEN ? "cafe" : "sourdough",
     handlerCLick: scrollToSection,
   },
   {
