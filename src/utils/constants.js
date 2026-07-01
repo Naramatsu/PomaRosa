@@ -33,46 +33,55 @@ export const whatsAppLink = "https://wa.me/573146343249";
 export const MENU_TITLE = {
   [SPANISH]: "Menú",
   [ENGLISH]: "Menu",
+  isActive: true,
 };
 
-export const CAFE_TILTE = {
+export const CAFE_TITLE = {
   [SPANISH]: "Cafetería",
   [ENGLISH]: "Café",
+  isActive: true,
 };
 
-export const DRINKS_TILTE = {
+export const DRINKS_TITLE = {
   [SPANISH]: "Bebidas",
   [ENGLISH]: "Drinks",
+  isActive: true,
 };
 
 export const COMBOS_BREAKFASTS_TITLE = {
   [SPANISH]: "COMBOS - DESAYUNOS",
   [ENGLISH]: "COMBOS - BREAKFASTS",
+  isActive: false,
 };
 
 export const BREAKFASTS_TITLE = {
   [SPANISH]: "DESAYUNOS",
   [ENGLISH]: "BREAKFASTS",
+  isActive: false,
 };
 
 export const WAFFLES_TITLE = {
   [SPANISH]: "WAFFLES",
   [ENGLISH]: "WAFFLES",
+  isActive: true,
 };
 
 export const SANDWICH_TITLE = {
   [SPANISH]: "SANDWICHS",
   [ENGLISH]: "SANDWICHS",
+  isActive: false,
 };
 
 export const PIZZA_TITLE = {
   [SPANISH]: "PIZZAS",
   [ENGLISH]: "PIZZAS",
+  isActive: true,
 };
 
 export const DAILYMENU_TITLE = {
   [SPANISH]: "MENÚ DEL DÍA",
   [ENGLISH]: "DAILY MENU",
+  isActive: false,
 };
 
 export const INDIVIDUAL_BAKERY_TITLE = {
@@ -96,15 +105,31 @@ export const BRIOCHE_BAKERY_TITLE = {
 };
 
 export const KITCHEN_MENU_TITLES = [
-  { label: MENU_TITLE, link: "menu", isActive: true },
-  { label: CAFE_TILTE, link: "cafe", isActive: true },
-  { label: DRINKS_TILTE, link: "drinks", isActive: true },
-  { label: COMBOS_BREAKFASTS_TITLE, link: "combos", isActive: false },
-  { label: BREAKFASTS_TITLE, link: "breakfasts", isActive: true },
-  { label: WAFFLES_TITLE, link: "waffles", isActive: true },
-  { label: SANDWICH_TITLE, link: "sandwichs", isActive: true },
-  { label: PIZZA_TITLE, link: "pizzas", isActive: true },
-  { label: DAILYMENU_TITLE, link: "dailymenu", isActive: true },
+  { label: MENU_TITLE, link: "menu", isActive: MENU_TITLE.isActive },
+  { label: CAFE_TITLE, link: "cafe", isActive: CAFE_TITLE.isActive },
+  { label: DRINKS_TITLE, link: "drinks", isActive: DRINKS_TITLE.isActive },
+  {
+    label: COMBOS_BREAKFASTS_TITLE,
+    link: "combos",
+    isActive: COMBOS_BREAKFASTS_TITLE.isActive,
+  },
+  {
+    label: BREAKFASTS_TITLE,
+    link: "breakfasts",
+    isActive: BREAKFASTS_TITLE.isActive,
+  },
+  { label: WAFFLES_TITLE, link: "waffles", isActive: WAFFLES_TITLE.isActive },
+  {
+    label: SANDWICH_TITLE,
+    link: "sandwichs",
+    isActive: SANDWICH_TITLE.isActive,
+  },
+  { label: PIZZA_TITLE, link: "pizzas", isActive: PIZZA_TITLE.isActive },
+  {
+    label: DAILYMENU_TITLE,
+    link: "dailymenu",
+    isActive: DAILYMENU_TITLE.isActive,
+  },
 ];
 
 export const BAKERY_MENU_TITLES = [

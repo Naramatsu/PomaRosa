@@ -14,7 +14,7 @@ import {
 } from "../data/kitchen/cafe";
 import useLanguaje from "../hooks/useLanguaje";
 import useProduct from "../hooks/useProduct";
-import { CAFE_TILTE } from "../utils/constants";
+import { CAFE_TITLE } from "../utils/constants";
 
 const Cafe = () => {
   const [languaje] = useLanguaje();
@@ -24,8 +24,8 @@ const Cafe = () => {
   // const teaAndInfusionProducts = useProduct(teaAndInfusionsProductList);
 
   return (
-    <section id={CAFE_TILTE[languaje]} className="w-full p-5">
-      <Title>{CAFE_TILTE[languaje]}</Title>
+    <section id={CAFE_TITLE[languaje]} className="w-full p-5">
+      <Title>{CAFE_TITLE[languaje]}</Title>
       <Box className="gap-5 flex-col py-10">
         {cafeProducts.map(({ name, hotPrice, coldPrice, img }, index) => (
           <Product

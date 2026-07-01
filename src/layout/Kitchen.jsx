@@ -17,10 +17,10 @@ import ModalImage from "../components/ModalImage";
 
 import {
   BREAKFASTS_TITLE,
-  CAFE_TILTE,
+  CAFE_TITLE,
   COMBOS_BREAKFASTS_TITLE,
   DAILYMENU_TITLE,
-  DRINKS_TILTE,
+  DRINKS_TITLE,
   generateRefObject,
   getTitle,
   KITCHEN,
@@ -63,8 +63,8 @@ const Kitchen = () => {
   useEffect(() => {
     const allRef = {
       menuTitle: generateRefObject(menuTitle, MENU_TITLE[languaje]),
-      cafeTitle: generateRefObject(cafeTitle, CAFE_TILTE[languaje]),
-      drinkTitle: generateRefObject(drinkTitle, DRINKS_TILTE[languaje]),
+      cafeTitle: generateRefObject(cafeTitle, CAFE_TITLE[languaje]),
+      drinkTitle: generateRefObject(drinkTitle, DRINKS_TITLE[languaje]),
       comboBfTitle: generateRefObject(
         comboBfTitle,
         COMBOS_BREAKFASTS_TITLE[languaje],
@@ -120,22 +120,28 @@ const Kitchen = () => {
         <section id="drinks" ref={drinkTitle}>
           <Drinks />
         </section>
-        <section id="combos" ref={comboBfTitle}>
-          <ComboBreakfasts />
-        </section>
-        <section id="breakfasts" ref={breakfastsTitle}>
-          <Breakfasts />
-        </section>
+        {COMBOS_BREAKFASTS_TITLE.isActive && (
+          <section id="combos" ref={comboBfTitle}>
+            <ComboBreakfasts />
+          </section>
+        )}
+        {BREAKFASTS_TITLE.isActive && (
+          <section id="breakfasts" ref={breakfastsTitle}>
+            <Breakfasts />
+          </section>
+        )}
         <section id="waffles" ref={wafflesTitle}>
           <Waffles />
         </section>
-        <section id="sandwichs" ref={sandwichTitle}>
-          <Sandwich />
-        </section>
+        {SANDWICH_TITLE.isActive && (
+          <section id="sandwichs" ref={sandwichTitle}>
+            <Sandwich />
+          </section>
+        )}
         <section id="pizzas" ref={pizzasTitle}>
           <Pizzas />
         </section>
-        {showDailyMenu && (
+        {DAILYMENU_TITLE.isActive && (
           <section id="dailymenu" ref={dailyMenuTitle}>
             <DailyMenu />
           </section>
