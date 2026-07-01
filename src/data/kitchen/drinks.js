@@ -139,8 +139,8 @@ export const otherDrinksProductList = [
   },
   {
     name: {
-      [SPANISH]: "Gaseosa x 400ml",
-      [ENGLISH]: "Soda x 400ml",
+      [SPANISH]: "Gaseosa",
+      [ENGLISH]: "Soda",
     },
     available: true,
     coldPrice: "8.000",
@@ -191,7 +191,7 @@ export const otherDrinksProductList = [
       [ENGLISH]: "Imported beer",
     },
     available: true,
-    coldPrice: "12.000",
+    coldPrice: "13.500",
   },
   {
     name: {

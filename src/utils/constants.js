@@ -96,15 +96,15 @@ export const BRIOCHE_BAKERY_TITLE = {
 };
 
 export const KITCHEN_MENU_TITLES = [
-  { label: MENU_TITLE, link: "menu" },
-  { label: CAFE_TILTE, link: "cafe" },
-  { label: DRINKS_TILTE, link: "drinks" },
-  { label: COMBOS_BREAKFASTS_TITLE, link: "combos" },
-  { label: BREAKFASTS_TITLE, link: "breakfasts" },
-  { label: WAFFLES_TITLE, link: "waffles" },
-  { label: SANDWICH_TITLE, link: "sandwichs" },
-  { label: PIZZA_TITLE, link: "pizzas" },
-  { label: DAILYMENU_TITLE, link: "dailymenu" },
+  { label: MENU_TITLE, link: "menu", isActive: true },
+  { label: CAFE_TILTE, link: "cafe", isActive: true },
+  { label: DRINKS_TILTE, link: "drinks", isActive: true },
+  { label: COMBOS_BREAKFASTS_TITLE, link: "combos", isActive: false },
+  { label: BREAKFASTS_TITLE, link: "breakfasts", isActive: true },
+  { label: WAFFLES_TITLE, link: "waffles", isActive: true },
+  { label: SANDWICH_TITLE, link: "sandwichs", isActive: true },
+  { label: PIZZA_TITLE, link: "pizzas", isActive: true },
+  { label: DAILYMENU_TITLE, link: "dailymenu", isActive: true },
 ];
 
 export const BAKERY_MENU_TITLES = [

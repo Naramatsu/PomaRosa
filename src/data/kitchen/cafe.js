@@ -26,6 +26,7 @@ export const cafeProductList = [
     // img: "assets/techai.jpg",
     available: true,
     hotPrice: "12.000",
+    coldPrice: "15.500",
   },
   {
     name: {
@@ -61,7 +62,7 @@ export const cafeProductList = [
     },
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Chocolate_e2klzh.webp",
     available: true,
-    hotPrice: "9.500",
+    hotPrice: "10.500",
     // coldPrice: "13.000",
   },
   {
@@ -82,7 +83,7 @@ export const cafeProductList = [
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257904/Americano_maqxoh.webp",
     available: true,
     hotPrice: "8.000",
-    coldPrice: "12.000",
+    coldPrice: "12.500",
   },
   {
     name: {
@@ -92,7 +93,7 @@ export const cafeProductList = [
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1743257902/Cafe_doble_zfuyqi.webp",
     available: true,
     hotPrice: "11.500",
-    coldPrice: "12.000",
+    coldPrice: "12.500",
   },
   {
     name: {
@@ -111,8 +112,8 @@ export const cafeProductList = [
     },
     img: "assets/lattegrande.jpg",
     available: true,
-    hotPrice: "9.500",
-    coldPrice: "13.500",
+    hotPrice: "10.500",
+    coldPrice: "14.500",
   },
   {
     name: {
@@ -122,7 +123,7 @@ export const cafeProductList = [
     img: "assets/capuchinos.jpeg",
     available: true,
     hotPrice: "10.500",
-    coldPrice: "14.500",
+    coldPrice: "15.500",
   },
   {
     name: {
@@ -131,8 +132,8 @@ export const cafeProductList = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1739196274/capuccinocaramel_dbs5yf.jpg",
-    hotPrice: "12.500",
-    coldPrice: "17.500",
+    hotPrice: "13.000",
+    coldPrice: "18.500",
   },
   {
     name: {
@@ -141,7 +142,7 @@ export const cafeProductList = [
     },
     img: "assets/milo.jpg",
     available: true,
-    hotPrice: "11.500",
+    hotPrice: "12.000",
     coldPrice: "16.000",
   },
   {
@@ -162,7 +163,7 @@ export const cafeProductList = [
     img: "assets/techai.jpg",
     available: true,
     hotPrice: "13.000",
-    coldPrice: "16.000",
+    coldPrice: "16.500",
   },
 ];
 
@@ -186,7 +187,7 @@ export const teaAndInfusionsProductList = [
       [ENGLISH]: "Red fruits herbal tea",
     },
     available: true,
-    hotPrice: "7.500",
+    hotPrice: "8.500",
   },
 ];
 
@@ -236,7 +237,7 @@ export const accompanyProductList = [
       [SPANISH]: "Pan de yuca",
       [ENGLISH]: "Yuca Bread",
     },
-    available: true,
+    available: false,
     img: "assets/pandeyuca.jpg",
     hotPrice: "4.500",
   },
@@ -274,7 +275,31 @@ export const accompanyProductList = [
     },
     available: true,
     // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1742650899/Chocolate_con_ar%C3%A1ndanos_converted_kgef9v.webp",
-    hotPrice: "8.000",
+    hotPrice: "8.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Rollito de canela",
+      [ENGLISH]: "Cinnamon roll",
+    },
+    available: true,
+    hotPrice: "10.500",
+  },
+  {
+    name: {
+      [SPANISH]: "Pan pizza",
+      [ENGLISH]: "Pizza bread",
+    },
+    available: true,
+    hotPrice: "13.000",
+  },
+  {
+    name: {
+      [SPANISH]: "Brownie con harina de garbanzo",
+      [ENGLISH]: "Chickpea flour brownie",
+    },
+    available: true,
+    hotPrice: "13.500",
   },
   {
     name: {
@@ -330,8 +355,8 @@ export const accompanyProductList = [
   },
   {
     name: {
-      [SPANISH]: "Fatay al horno",
-      [ENGLISH]: "Baked Fatay",
+      [SPANISH]: "Fatay  arabe",
+      [ENGLISH]: "Arabian Fatay",
     },
     available: true,
     hotPrice: "13.000",

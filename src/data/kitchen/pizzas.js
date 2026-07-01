@@ -5,12 +5,25 @@ export const PIZZA = "PIZZA";
 export const pizzaProducts = [
   {
     name: {
+      [SPANISH]: "PAN PIZZA",
+      [ENGLISH]: "PIZZA BREAD",
+    },
+    personal: "13.000",
+    available: true,
+    description: {
+      [SPANISH]:
+        "(Porción) Queso mozzarella, pomodoro, jamón, tocineta, chorizo santarronaso y pepperoni.",
+      [ENGLISH]:
+        "(Portion) Mozzarella cheese, pomodoro, ham, bacon, santarronaso sausage, and pepperoni.",
+    },
+  },
+  {
+    name: {
       [SPANISH]: "NAPOLITANA",
       [ENGLISH]: "NEAPOLITAN",
     },
     personal: "25.500",
     available: true,
-    // img:  "https://res.cloudinary.com/dwufyf99d/image/upload/v1744511477/pizza-napolitana_a9ykhj.webp",
     description: {
       [SPANISH]:
         "Queso mozzarella, tomate fresco, orégano, pesto y aceite de ajo.",

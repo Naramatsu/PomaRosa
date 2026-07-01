@@ -7,7 +7,9 @@ import { IoMenuSharp } from "react-icons/io5";
 import { KITCHEN_MENU_TITLES, scrollToSection } from "../utils/constants";
 import useTheme from "../hooks/useTheme";
 
-const Header = ({ title = "", data = KITCHEN_MENU_TITLES }) => {
+const headerActiveItems = KITCHEN_MENU_TITLES.filter((item) => item.isActive);
+
+const Header = ({ title = "", data = headerActiveItems }) => {
   const scrollY = useScrollY();
   const [languaje] = useLanguaje();
   const { themeBgColor, themeBorderColor, themeTitleTextColor } = useTheme();

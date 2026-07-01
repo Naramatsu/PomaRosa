@@ -33,9 +33,11 @@ import {
 import useTheme from "../hooks/useTheme";
 import useMenuHours from "../hooks/useMenuHours";
 
+const headerActiveItems = KITCHEN_MENU_TITLES.filter((item) => item.isActive);
+
 const Kitchen = () => {
   const [title, setTitle] = useState("");
-  const [menuTitles, setMenuTitles] = useState(KITCHEN_MENU_TITLES);
+  const [menuTitles, setMenuTitles] = useState(headerActiveItems);
   const [languaje] = useLanguaje();
   const { setTheme, themeBgColor } = useTheme();
   const scrollY = useScrollY();
@@ -95,7 +97,7 @@ const Kitchen = () => {
 
   useEffect(() => {
     setMenuTitles(
-      KITCHEN_MENU_TITLES.filter((item) => {
+      headerActiveItems.filter((item) => {
         if (!showDailyMenu)
           return item.label[languaje] !== DAILYMENU_TITLE[languaje];
         return item;

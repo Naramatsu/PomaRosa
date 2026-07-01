@@ -174,7 +174,7 @@ export const wafflesProducts = [
       [SPANISH]: "CARIBE",
       [ENGLISH]: "CARIBBEAN",
     },
-    hotPrice: "25.500",
+    hotPrice: "26.000",
     available: true,
     description: {
       [SPANISH]: "Waffle artesanal con salsa de chocolate hersheys.",
@@ -214,14 +214,13 @@ export const wafflesProducts = [
       [SPANISH]: "NUTELLA",
       [ENGLISH]: "NUTELLA",
     },
-    hotPrice: "27.500",
+    hotPrice: "28.000",
     available: true,
     img: "assets/waffledenutella.jpeg",
     description: {
       [SPANISH]:
-        "Waffle bañado con Nutella y lluvia de trozos de fresas frescas. Incluyen helado y crema chantillí.",
-      [ENGLISH]:
-        "Waffle with Nutella and Fresh Strawberry Pieces. Included ice cream and whipped cream.",
+        "Waffle bañado con Nutella y lluvia de trozos de fresas frescas.",
+      [ENGLISH]: "Waffle with Nutella and Fresh Strawberry Pieces.",
     },
   },
   {
@@ -229,14 +228,12 @@ export const wafflesProducts = [
       [SPANISH]: "BERRIES",
       [ENGLISH]: "BERRIES",
     },
-    hotPrice: "26.500",
+    hotPrice: "27.000",
     available: true,
     img: "assets/waffleberries.jpeg",
     description: {
-      [SPANISH]:
-        "Salsa de frutos rojos con fresas y arándanos frescos. Incluyen helado y crema chantillí.",
-      [ENGLISH]:
-        "Berry Sauce with Fresh Strawberries and Blueberries. Included ice cream and whipped cream.",
+      [SPANISH]: "Salsa de frutos rojos con fresas y arándanos frescos.",
+      [ENGLISH]: "Berry Sauce with Fresh Strawberries and Blueberries.",
     },
   },
 ];
